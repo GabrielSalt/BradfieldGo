@@ -1,0 +1,28 @@
+{% extends "website/layout.html" %}
+{% load static %}
+{% block body %}
+    <h2 id='prompt' class = 'middle'>Your Route: {% for destination in destinations %}{{destination.name}} to {% endfor %}{{end.name}}</h2>
+    <div id='container'>
+        <div>
+        {% with source as image_static %}
+        <img src = "{% static image_static %}" alt="Bradfield Map">
+        {% endwith %}
+        <h4>Route Info:</h4>
+        <h5>Total Distance: {{distance}}m</h5>
+        <h5>Estimated Time: {{time}}</h5>
+        <h6>Net Elevation Change: {{elevation}}m</h6>
+        <br>
+        </div>
+        <div id='info'>
+            <h5>Route:</h5>
+            {% for description in descriptions %}
+            <h6>{{description}}</h6>
+            {% endfor %}
+            <form action='{% url "index" %}'>
+                <input type='submit' value='Home'>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+<script src="{% static 'index.js' %}"></script>

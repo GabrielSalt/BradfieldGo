@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %}
+        {% endblock %}
+        <title>BradfieldGo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'website/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id='header'>
+            <h1 id='title' class='middle'>BradfieldGo</h1>
+            <div id='topbar'>
+                <form method='GET' action='{% url "index"%}'>
+                    <input type='submit' value='Home' name='home'>
+                </form>
+                <form method='GET' action='{% url "help"%}'>
+                    <input type='submit' value='Help' name='help'>
+                </form>
+                <div id='login'>
+                    {% if user.is_authenticated %}
+                        <h6>Signed in as <strong>{{ user.username }}</strong></h6>
+                        <form action="{% url 'logout' %}" style='align-self: right;'><input type='submit' value = 'Log Out'></form>
+                    {% else %}
+                        Not signed in.
+                    {% endif %} 
+                </div>
+            </div>
+        </div>
+        <hr>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

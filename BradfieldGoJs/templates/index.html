@@ -1,0 +1,231 @@
+{% extends "website/layout.html" %}
+{% load static %}
+{% block head %}
+<link href="{% static 'website/styles.css' %}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+    <h2 id='prompt' class = 'middle'>Find Your Route</h2>
+    <div id='container'>
+        <img src = "{% static 'website/BradfieldGo.png' %}" alt="Bradfield Map">
+        <form action="{% url 'go' %}" method="post">
+            <div id='forms'>
+                {% csrf_token %}
+                <div class='form'>
+                    <label id='class' for="start">Choose a starting point:</label>
+                    <select id="startcategory" name="startcategory" onchange="startchange()">
+                        <option value='Category' selected disabled >Category</option>
+                        {% for category in categories %}
+                        <option value="{{category}}">{{category}}</option>
+                        {% endfor %}
+                    </select>
+                    <select id="start" name="start">
+                        {% for point in points %}
+                            <option value="{{point}}">{{point}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class='form' id='midform'>
+                    <label for="midpoints" class='label'>Select up to 3 midpoints:</label> 
+                    <div>
+                    <div class='middiv'>
+                    <select id="mid1category" name="mid1category" onchange="mid1change()">
+                        <option value='Category' selected>Category</option>
+                        {% for category in categories %}
+                        <option value="{{category}}">{{category}}</option>
+                        {% endfor %}
+                    </select>
+                    <select id="midpoint1" name="midpoint1" class='midpointform'>
+                        <option value='none'>None</option>
+                        {% for point in points %}
+                        <option value="{{point}}">{{point}}</option>
+                        {% endfor %}
+                    </select>
+                    </div>
+                    <div class='middiv'>
+                    <select id="mid2category" name="mid2category" onchange="mid2change()">
+                        <option value='Category' selected>Category</option>
+                        {% for category in categories %}
+                        <option value="{{category}}">{{category}}</option>
+                        {% endfor %}
+                    </select>
+                    <select id="midpoint2" name="midpoint2" class='midpointform'>
+                        <option value='none'>None</option>
+                        {% for point in points %}
+                        <option value="{{point}}">{{point}}</option>
+                        {% endfor %}
+                    </select>
+                    </div>
+                    <div class='middiv'>
+                    <select id="mid3category" name="mid3category" onchange="mid3change()">
+                        <option value='Category' selected>Category</option>
+                        {% for category in categories %}
+                        <option value="{{category}}">{{category}}</option>
+                        {% endfor %}
+                    </select>
+                    <select id="midpoint3" name="midpoint3" class='midpointform'>
+                        <option value='none'>None</option>
+                        {% for point in points %}
+                        <option value="{{point}}">{{point}}</option>
+                        {% endfor %}
+                    </select>
+                    </div>
+                    </div>
+                </div>
+                <div class='form'>
+                    <label class='label' for="end">Choose an ending point:</label>
+                    <select id="endcategory" name="endcategory" onchange="endchange()">
+                        <option value='Category' selected disabled >Category</option>
+                        {% for category in categories %}
+                        <option value="{{category}}">{{category}}</option>
+                        {% endfor %}
+                    </select>
+                    <select id="end" required name="end">
+                        {% for point in points %}
+                        <option value="{{point}}">{{point}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class='form'>
+                    <label id='class' for="modes">Select any constraint on your travel:</label>
+                    <select id="modes" name="modes">
+                        {% for mode in modes %}
+                        <option value="{{mode}}">{{mode}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <input type='submit'>
+                {% if message %}
+                <br>
+                <h6 style='color:red'>{{message}}</h6>
+                {% endif %}
+            </div>
+        </form>
+        <script>
+            function endchange() {
+                var x = document.getElementById("endcategory").value;
+                console.log(x)
+    
+                if (x == 'House') {
+                    document.getElementById("end").innerHTML = 
+                    "{% for house in houses %} <option value='{{house}}''>{{house}}</option>{% endfor %}"
+                }
+                else if (x == 'Academic') {
+                    document.getElementById("end").innerHTML = 
+                    "{% for academic in academics %} <option value='{{academic}}''>{{academic}}</option>{% endfor %}"
+                }
+                else if (x == 'Sports') {
+                    document.getElementById("end").innerHTML = 
+                    "{% for sport in sports %} <option value='{{sport}}''>{{sport}}</option>{% endfor %}"
+                }
+                else if (x == 'Other') {
+                    document.getElementById("end").innerHTML = 
+                    "{% for other in others %} <option value='{{other}}''>{{other}}</option>{% endfor %}"
+                }
+                else if (x == 'Category') {
+                    document.getElementById('end').innerHTML = 
+                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
+                }
+            }
+            function startchange() {
+                var x = document.getElementById("startcategory").value;
+                console.log(x)
+                
+                if (x == 'House') {
+                    document.getElementById("start").innerHTML = 
+                    "{% for house in houses %} <option value='{{house}}'>{{house}}</option>{% endfor %}"
+                }
+                else if (x == 'Academic') {
+                    document.getElementById("start").innerHTML = 
+                    "{% for academic in academics %} <option value='{{academic}}'>{{academic}}</option>{% endfor %}"
+                }
+                else if (x == 'Sports') {
+                    document.getElementById("start").innerHTML = 
+                    "{% for sport in sports %} <option value='{{sport}}'>{{sport}}</option>{% endfor %}"
+                }
+                else if (x == 'Other') {
+                    document.getElementById("start").innerHTML = 
+                    "{% for other in others %} <option value='{{other}}'>{{other}}</option>{% endfor %}"
+                }
+                else if (x == 'Category') {
+                    document.getElementById('start').innerHTML = 
+                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
+                }
+            }
+            function mid1change() {
+                var x = document.getElementById("mid1category").value;
+                console.log(x)
+    
+                if (x == 'House') {
+                    document.getElementById("midpoint1").innerHTML = 
+                    "{% for house in houses %} <option value='{{house}}''>{{house}}</option>{% endfor %}"
+                }
+                else if (x == 'Academic') {
+                    document.getElementById("midpoint1").innerHTML = 
+                    "{% for academic in academics %} <option value='{{academic}}''>{{academic}}</option>{% endfor %}"
+                }
+                else if (x == 'Sports') {
+                    document.getElementById("midpoint1").innerHTML = 
+                    "{% for sport in sports %} <option value='{{sport}}''>{{sport}}</option>{% endfor %}"
+                }
+                else if (x == 'Other') {
+                    document.getElementById("midpoint1").innerHTML = 
+                    "{% for other in others %} <option value='{{other}}''>{{other}}</option>{% endfor %}"
+                }
+                else if (x == 'Category') {
+                    document.getElementById('midpoint1').innerHTML = 
+                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
+                }
+            }
+            function mid2change() {
+                var x = document.getElementById("mid2category").value;
+                console.log(x)
+    
+                if (x == 'House') {
+                    document.getElementById("midpoint2").innerHTML = 
+                    "{% for house in houses %} <option value='{{house}}''>{{house}}</option>{% endfor %}"
+                }
+                else if (x == 'Academic') {
+                    document.getElementById("midpoint2").innerHTML = 
+                    "{% for academic in academics %} <option value='{{academic}}''>{{academic}}</option>{% endfor %}"
+                }
+                else if (x == 'Sports') {
+                    document.getElementById("midpoint2").innerHTML = 
+                    "{% for sport in sports %} <option value='{{sport}}''>{{sport}}</option>{% endfor %}"
+                }
+                else if (x == 'Other') {
+                    document.getElementById("midpoint2").innerHTML = 
+                    "{% for other in others %} <option value='{{other}}''>{{other}}</option>{% endfor %}"
+                }
+                else if (x == 'Category') {
+                    document.getElementById('midpoint2').innerHTML = 
+                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
+                }
+            }
+            function mid3change() {
+                var x = document.getElementById("mid3category").value;
+                console.log(x)
+    
+                if (x == 'House') {
+                    document.getElementById("midpoint3").innerHTML = 
+                    "{% for house in houses %} <option value='{{house}}''>{{house}}</option>{% endfor %}"
+                }
+                else if (x == 'Academic') {
+                    document.getElementById("midpoint3").innerHTML = 
+                    "{% for academic in academics %} <option value='{{academic}}''>{{academic}}</option>{% endfor %}"
+                }
+                else if (x == 'Sports') {
+                    document.getElementById("midpoint3").innerHTML = 
+                    "{% for sport in sports %} <option value='{{sport}}''>{{sport}}</option>{% endfor %}"
+                }
+                else if (x == 'Other') {
+                    document.getElementById("midpoint3").innerHTML = 
+                    "{% for other in others %} <option value='{{other}}''>{{other}}</option>{% endfor %}"
+                }
+                else if (x == 'Category') {
+                    document.getElementById('midpoint3').innerHTML = 
+                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
+                }
+            }
+        </script>
+    </div>
+{% endblock %}
