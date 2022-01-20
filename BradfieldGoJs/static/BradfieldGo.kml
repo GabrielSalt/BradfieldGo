@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>hill2b</name>
+            <description>turn</description>
+            <Point id="2">
+                <coordinates>-1.132275154673008,51.44713154688046,75.88397453178179</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>hill2</name>
+            <description>turn</description>
+            <Point id="4">
+                <coordinates>-1.131929522486307,51.44713291208392,78.73744939672919</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>Science (Back)</name>
+            <description>academic</description>
+            <Point id="6">
+                <coordinates>-1.131995976414797,51.44743110850764,77.10476477064458</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>Science (Front)</name>
+            <description>academic</description>
+            <Point id="8">
+                <coordinates>-1.131649883375699,51.44776925776888,76.4069078959644</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>sciencecross</name>
+            <description>turn</description>
+            <Point id="10">
+                <coordinates>-1.132088369320483,51.447335754797,77.07605401141551</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>MFL (Back)</name>
+            <description>academic</description>
+            <Point id="12">
+                <coordinates>-1.132575518944713,51.4472370913063,73.80740036256361</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>hill2c</name>
+            <description>turn</description>
+            <Point id="14">
+                <coordinates>-1.132587960842445,51.44718079395938,73.63070580716081</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>MFL (Front)</name>
+            <description>academic</description>
+            <Point id="16">
+                <coordinates>-1.132574905182901,51.44745746882037,73.86955022142122</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>topofhill2</name>
+            <description>turn</description>
+            <Point id="18">
+                <coordinates>-1.126998493474015,51.44820971249831,90.40740205968582</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>G House</name>
+            <description>house</description>
+            <Point id="20">
+                <coordinates>-1.126780981590091,51.44827559693298,90.7620411047358</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>D House</name>
+            <description>house</description>
+            <Point id="22">
+                <coordinates>-1.126526740522462,51.448040364981,91.29787341082708</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>D House (Back)</name>
+            <description>house</description>
+            <Point id="24">
+                <coordinates>-1.125985456591595,51.44812595500498,90.06071313165201</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>Faulkner's House</name>
+            <description>house</description>
+            <Point id="26">
+                <coordinates>-1.126967112134958,51.44859451864669,90.14773873522418</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>Faulkner's Dining Hall</name>
+            <description>other</description>
+            <Point id="28">
+                <coordinates>-1.126370121637711,51.44884118365758,90.78814769856696</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>H House</name>
+            <description>house</description>
+            <Point id="30">
+                <coordinates>-1.125824683408079,51.44890681575254,90.91351611687318</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>Astro 1</name>
+            <description>sports</description>
+            <Point id="32">
+                <coordinates>-1.124927476111861,51.44954463435482,88.19951058289278</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="35">
+            <name>Astro 1 (Back)</name>
+            <description>sports</description>
+            <Point id="34">
+                <coordinates>-1.125519292474277,51.4491643253018,88.91611888874472</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="37">
+            <name>Astro 2</name>
+            <description>sports</description>
+            <Point id="36">
+                <coordinates>-1.124359961572599,51.44975297455213,87.06979780264757</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="39">
+            <name>faulknerhallturn</name>
+            <description>turn</description>
+            <Point id="38">
+                <coordinates>-1.126016093942012,51.4488072324048,90.38535784774444</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="41">
+            <name>faulknerback</name>
+            <description>turn</description>
+            <Point id="40">
+                <coordinates>-1.126038727179925,51.44889886352993,90.74750374653044</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>astroturn</name>
+            <description>turn</description>
+            <Point id="42">
+                <coordinates>-1.125905894689968,51.44900107031732,90.9135365431716</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="45">
+            <name>hill2split</name>
+            <description>turn</description>
+            <Point id="44">
+                <coordinates>-1.127796145342701,51.44836516433054,89.9685314392099</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="47">
+            <name>Bloods (Back)</name>
+            <description>academic</description>
+            <Point id="46">
+                <coordinates>-1.132179022183879,51.448292485206,67.20712417275841</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="49">
+            <name>History</name>
+            <description>academic</description>
+            <Point id="48">
+                <coordinates>-1.13241557543038,51.44770685251119,73.66791083614382</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="51">
+            <name>Library</name>
+            <description>academic</description>
+            <Point id="50">
+                <coordinates>-1.132090599914353,51.4480008010675,72.17404393884931</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="53">
+            <name>sciencestairs</name>
+            <description>turn</description>
+            <Point id="52">
+                <coordinates>-1.131894732253822,51.44817277541026,71.57634324837763</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="55">
+            <name>scienceroad</name>
+            <description>turn</description>
+            <Point id="54">
+                <coordinates>-1.131554448594252,51.44843911812137,70.3823033241979</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="57">
+            <name>Bloods (Front)</name>
+            <description>academic</description>
+            <Point id="56">
+                <coordinates>-1.132091579678023,51.44895924775361,64.74607271659</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="59">
+            <name>Grey School (Right)</name>
+            <description>academic</description>
+            <Point id="58">
+                <coordinates>-1.132568902076829,51.44889354559275,64.2235901358737</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="61">
+            <name>Grey School (Left)</name>
+            <description>academic</description>
+            <Point id="60">
+                <coordinates>-1.132689993589706,51.44881145925722,64.34698319672242</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="63">
+            <name>Maths</name>
+            <description>academic</description>
+            <Point id="62">
+                <coordinates>-1.132367901975156,51.44944347149149,60.58203502400359</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="65">
+            <name>CCF Office</name>
+            <description>other</description>
+            <Point id="64">
+                <coordinates>-1.132563042379532,51.44971632189834,58.97920548305345</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="67">
+            <name>C House</name>
+            <description>house</description>
+            <Point id="66">
+                <coordinates>-1.131303348677123,51.44926574621469,64.28849117481131</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="69">
+            <name>E House</name>
+            <description>house</description>
+            <Point id="68">
+                <coordinates>-1.129590134240916,51.44945455629743,70.1602849086238</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="71">
+            <name>Greeker</name>
+            <description>other</description>
+            <Point id="70">
+                <coordinates>-1.130008649265543,51.45021408260092,60.04758059587335</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="73">
+            <name>F House</name>
+            <description>house</description>
+            <Point id="72">
+                <coordinates>-1.130967372627941,51.4496604793077,63.74057825193974</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="75">
+            <name>M House</name>
+            <description>house</description>
+            <Point id="74">
+                <coordinates>-1.128818886089673,51.44908686373778,78.97547057153997</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="77">
+            <name>I House</name>
+            <description>house</description>
+            <Point id="76">
+                <coordinates>-1.12812045489993,51.44864119845806,86.68958485636365</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="79">
+            <name>J House</name>
+            <description>house</description>
+            <Point id="78">
+                <coordinates>-1.127464747268968,51.44931292317477,83.28773534894327</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="81">
+            <name>K House</name>
+            <description>house</description>
+            <Point id="80">
+                <coordinates>-1.127620478378356,51.45000801345326,77.0718795546764</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="83">
+            <name>A House</name>
+            <description>house</description>
+            <Point id="82">
+                <coordinates>-1.128717498935091,51.45042218984492,67.14090003000645</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="85">
+            <name>Rux</name>
+            <description>sports</description>
+            <Point id="84">
+                <coordinates>-1.130905088643661,51.45005599921515,60.18355838797606</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="87">
+            <name>Old Sports Hall</name>
+            <description>other</description>
+            <Point id="86">
+                <coordinates>-1.130188963115554,51.45081898035296,59.46085665516124</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="89">
+            <name>Sports Centre</name>
+            <description>sports</description>
+            <Point id="88">
+                <coordinates>-1.130593557872311,51.45091155113662,57.72622303532626</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="91">
+            <name>Indoor Tennis Courts</name>
+            <description>sports</description>
+            <Point id="90">
+                <coordinates>-1.129163262758425,51.45124093176051,61.91278596551523</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="93">
+            <name>Clay Tennis Courts</name>
+            <description>sports</description>
+            <Point id="92">
+                <coordinates>-1.128951689485763,51.4517737677393,55.75594305739611</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="95">
+            <name>Astro Tennis Courts</name>
+            <description>sports</description>
+            <Point id="94">
+                <coordinates>-1.125207473458519,51.44835812828173,87.9296170025682</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="97">
+            <name>Med Centre</name>
+            <description>other</description>
+            <Point id="96">
+                <coordinates>-1.133302731747089,51.45065956117039,54.18159198264868</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="99">
+            <name>Design Centre</name>
+            <description>academic</description>
+            <Point id="98">
+                <coordinates>-1.126034573329942,51.44866519179493,90.55683931239935</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="101">
+            <name>designturn</name>
+            <description>turn</description>
+            <Point id="100">
+                <coordinates>-1.126216238630264,51.44870457096154,90.11510060056553</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="103">
+            <name>midhill2turn</name>
+            <description>turn</description>
+            <Point id="102">
+                <coordinates>-1.12729897153183,51.44897505866382,87.30623586214625</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="105">
+            <name>jhousesplit</name>
+            <description>turn</description>
+            <Point id="104">
+                <coordinates>-1.127578172565373,51.44913249103768,84.03036443636306</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="107">
+            <name>astrochoice</name>
+            <description>turn</description>
+            <Point id="106">
+                <coordinates>-1.125719469502721,51.44937001789961,88.6717198964744</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="109">
+            <name>khousesplit</name>
+            <description>turn</description>
+            <Point id="108">
+                <coordinates>-1.127844154697702,51.44925305615712,82.2825019933697</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="111">
+            <name>khousesplit2</name>
+            <description>turn</description>
+            <Point id="110">
+                <coordinates>-1.128192057552897,51.4498493349185,74.97514025418081</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="113">
+            <name>mhousesplit</name>
+            <description>turn</description>
+            <Point id="112">
+                <coordinates>-1.128925622736404,51.44924817387327,76.46064066965266</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="115">
+            <name>bryn</name>
+            <description>turn</description>
+            <Point id="114">
+                <coordinates>-1.129906114253402,51.44883750703265,73.38888131733198</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="117">
+            <name>topofbryn</name>
+            <description>turn</description>
+            <Point id="116">
+                <coordinates>-1.129530207222889,51.4489912745645,75.33567512232725</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="119">
+            <name>crosswayshillside</name>
+            <description>turn</description>
+            <Point id="118">
+                <coordinates>-1.130600697141567,51.44917940436362,66.2724682002498</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="121">
+            <name>crosswaysheadside</name>
+            <description>turn</description>
+            <Point id="120">
+                <coordinates>-1.130791291594917,51.44912990814731,65.90854907414675</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="123">
+            <name>crosswayscside</name>
+            <description>turn</description>
+            <Point id="122">
+                <coordinates>-1.131043729597428,51.44908890050042,65.05105843967266</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="125">
+            <name>ehousesplit</name>
+            <description>turn</description>
+            <Point id="124">
+                <coordinates>-1.129670740707918,51.44950599994042,68.29818912886711</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="127">
+            <name>road</name>
+            <description>turn</description>
+            <Point id="126">
+                <coordinates>-1.128913912126522,51.4498759882382,69.23541697812509</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="129">
+            <name>ahousesplit</name>
+            <description>turn</description>
+            <Point id="128">
+                <coordinates>-1.129114727550702,51.45013013696818,67.89509441876257</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="131">
+            <name>greekersplit</name>
+            <description>turn</description>
+            <Point id="130">
+                <coordinates>-1.12938781234435,51.45044131416994,64.9966817624387</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="133">
+            <name>backroutesplit</name>
+            <description>turn</description>
+            <Point id="132">
+                <coordinates>-1.130239248206185,51.45012615970089,60.34649590008048</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="135">
+            <name>Old Sports Hall (Back)</name>
+            <description>other</description>
+            <Point id="134">
+                <coordinates>-1.130543994286296,51.45076045157112,58.80450665475731</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="137">
+            <name>indoortennissplit</name>
+            <description>turn</description>
+            <Point id="136">
+                <coordinates>-1.129888643951646,51.45094501008936,59.19940773402178</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="139">
+            <name>New Ground</name>
+            <description>sports</description>
+            <Point id="138">
+                <coordinates>-1.138725040048091,51.44980075257063,53.40295461818711</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="141">
+            <name>Iron Bridge</name>
+            <description>turn</description>
+            <Point id="140">
+                <coordinates>-1.134689120606963,51.44874924685295,56.46289121255426</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="143">
+            <name>Max</name>
+            <description>sports</description>
+            <Point id="142">
+                <coordinates>-1.134738704596627,51.44817248094012,56.85927834574539</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="145">
+            <name>Major</name>
+            <description>sports</description>
+            <Point id="144">
+                <coordinates>-1.133726580123545,51.44785864033888,62.15805284533085</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="147">
+            <name>Pit</name>
+            <description>sports</description>
+            <Point id="146">
+                <coordinates>-1.135651520624822,51.44718703397179,57.09868549086063</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="149">
+            <name>Rectory 1</name>
+            <description>sports</description>
+            <Point id="148">
+                <coordinates>-1.136500146395667,51.44595733118856,60.74279900404301</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="151">
+            <name>Rectory 2</name>
+            <description>sports</description>
+            <Point id="150">
+                <coordinates>-1.137851165415464,51.44576593827934,60.1540135692932</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="153">
+            <name>Rectory 3</name>
+            <description>sports</description>
+            <Point id="152">
+                <coordinates>-1.139494718324544,51.44569159919995,57.8480108423413</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="155">
+            <name>Hill 2 Pitch</name>
+            <description>sports</description>
+            <Point id="154">
+                <coordinates>-1.1283544839111,51.44756390073426,90.13591912980066</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="157">
+            <name>Hill 2 Cricket Nets</name>
+            <description>sports</description>
+            <Point id="156">
+                <coordinates>-1.127658291844404,51.44792155738116,90.22362708758772</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="159">
+            <name>Chapel</name>
+            <description>other</description>
+            <Point id="158">
+                <coordinates>-1.132660657317595,51.44807703767772,68.03947478674893</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="161">
+            <name>Stunt Pavilion</name>
+            <description>other</description>
+            <Point id="160">
+                <coordinates>-1.133495391102308,51.44698043638034,68.92302896305075</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="163">
+            <name>bloodsturn</name>
+            <description>turn</description>
+            <Point id="162">
+                <coordinates>-1.132585165251127,51.4483104555847,64.91651721980485</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="165">
+            <name>Big School</name>
+            <description>academic</description>
+            <Point id="164">
+                <coordinates>-1.13260738745973,51.44873309187895,65.01789974385078</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="167">
+            <name>riversplit</name>
+            <description>turn</description>
+            <Point id="166">
+                <coordinates>-1.132978159076189,51.44861510928533,63.06393363143381</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="169">
+            <name>thai1</name>
+            <description>turn</description>
+            <Point id="168">
+                <coordinates>-1.132222719037624,51.44903714017389,63.03097128894647</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="171">
+            <name>thai2</name>
+            <description>turn</description>
+            <Point id="170">
+                <coordinates>-1.131695088003021,51.44931691535066,63.50258672167438</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="173">
+            <name>thai3</name>
+            <description>turn</description>
+            <Point id="172">
+                <coordinates>-1.132097154826186,51.44956709905227,60.88717032656253</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="175">
+            <name>thai4</name>
+            <description>turn</description>
+            <Point id="174">
+                <coordinates>-1.132586919597854,51.44929463537954,60.39339498007656</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="177">
+            <name>fhousesplit</name>
+            <description>turn</description>
+            <Point id="176">
+                <coordinates>-1.131575763966169,51.44966600389308,61.01336016587788</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="179">
+            <name>medcentresplit</name>
+            <description>turn</description>
+            <Point id="178">
+                <coordinates>-1.133429908026307,51.450614780089,53.52672035736742</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="181">
+            <name>sciencecross-hill2b</name>
+            <description>W1C0-Take the right turning as the path diverges.-Turn left when the path diverges.</description>
+            <LineString id="180">
+                <coordinates>-1.132088369320483,51.447335754797,77.07605401141551 -1.132275154673008,51.44713154688046,75.88397453178179</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="183">
+            <name>sciencecross-hill2</name>
+            <description>W1C0-Take the left turning as the path diverges.-Turn right on the way down the hill.</description>
+            <LineString id="182">
+                <coordinates>-1.132088369320483,51.447335754797,77.07605401141551 -1.131929522486307,51.44713291208392,78.73744939672919</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="185">
+            <name>hill2b-hill2</name>
+            <description>W1C0-Continue up the hill.-Continue down the hill.</description>
+            <LineString id="184">
+                <coordinates>-1.132275154673008,51.44713154688046,75.88397453178179 -1.131929522486307,51.44713291208392,78.73744939672919</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="187">
+            <name>sciencecross-Science (Back)</name>
+            <description>W1C0-Enter the science block-Exit the science block</description>
+            <LineString id="186">
+                <coordinates>-1.132088369320483,51.447335754797,77.07605401141551 -1.131995976414797,51.44743110850764,77.10476477064458</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="189">
+            <name>MFL (Back)-hill2c</name>
+            <description>W1C1-Exit the MFL block from the back.-Enter the MFL block from the back.</description>
+            <LineString id="188">
+                <coordinates>-1.132575518944713,51.4472370913063,73.80740036256361 -1.132587960842445,51.44718079395938,73.63070580716081</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="191">
+            <name>hill2c-hill2b</name>
+            <description>W1C0-Go up the hill.-Go down the hill.</description>
+            <LineString id="190">
+                <coordinates>-1.132587960842445,51.44718079395938,73.63070580716081 -1.132275154673008,51.44713154688046,75.88397453178179</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="193">
+            <name>MFL (Front)-hill2c</name>
+            <description>W1C0-Turn left from the front exit of the MFL block.-Turn right and go towards the MFL entrance.</description>
+            <LineString id="192">
+                <coordinates>-1.132574905182901,51.44745746882037,73.86955022142122 -1.132700459514933,51.44726298532812,73.21795405063325 -1.132685457362702,51.4472210250452,73.27482529993243 -1.132639087421545,51.44720588634907,73.40237699355598 -1.132587960842445,51.44718079395938,73.63070580716081</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="195">
+            <name>hill2-topofhill2</name>
+            <description>W1C0-Go up the hill and turn left at the road, coninue until you split at a footpath and then cross the road at the zebra crossing.-Turn towards and follow the path to the crossing. Follow this footpath and road until they split past the black house on the right and walk down the hill.</description>
+            <LineString id="194">
+                <coordinates>-1.131929522486307,51.44713291208392,78.73744939672919 -1.130864717434565,51.44710795888317,88.82634648356554 -1.129815605029256,51.44715187019805,89.9053565332831 -1.128577826144368,51.44800623816999,89.36032801587464 -1.128358135590939,51.44802272665334,89.84909223180603 -1.12809977039626,51.44799594698119,89.54377605102428 -1.127938374930638,51.44805782974742,89.94968679438259 -1.127892718630138,51.44810964911335,90.04402513383236 -1.127726407309503,51.4481217497416,89.82805856180168 -1.126924898455366,51.44782400523957,90.2114936599941 -1.126766884328013,51.44796428120587,90.40321120909032 -1.127015262961564,51.44809150676199,90.49906998363842 -1.126998493474015,51.44820971249831,90.40740205968582</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="197">
+            <name>G House-topofhill2</name>
+            <description>W1C0-Walk from G House.-Go towards G House.</description>
+            <LineString id="196">
+                <coordinates>-1.126780981590091,51.44827559693298,90.7620411047358 -1.126780147520128,51.44828286222392,90.12395459323972 -1.126998493474015,51.44820971249831,90.40740205968582</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="199">
+            <name>topofhill2-D House</name>
+            <description>W1C0-Go towards the entrance of D House.-Exit D House and turn right.</description>
+            <LineString id="198">
+                <coordinates>-1.126998493474015,51.44820971249831,90.40740205968582 -1.126596575139491,51.44798069627728,91.1433008423534 -1.126526740522462,51.448040364981,91.29787341082708</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="201">
+            <name>D House (Back)-faulknerhallturn</name>
+            <description>W1C0-Exit D House through the back entrance and turn left, continue past the design centre and turn left towards the faulkner's dining hall.-Walk down the path between Design and H House</description>
+            <LineString id="200">
+                <coordinates>-1.125985456591595,51.44812595500498,90.06071313165201 -1.125917513103919,51.44814488178911,89.54670578502812 -1.125877849741734,51.44829219036141,89.3934163886917 -1.125586076387767,51.4485458480176,89.48694972105571 -1.125617678361175,51.44855383847547,89.79052254149322 -1.12559552038665,51.44857946280229,89.75131362164795 -1.125705630567423,51.44864088502776,90.57203679189954 -1.126016093942012,51.4488072324048,90.38535784774444</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="203">
+            <name>faulknerback-faulknerhallturn</name>
+            <description>W1C0-Exit the Faulkner's dining hall through the back entrance.-Enter the Faulkner's dining hall through the back entrance.</description>
+            <LineString id="202">
+                <coordinates>-1.126038727179925,51.44889886352993,90.74750374653044 -1.126016093942012,51.4488072324048,90.38535784774444</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="205">
+            <name>faulknerhallturn-H House</name>
+            <description>W1C0-Enter H House (The Close).-Exit H House.</description>
+            <LineString id="204">
+                <coordinates>-1.126016093942012,51.4488072324048,90.38535784774444 -1.125824683408079,51.44890681575254,90.91351611687318</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="207">
+            <name>faulknerback-H House</name>
+            <description>W1C0-Enter H House (The Close).-Enter the Faulkner's dining hall through the back entrance.</description>
+            <LineString id="206">
+                <coordinates>-1.126038727179925,51.44889886352993,90.74750374653044 -1.125824683408079,51.44890681575254,90.91351611687318</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="209">
+            <name>faulknerhallturn-astroturn</name>
+            <description>W1C0-Walk towards the astro.-Walk towards the Faulkner's Dining Hall.</description>
+            <LineString id="208">
+                <coordinates>-1.126016093942012,51.4488072324048,90.38535784774444 -1.125905894689968,51.44900107031732,90.9135365431716</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="211">
+            <name>H House-astroturn</name>
+            <description>W1C0-Exit H House.-Enter H House (The Close).</description>
+            <LineString id="210">
+                <coordinates>-1.125824683408079,51.44890681575254,90.91351611687318 -1.125905894689968,51.44900107031732,90.9135365431716</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="213">
+            <name>astroturn-Astro 1 (Back)</name>
+            <description>W1C0-Enter the astro through the back.-Leave the astro and go towards the Faulkner's Dining Hall.</description>
+            <LineString id="212">
+                <coordinates>-1.125905894689968,51.44900107031732,90.9135365431716 -1.125519292474277,51.4491643253018,88.91611888874472</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="215">
+            <name>astroturn-Astro 1</name>
+            <description>W1C0-Walk towards the front entrance of the astro (With the building).-Leave the astro and walk towards the Faulkner's dining hall.</description>
+            <LineString id="214">
+                <coordinates>-1.125905894689968,51.44900107031732,90.9135365431716 -1.125620090695557,51.44926071142349,88.84563199332364 -1.124927476111861,51.44954463435482,88.19951058289278</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="217">
+            <name>Astro 1-Astro 2</name>
+            <description>W1C0-Leave the front astro and walk towards the far astro.-Leave the far astro and enter the front astro.</description>
+            <LineString id="216">
+                <coordinates>-1.124927476111861,51.44954463435482,88.19951058289278 -1.124359961572599,51.44975297455213,87.06979780264757</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="219">
+            <name>Faulkner's House-G House</name>
+            <description>W1C0-Exit Faulkner's and walk towards G House.-Walk towards Faulker's.</description>
+            <LineString id="218">
+                <coordinates>-1.126967112134958,51.44859451864669,90.14773873522418 -1.126742101260635,51.44834101802767,89.93223588413183 -1.126780981590091,51.44827559693298,90.7620411047358</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="221">
+            <name>Faulkner's House-Faulkner's Dining Hall</name>
+            <description>W1C0-Leave Faulkner's and walk to the dining hall on the left.-Leave the faulkner's hall and walk towards the Faulkner's House building.</description>
+            <LineString id="220">
+                <coordinates>-1.126967112134958,51.44859451864669,90.14773873522418 -1.126802665729395,51.44871217449614,90.11167505045451 -1.12662037722985,51.4487302007763,89.32685326296982 -1.126370121637711,51.44884118365758,90.78814769856696</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="223">
+            <name>G House-Faulkner's Dining Hall</name>
+            <description>W1C0-Continue along the road towards the Faulkner's hall.-Leave the faulkner's hall and walk along the road towards the road crossing</description>
+            <LineString id="222">
+                <coordinates>-1.126780981590091,51.44827559693298,90.7620411047358 -1.126543167016167,51.44846344651453,89.69345867536522 -1.126447796169817,51.4486480171212,89.07114802346418 -1.126370121637711,51.44884118365758,90.78814769856696</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="225">
+            <name>Faulkner's House-hill2split</name>
+            <description>W1C0-Go along the path to the right from the Faulkner's entrance and turn right at the road.-At the top of the hill, turn left and walk parallel to faulkner's</description>
+            <LineString id="224">
+                <coordinates>-1.126967112134958,51.44859451864669,90.14773873522418 -1.127099226353683,51.44856881652586,89.78681570858721 -1.127428913100166,51.44831675058176,90.27422558399604 -1.127796145342701,51.44836516433054,89.9685314392099</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="227">
+            <name>topofhill2-hill2split</name>
+            <description>W1C0-Walk along the road parallel to the gate -At the top of the hill, walk along the road straight.</description>
+            <LineString id="226">
+                <coordinates>-1.126998493474015,51.44820971249831,90.40740205968582 -1.127422575458374,51.44831677381251,90.24011604581793 -1.127796145342701,51.44836516433054,89.9685314392099</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="229">
+            <name>Faulkner's House-designturn</name>
+            <description>W1C0-Exit Faulkner's and turn left towards design.-Walk towards Faulkner's</description>
+            <LineString id="228">
+                <coordinates>-1.126967112134958,51.44859451864669,90.14773873522418 -1.126817489064774,51.44854447190449,89.3337402169876 -1.126216238630264,51.44870457096154,90.11510060056553</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="231">
+            <name>Faulkner's Dining Hall-designturn</name>
+            <description>W1C0-Exit Faulkner's dining hall and turn left-Enter the dining hall from the left</description>
+            <LineString id="230">
+                <coordinates>-1.126370121637711,51.44884118365758,90.78814769856696 -1.126385351348334,51.44879594094575,89.95377765198678 -1.126216238630264,51.44870457096154,90.11510060056553</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="233">
+            <name>G House-designturn</name>
+            <description>W1C0-Walk along the road towards the faulkner's dining hall.-Walk along the road towards the front gate.</description>
+            <LineString id="232">
+                <coordinates>-1.126780981590091,51.44827559693298,90.7620411047358 -1.126540204008268,51.44846096026125,89.71911861768493 -1.12645019780186,51.44864929293468,89.06576956561956 -1.126216238630264,51.44870457096154,90.11510060056553</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="235">
+            <name>designturn-Design Centre</name>
+            <description>W1C0-Enter the Design Centre.-Exit the Design Centre.</description>
+            <LineString id="234">
+                <coordinates>-1.126216238630264,51.44870457096154,90.11510060056553 -1.126122064156305,51.44870206041153,90.02202916198684 -1.126034573329942,51.44866519179493,90.55683931239935</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="237">
+            <name>designturn-faulknerhallturn</name>
+            <description>W1C0-Nothing-Nothing</description>
+            <LineString id="236">
+                <coordinates>-1.126216238630264,51.44870457096154,90.11510060056553 -1.126016093942012,51.4488072324048,90.38535784774444</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="239">
+            <name>hill2split-I House</name>
+            <description>W1C0-Walk downhill along the road to I House-Exit I House and Walk up the hill.</description>
+            <LineString id="238">
+                <coordinates>-1.127796145342701,51.44836516433054,89.9685314392099 -1.12812045489993,51.44864119845806,86.68958485636365</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="241">
+            <name>I House-midhill2turn</name>
+            <description>W1C0-Walk along the road towards J House.-Continue up the road towards I House.</description>
+            <LineString id="240">
+                <coordinates>-1.12812045489993,51.44864119845806,86.68958485636365 -1.12729897153183,51.44897505866382,87.30623586214625</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="243">
+            <name>midhill2turn-jhousesplit</name>
+            <description>W1C0-Walk down the hill.-Continue up the hill.</description>
+            <LineString id="242">
+                <coordinates>-1.12729897153183,51.44897505866382,87.30623586214625 -1.127578172565373,51.44913249103768,84.03036443636306</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="245">
+            <name>midhill2turn-astroturn</name>
+            <description>W1C0-Split off of the bigger road and walk parallel to the back of faulkner's.-Walk down the narrow path behind the Faulkner's dining hall.</description>
+            <LineString id="244">
+                <coordinates>-1.12729897153183,51.44897505866382,87.30623586214625 -1.127148284725408,51.4489827767415,88.95068119741329 -1.126650618246451,51.44916657123888,89.63632637392384 -1.126458490671631,51.44918754137522,89.50681540500032 -1.126269305120386,51.44917860844196,89.73361961397246 -1.125905894689968,51.44900107031732,90.9135365431716</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="247">
+            <name>midhill2turn-astrochoice</name>
+            <description>W1C0-Split off of the bigger road and walk parallel to the back of faulkner's, continue until you can see the astro pitches.-Turn right, to the path off the road and continue along until you reach the big road again and it splits.</description>
+            <LineString id="246">
+                <coordinates>-1.12729897153183,51.44897505866382,87.30623586214625 -1.127151193047901,51.4489827834042,88.91328065939659 -1.126647831202295,51.44916656682304,89.64049718038227 -1.125719469502721,51.44937001789961,88.6717198964744</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="249">
+            <name>astrochoice-Astro 1 (Back)</name>
+            <description>W1C0-Enter the Astro through the back entrance.-Exit the Astro through the back entrance.</description>
+            <LineString id="248">
+                <coordinates>-1.125719469502721,51.44937001789961,88.6717198964744 -1.125519292474277,51.4491643253018,88.91611888874472</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="251">
+            <name>astrochoice-Astro 1</name>
+            <description>W1C0-Walk towards the front entrace of the Astro (with the building).-Exit the astro and walk along the path.</description>
+            <LineString id="250">
+                <coordinates>-1.125719469502721,51.44937001789961,88.6717198964744 -1.125141328718764,51.44957828462188,87.99693146174664 -1.125051912000354,51.44948901579988,88.10577237057295 -1.124927476111861,51.44954463435482,88.19951058289278</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="253">
+            <name>astrochoice-Astro 2</name>
+            <description>W1C0-Walk towards the astro at the far end-Leave the astro and walk along the path back towards Faulkner's.-Leave the astro and walk along the path back towards Faulkner's.</description>
+            <LineString id="252">
+                <coordinates>-1.125719469502721,51.44937001789961,88.6717198964744 -1.125144141707686,51.44957828141703,87.99941561687118 -1.124485012373942,51.4498435290617,87.08734096609064 -1.124359961572599,51.44975297455213,87.06979780264757</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="255">
+            <name>Astro 1 (Back)-Astro Tennis Courts</name>
+            <description>W1C0-Walk along the road parallel to the short end of the astro until you reach the Tennis Courts.-Leave the tennis courts and turn right, follow that road.</description>
+            <LineString id="254">
+                <coordinates>-1.125519292474277,51.4491643253018,88.91611888874472 -1.125594259387435,51.44913886389528,89.02227899736994 -1.125036243925537,51.44860216058351,87.60834447155315 -1.125058274011372,51.44850026607518,87.31741739261459 -1.125207473458519,51.44835812828173,87.9296170025682</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="257">
+            <name>D House (Back)-Astro Tennis Courts</name>
+            <description>W1C0-Exit D House through the back and walk towards the tennis courts on the right.-Leave the tennis courts and turn right, walk towards the back door of D House.</description>
+            <LineString id="256">
+                <coordinates>-1.125985456591595,51.44812595500498,90.06071313165201 -1.125541449548563,51.44814475718582,89.24979325939805 -1.125207473458519,51.44835812828173,87.9296170025682</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="259">
+            <name>jhousesplit-khousesplit</name>
+            <description>W1C0-Nothing-Nothing</description>
+            <LineString id="258">
+                <coordinates>-1.127578172565373,51.44913249103768,84.03036443636306 -1.127844154697702,51.44925305615712,82.2825019933697</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="261">
+            <name>khousesplit2-K House</name>
+            <description>W1C0-Walk towards K House.-Exit K House and walk towards the footpath.</description>
+            <LineString id="260">
+                <coordinates>-1.128192057552897,51.4498493349185,74.97514025418081 -1.127620478378356,51.45000801345326,77.0718795546764</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="263">
+            <name>khousesplit-khousesplit2</name>
+            <description>W0C0-Split off of the road and walk down the footpath-Walk up the footpath towards the road.</description>
+            <LineString id="262">
+                <coordinates>-1.127844154697702,51.44925305615712,82.2825019933697 -1.127868880468983,51.44942353103723,80.85084952350016 -1.128068268969683,51.44963611595342,77.11040891593358 -1.128192057552897,51.4498493349185,74.97514025418081</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="265">
+            <name>khousesplit-mhousesplit</name>
+            <description>W1C0-Walk down the road towards M House-Walk up the road towards K House.</description>
+            <LineString id="264">
+                <coordinates>-1.127844154697702,51.44925305615712,82.2825019933697 -1.128068307856767,51.44927532071277,81.45610902639739 -1.128525703179444,51.44927492354086,78.5737450037463 -1.128831723728605,51.44927633248026,76.79532519908884 -1.128925622736404,51.44924817387327,76.46064066965266</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="267">
+            <name>M House-mhousesplit</name>
+            <description>W1C0-Exit M House-Enter M House.</description>
+            <LineString id="266">
+                <coordinates>-1.128818886089673,51.44908686373778,78.97547057153997 -1.128765155193761,51.44917447800564,78.33204615559399 -1.128835316346818,51.44913467372078,77.89219436151112 -1.128925622736404,51.44924817387327,76.46064066965266</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="269">
+            <name>topofbryn-mhousesplit</name>
+            <description>W1C0-Walk up the road towards the basketball courts.-Walk down the road towards the house.</description>
+            <LineString id="268">
+                <coordinates>-1.129530207222889,51.4489912745645,75.33567512232725 -1.128925622736404,51.44924817387327,76.46064066965266</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="271">
+            <name>bryn-topofbryn</name>
+            <description>W1C0-Walk along the road parallel to the home.-Walk down the road towards the main road.</description>
+            <LineString id="270">
+                <coordinates>-1.129906114253402,51.44883750703265,73.38888131733198 -1.129530207222889,51.4489912745645,75.33567512232725</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="273">
+            <name>hill2split-bryn</name>
+            <description>W0C1-Walk down the footpath for about 150m.-Walk up the hill along the footpath until you reach the road.</description>
+            <LineString id="272">
+                <coordinates>-1.127796145342701,51.44836516433054,89.9685314392099 -1.12864349610219,51.44846528524228,85.42032860318959 -1.129228281977833,51.44859893560044,81.89135374494366 -1.129656326115448,51.44873080471161,78.04465580799405 -1.129906114253402,51.44883750703265,73.38888131733198</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="275">
+            <name>crosswayshillside-bryn</name>
+            <description>W1C2-Walk up the hill from the crossways by the road.-Walk down the hill towards the crossways along the pavement.</description>
+            <LineString id="274">
+                <coordinates>-1.130600697141567,51.44917940436362,66.2724682002498 -1.130462020726556,51.44908328589583,68.42245436684183 -1.130189143036272,51.4489621988716,70.65568948823679 -1.129906114253402,51.44883750703265,73.38888131733198</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="277">
+            <name>crosswayshillside-topofbryn</name>
+            <description>W1C1-Walk down the middle path up the hill from crossways.-Split off of the road and walk down the narrow path between E House and the Home on the left.</description>
+            <LineString id="276">
+                <coordinates>-1.130600697141567,51.44917940436362,66.2724682002498 -1.130503342171272,51.44919101848872,66.22129949454647 -1.130163572824184,51.44907725561379,69.92459938266515 -1.129972303436766,51.44906568554133,70.68868400054727 -1.129713532971011,51.44905336133247,73.66801424463532 -1.129530207222889,51.4489912745645,75.33567512232725</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="279">
+            <name>crosswayshillside-ehousesplit</name>
+            <description>W1C0-Walk up along the furthest left path from crossways-Walk down towards crossways.</description>
+            <LineString id="278">
+                <coordinates>-1.130600697141567,51.44917940436362,66.2724682002498 -1.130186684020461,51.44924241890087,67.91392977480727 -1.129670740707918,51.44950599994042,68.29818912886711</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="281">
+            <name>ehousesplit-E House</name>
+            <description>W0C0-Enter E House-Exit E House</description>
+            <LineString id="280">
+                <coordinates>-1.129670740707918,51.44950599994042,68.29818912886711 -1.129590134240916,51.44945455629743,70.1602849086238</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="283">
+            <name>ehousesplit-road</name>
+            <description>W1C0-Continue along the path from crossways/Turn right from the exit of E House-Walk up from the road crossing towards E House along the footpath.</description>
+            <LineString id="282">
+                <coordinates>-1.129670740707918,51.44950599994042,68.29818912886711 -1.128913912126522,51.4498759882382,69.23541697812509</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="285">
+            <name>road-E House</name>
+            <description>W1C0-Walk up along the driveway to E House.-Walk down the driveway from E House towards the road.</description>
+            <LineString id="284">
+                <coordinates>-1.128913912126522,51.4498759882382,69.23541697812509 -1.129107549779864,51.44963426052844,70.69575457875645 -1.129590134240916,51.44945455629743,70.1602849086238</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="287">
+            <name>khousesplit2-road</name>
+            <description>W0C0-Continue down the hill towards the road crossing-Walk parallel to the road and up the footpath.</description>
+            <LineString id="286">
+                <coordinates>-1.128192057552897,51.4498493349185,74.97514025418081 -1.128780041551637,51.44970941182532,72.2215567625759 -1.128913912126522,51.4498759882382,69.23541697812509</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="289">
+            <name>road-ahousesplit</name>
+            <description>W1C0-Cross the road.-Cross the road.</description>
+            <LineString id="288">
+                <coordinates>-1.128913912126522,51.4498759882382,69.23541697812509 -1.129114727550702,51.45013013696818,67.89509441876257</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="291">
+            <name>ahousesplit-A House</name>
+            <description>W1C0-Split off of the road towards A House.-Exit A House and turn right towards the path.</description>
+            <LineString id="290">
+                <coordinates>-1.129114727550702,51.45013013696818,67.89509441876257 -1.128664753930767,51.45026077288752,69.50064834692314 -1.12861084703455,51.45036422212807,68.37330406337725 -1.128717498935091,51.45042218984492,67.14090003000645</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="293">
+            <name>ahousesplit-greekersplit</name>
+            <description>W1C0-Continue down the path.-Walk up the path towards A House.</description>
+            <LineString id="292">
+                <coordinates>-1.129114727550702,51.45013013696818,67.89509441876257 -1.12938781234435,51.45044131416994,64.9966817624387</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="295">
+            <name>F House-Rux</name>
+            <description>W1C0-Exit F House and walk to the pitch.-Exit the Pitch and walk towards the F House entrance.</description>
+            <LineString id="294">
+                <coordinates>-1.130967372627941,51.4496604793077,63.74057825193974 -1.130905088643661,51.45005599921515,60.18355838797606</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="297">
+            <name>road-K House</name>
+            <description>W1C0-Walk along the driveway towards K House.-Walk down the driveway from K House to the road.</description>
+            <LineString id="296">
+                <coordinates>-1.128913912126522,51.4498759882382,69.23541697812509 -1.128734051671013,51.45000571644896,71.65948416940563 -1.128456845228922,51.45008926051291,73.06188648855169 -1.128182832508768,51.45013816023962,74.46428880769777 -1.128010610071857,51.45012448024158,75.09103105012356 -1.127908348047298,51.45004953617942,75.71777329254937 -1.127767787540535,51.44997650233014,76.5395729239386 -1.127620478378356,51.45000801345326,77.0718795546764</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="299">
+            <name>F House-backroutesplit</name>
+            <description>W1C0-Walk along the footpath from F House towards Greeker.-Walk from Greeker towards F House.</description>
+            <LineString id="298">
+                <coordinates>-1.130967372627941,51.4496604793077,63.74057825193974 -1.130611998737596,51.44982992214438,61.79737337778822 -1.130239248206185,51.45012615970089,60.34649590008048</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="301">
+            <name>backroutesplit-Greeker</name>
+            <description>W1C0-Enter Greeker.-Exit Greeker.</description>
+            <LineString id="300">
+                <coordinates>-1.130239248206185,51.45012615970089,60.34649590008048 -1.130008649265543,51.45021408260092,60.04758059587335</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="303">
+            <name>backroutesplit-Old Sports Hall (Back)</name>
+            <description>W0C0-Walk down the narrow footpath between the tennis courts and the pitch towards the old hall.-Exit the old hall from the back exit, turn left, continue until you reach Greeker.</description>
+            <LineString id="302">
+                <coordinates>-1.130239248206185,51.45012615970089,60.34649590008048 -1.130783352039434,51.45060262686405,59.23638069322985 -1.130867424143402,51.45065025169327,58.79535684597312 -1.130663272554558,51.45073926176899,58.32184603678758 -1.130543994286296,51.45076045157112,58.80450665475731</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="305">
+            <name>Old Sports Hall (Back)-Sports Centre</name>
+            <description>W1C0-Exit the old hall from the back and walk to the new hall.-Leave the new hall and walk up the stairs to the old hall.</description>
+            <LineString id="304">
+                <coordinates>-1.130543994286296,51.45076045157112,58.80450665475731 -1.130521846647933,51.45086441755801,58.15973530611593 -1.130593557872311,51.45091155113662,57.72622303532626</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="307">
+            <name>Old Sports Hall-Old Sports Hall (Back)</name>
+            <description>W1C0-Nothing-Nothing</description>
+            <LineString id="306">
+                <coordinates>-1.130188963115554,51.45081898035296,59.46085665516124 -1.130249253487019,51.45089902306581,58.83640458380723 -1.130543994286296,51.45076045157112,58.80450665475731</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="309">
+            <name>Old Sports Hall-Sports Centre</name>
+            <description>W1C0-Exit the old hall and walk to the new hall on the left.-Walk up the stairs to the old hall.</description>
+            <LineString id="308">
+                <coordinates>-1.130188963115554,51.45081898035296,59.46085665516124 -1.130282439316354,51.4509412641842,58.47973719099728 -1.13051292626614,51.45086503846952,58.23090450580336 -1.130593557872311,51.45091155113662,57.72622303532626</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="311">
+            <name>Greeker-greekersplit</name>
+            <description>W1C0-Walk along the footpath from Greeker towards and past the music centre.-Split off the footpath where the music centre is and continue towards Greeker.</description>
+            <LineString id="310">
+                <coordinates>-1.130008649265543,51.45021408260092,60.04758059587335 -1.12938781234435,51.45044131416994,64.9966817624387</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="313">
+            <name>Old Sports Hall-indoortennissplit</name>
+            <description>W1C0-Walk from the old hall towards the car park.-Walk from the car park towards the old hall.</description>
+            <LineString id="312">
+                <coordinates>-1.130188963115554,51.45081898035296,59.46085665516124 -1.129888643951646,51.45094501008936,59.19940773402178</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="315">
+            <name>greekersplit-indoortennissplit</name>
+            <description>W1C0-Walk down the hill towards the car park.-Walk up the hill towards the music centre.</description>
+            <LineString id="314">
+                <coordinates>-1.12938781234435,51.45044131416994,64.9966817624387 -1.129888643951646,51.45094501008936,59.19940773402178</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="317">
+            <name>indoortennissplit-Indoor Tennis Courts</name>
+            <description>W1C0-Walk along the car park and enter the large grey building.-Leave the indoor tennis building and walk towards the sports hall.</description>
+            <LineString id="316">
+                <coordinates>-1.129888643951646,51.45094501008936,59.19940773402178 -1.129213077013845,51.45128463267923,61.24227015322212 -1.129163262758425,51.45124093176051,61.91278596551523</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="319">
+            <name>Indoor Tennis Courts-Clay Tennis Courts</name>
+            <description>W1C0-Walk from the indoor tennis building to the clay tennis courts-Walk from the clay tennis courts to the indoor tennis building.</description>
+            <LineString id="318">
+                <coordinates>-1.129163262758425,51.45124093176051,61.91278596551523 -1.129228183366514,51.45131028823882,60.90480275608924 -1.128875490885534,51.45145724887971,59.16906528436801 -1.129085102867475,51.45173247220595,56.24051290662948 -1.128951689485763,51.4517737677393,55.75594305739611</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="321">
+            <name>A House-Clay Tennis Courts</name>
+            <description>W1C0-From A House go towards the road and turn left down the hill to the clay tennis courts.-Walk up the hill from the clay tennis courts until you reach A House (before the road crossing).</description>
+            <LineString id="320">
+                <coordinates>-1.128717498935091,51.45042218984492,67.14090003000645 -1.128040909932827,51.45070260625373,68.80858633659453 -1.128473652391134,51.45099390167852,63.37776413990974 -1.128872158431211,51.45145217156441,59.24112641421205 -1.129079269918591,51.45172961688055,56.23294510921587 -1.128951689485763,51.4517737677393,55.75594305739611</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="323">
+            <name>hill2-Hill 2 Pitch</name>
+            <description>W1C0-Walk up the hill and turn left at the road, continue until you reach the pitch.-Walk from the hill 2 pitch down the footpath away from the cricket nets, then continue down the hill.</description>
+            <LineString id="322">
+                <coordinates>-1.131929522486307,51.44713291208392,78.73744939672919 -1.130871203189289,51.44710958951075,88.8117018311478 -1.129802094866768,51.44715166371252,89.92853335741555 -1.129472564610755,51.44738656268559,89.80384788857064 -1.1283544839111,51.44756390073426,90.13591912980066</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="325">
+            <name>topofhill2-Hill 2 Cricket Nets</name>
+            <description>W1C0-Cross the road at the zebra crossing and continue on the footpath until you reach the cricket nets.-Leave the cricket nets, turn right and walk along the footpath then cross the road.</description>
+            <LineString id="324">
+                <coordinates>-1.126998493474015,51.44820971249831,90.40740205968582 -1.127015947734372,51.44809254913054,91.02726933230383 -1.126767971775665,51.44796384058495,90.96493400922434 -1.126923493531029,51.44782300382062,90.95096545688637 -1.127547268355252,51.44805319378206,90.29899170194494 -1.127658291844404,51.44792155738116,90.22362708758772</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="327">
+            <name>topofhill2-Hill 2 Pitch</name>
+            <description>W1C0-Cross the road at the zebra crossing and continue on the footpath until you reach the pitch.-Leave the pitch, turn right and walk along the footpath then cross the road.</description>
+            <LineString id="326">
+                <coordinates>-1.126998493474015,51.44820971249831,90.40740205968582 -1.127013233691742,51.44809423287361,91.03954887225976 -1.126770524916464,51.44796550780543,90.97065202653866 -1.126923493531029,51.44782300382062,90.95096545688637 -1.127719517961731,51.44812139120625,89.82965254659221 -1.127883040877179,51.44810874431042,90.04402461607106 -1.1283544839111,51.44756390073426,90.13591912980066</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="329">
+            <name>MFL (Front)-History</name>
+            <description>W1C0-Exit MFL from the front exit and turn right.-Exit the history block and turn left.</description>
+            <LineString id="328">
+                <coordinates>-1.132574905182901,51.44745746882037,73.86955022142122 -1.132494814996269,51.4475568592656,74.1745898883032 -1.132553095573133,51.44761061031541,72.9892065476441 -1.132457811551061,51.44771712746395,72.91696897153462 -1.13241557543038,51.44770685251119,73.66791083614382</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="331">
+            <name>History-Library</name>
+            <description>W1C0-Exit the history block and turn right.-Exit the library and turn left.</description>
+            <LineString id="330">
+                <coordinates>-1.13241557543038,51.44770685251119,73.66791083614382 -1.132389283604344,51.4477682307207,72.59092798234802 -1.132090599914353,51.4480008010675,72.17404393884931</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="333">
+            <name>Library-sciencestairs</name>
+            <description>W1C0-From the library, walk parallel to bloods towards the stairs.-From the stairs walk towards chapel but don't cross the road.</description>
+            <LineString id="332">
+                <coordinates>-1.132090599914353,51.4480008010675,72.17404393884931 -1.132087641812159,51.44807088792981,71.18942023875107 -1.131894732253822,51.44817277541026,71.57634324837763</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="335">
+            <name>sciencestairs-Science (Front)</name>
+            <description>W0C0-Walk up the stairs and continue to the front entrance of the science block.-Exit science out the front exit and walk to the stairs.</description>
+            <LineString id="334">
+                <coordinates>-1.131894732253822,51.44817277541026,71.57634324837763 -1.131636276477062,51.44803113802536,74.81242048226949 -1.131655095056346,51.44796134775022,75.11225807497834 -1.131721008082024,51.44789032498552,75.32994594591148 -1.131732117384991,51.4478483583738,75.60738254586508 -1.131613905499661,51.44780594342607,76.14182433261597 -1.131649883375699,51.44776925776888,76.4069078959644</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="337">
+            <name>sciencestairs-scienceroad</name>
+            <description>W1C0-Continue down the path towards the crossways.-Continue up the path towards the chapel.</description>
+            <LineString id="336">
+                <coordinates>-1.131894732253822,51.44817277541026,71.57634324837763 -1.131554448594252,51.44843911812137,70.3823033241979</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="339">
+            <name>scienceroad-Science (Front)</name>
+            <description>W1C0-Walk up the road towards the car park and then to the science block.-Exit science out the front and go through the car park to the road and down to the footpath.</description>
+            <LineString id="338">
+                <coordinates>-1.131554448594252,51.44843911812137,70.3823033241979 -1.131168639415667,51.4482928891187,73.31650663756447 -1.131172141540248,51.4481569700599,74.59448300228505 -1.131649883375699,51.44776925776888,76.4069078959644</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="341">
+            <name>scienceroad-crosswaysheadside</name>
+            <description>W1C0-Continue along the pavement towards the crossways.-Walk along the pavement from the crossways.</description>
+            <LineString id="340">
+                <coordinates>-1.131554448594252,51.44843911812137,70.3823033241979 -1.130880735058852,51.44910724887311,65.88162565191614 -1.130791291594917,51.44912990814731,65.90854907414675</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="343">
+            <name>crosswaysheadside-crosswayshillside</name>
+            <description>W1C0-Cross the road towards the hill.-Cross the road towards the arch.</description>
+            <LineString id="342">
+                <coordinates>-1.130791291594917,51.44912990814731,65.90854907414675 -1.130600697141567,51.44917940436362,66.2724682002498</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="345">
+            <name>Library-Chapel</name>
+            <description>W1C0-Cross the road and walk along the pavement up towards the entrance of the chapel.-From the chapel, continue up and turn left, continue and cross the road.</description>
+            <LineString id="344">
+                <coordinates>-1.132090599914353,51.4480008010675,72.17404393884931 -1.132081276799922,51.44807561116736,71.16471976048786 -1.13216529163614,51.44811775441041,70.01148701514926 -1.132357547983313,51.44795320613311,70.64219591965971 -1.132625730990774,51.44796622730775,69.30688762963298 -1.132695794282123,51.4479910216433,68.63834774213508 -1.132660657317595,51.44807703767772,68.03947478674893</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="347">
+            <name>Stunt Pavilion-Chapel</name>
+            <description>W1C0-From the stunt pavilion, walk along the road until you pass the gate and reach chapel.-From chapel walk past the gate and continue to the pavilion.</description>
+            <LineString id="346">
+                <coordinates>-1.133495391102308,51.44698043638034,68.92302896305075 -1.133271390857635,51.44712038963556,68.43266308081297 -1.132637017993706,51.44794775534705,69.40237499885394 -1.132690112802536,51.4479869612484,68.7247728312763 -1.132660657317595,51.44807703767772,68.03947478674893</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="349">
+            <name>Stunt Pavilion-Library</name>
+            <description>W1C0-From stunt pavilion, walk straight up to the road opposite MFL and continue along the road. Cross the road at the zebra crossing.-Cross the road, then walk along the pavement opposite MFL/History, continue until the pavement stops and walk to the pavilion.</description>
+            <LineString id="348">
+                <coordinates>-1.133495391102308,51.44698043638034,68.92302896305075 -1.133267732075878,51.4471203224232,68.46739229581947 -1.133174916577591,51.4470669463938,69.95540659108566 -1.132920525025847,51.44711954978276,72.36097552287788 -1.132690685627034,51.44759560522096,71.29915728206903 -1.132474565932063,51.44790384300988,70.25902018027536 -1.132365904421644,51.44795268095733,70.59621704004853 -1.132175190027906,51.44811714931998,69.97282275191317 -1.132088036305847,51.44807509039943,71.12091079449388 -1.132090599914353,51.4480008010675,72.17404393884931</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="351">
+            <name>Chapel-bloodsturn</name>
+            <description>W1C0-Walk down the hill from Chapel.-Walk up to Chapel.</description>
+            <LineString id="350">
+                <coordinates>-1.132660657317595,51.44807703767772,68.03947478674893 -1.132585165251127,51.4483104555847,64.91651721980485</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="353">
+            <name>bloodsturn-Bloods (Back)</name>
+            <description>W1C2-Turn off the pavement to the back entrance past the memorial.-Exit bloods through the back and walk out past the memorial.</description>
+            <LineString id="352">
+                <coordinates>-1.132585165251127,51.4483104555847,64.91651721980485 -1.132476506298301,51.44837138162508,64.39950053368864 -1.132314902714786,51.44836408568317,64.83610382397082 -1.132272184912391,51.4483460620238,65.30214538015017 -1.132179022183879,51.448292485206,67.20712417275841</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="355">
+            <name>bloodsturn-riversplit</name>
+            <description>W1C0-Continue along the road.-Continue along the road.</description>
+            <LineString id="354">
+                <coordinates>-1.132585165251127,51.4483104555847,64.91651721980485 -1.132978159076189,51.44861510928533,63.06393363143381</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="357">
+            <name>riversplit-Grey School (Left)</name>
+            <description>W1C0-Walk along to the grey building.-From Greys, continue along the road.</description>
+            <LineString id="356">
+                <coordinates>-1.132978159076189,51.44861510928533,63.06393363143381 -1.132689993589706,51.44881145925722,64.34698319672242</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="359">
+            <name>Grey School (Left)-Grey School (Right)</name>
+            <description>W1C0-Nothing-Nothing</description>
+            <LineString id="358">
+                <coordinates>-1.132689993589706,51.44881145925722,64.34698319672242 -1.132568902076829,51.44889354559275,64.2235901358737</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="361">
+            <name>riversplit-Big School</name>
+            <description>W1C0-Continue along the road to the entrance by the brick wall.-From Big School walk along the road towards the pitches.</description>
+            <LineString id="360">
+                <coordinates>-1.132978159076189,51.44861510928533,63.06393363143381 -1.13260738745973,51.44873309187895,65.01789974385078</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="363">
+            <name>Big School-Bloods (Front)</name>
+            <description>W1C0-Walk along the road past the brick wall to the large door on the right.-From snake door, walk towards the pitches and stop at the door past the brick wall.</description>
+            <LineString id="362">
+                <coordinates>-1.13260738745973,51.44873309187895,65.01789974385078 -1.132240578325923,51.44898387959022,63.62944466228242 -1.132091579678023,51.44895924775361,64.74607271659</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="365">
+            <name>Grey School (Right)-Bloods (Front)</name>
+            <description>W1C0-Walk from Greys towards the Thai Garden, to the large door on the right.-From snake door, walk to the grey building on the way to the pitches.</description>
+            <LineString id="364">
+                <coordinates>-1.132568902076829,51.44889354559275,64.2235901358737 -1.132393535139927,51.44888160715088,64.57013856119663 -1.132247427144045,51.44898169054181,63.62684578058741 -1.132091579678023,51.44895924775361,64.74607271659</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="367">
+            <name>Bloods (Front)-thai1</name>
+            <description>W0C0-Walk to the Thai Garden.-From the top of the Thai Garden, walk towards the large door.</description>
+            <LineString id="366">
+                <coordinates>-1.132091579678023,51.44895924775361,64.74607271659 -1.132222719037624,51.44903714017389,63.03097128894647</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="369">
+            <name>thai1-thai3</name>
+            <description>W0C0-Cross the Thai Garden.-Cross the Thai Garden.</description>
+            <LineString id="368">
+                <coordinates>-1.132222719037624,51.44903714017389,63.03097128894647 -1.132227796338734,51.44907417288835,62.45691544790457 -1.13214956804614,51.44928102672486,60.97990667439317 -1.13214634482525,51.44933201457139,60.90176445772336 -1.132097154826186,51.44956709905227,60.88717032656253</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="371">
+            <name>thai1-thai4</name>
+            <description>W0C0-Walk down parallel to the Thai Garden.-Walk up parallel to the Thai Garden.</description>
+            <LineString id="370">
+                <coordinates>-1.132222719037624,51.44903714017389,63.03097128894647 -1.132390331196976,51.44913268314809,61.41634944310692 -1.132586919597854,51.44929463537954,60.39339498007656</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="373">
+            <name>thai4-Maths</name>
+            <description>W0C0-Walk down the stairs and continue to the entrance on the right.-Turn right from the exit and continue to the stairs then left.</description>
+            <LineString id="372">
+                <coordinates>-1.132586919597854,51.44929463537954,60.39339498007656 -1.132367901975156,51.44944347149149,60.58203502400359</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="375">
+            <name>Maths-thai3</name>
+            <description>W0C0-Turn left from the exit and continue past the stairs.-Walk down the stairs towards the front entrance of the maths block.</description>
+            <LineString id="374">
+                <coordinates>-1.132367901975156,51.44944347149149,60.58203502400359 -1.132097154826186,51.44956709905227,60.88717032656253</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="377">
+            <name>thai3-thai2</name>
+            <description>W0C0-Walk through the Thai Garden towards the Arch/C House.-Walk straight along the path through the Thai Garden.</description>
+            <LineString id="376">
+                <coordinates>-1.132097154826186,51.44956709905227,60.88717032656253 -1.132041728602126,51.44952490219449,61.33699097115938 -1.131695088003021,51.44931691535066,63.50258672167438</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="379">
+            <name>thai2-thai4</name>
+            <description>W0C0-Cross the Thai Garden.-Cross the Thai Garden.</description>
+            <LineString id="378">
+                <coordinates>-1.131695088003021,51.44931691535066,63.50258672167438 -1.131757680765164,51.44935804118569,62.48757430073288 -1.13214145315611,51.44933094167834,60.9003814168141 -1.132586919597854,51.44929463537954,60.39339498007656</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="381">
+            <name>thai2-Bloods (Front)</name>
+            <description>W1C0-From the top of the Thai Garden, walk down the road towards the pitches to the large door.-From snake door, walk towards C House past the dining hall to the top of the Thai Garden.</description>
+            <LineString id="380">
+                <coordinates>-1.131695088003021,51.44931691535066,63.50258672167438 -1.132166721848239,51.44901153439495,63.70848790529804 -1.132091579678023,51.44895924775361,64.74607271659</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="383">
+            <name>thai2-C House</name>
+            <description>W1C0-From the top of the Thai Garden, walk to the C House entrance.-From C House, walk towards the Thai Garden.</description>
+            <LineString id="382">
+                <coordinates>-1.131695088003021,51.44931691535066,63.50258672167438 -1.131303348677123,51.44926574621469,64.28849117481131</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="385">
+            <name>C House-crosswayscside</name>
+            <description>W1C0-From C House walk towards the arch.-Walk towards the Thai Garden straight ahead, with C House on the right.</description>
+            <LineString id="384">
+                <coordinates>-1.131303348677123,51.44926574621469,64.28849117481131 -1.131043729597428,51.44908890050042,65.05105843967266</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="387">
+            <name>crosswayscside-crosswaysheadside</name>
+            <description>W1C0-Cross the road from the Arch's side to the Headmaster's House's side.-Cross the road to the Arch's side.</description>
+            <LineString id="386">
+                <coordinates>-1.131043729597428,51.44908890050042,65.05105843967266 -1.130791291594917,51.44912990814731,65.90854907414675</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="389">
+            <name>crosswayscside-fhousesplit</name>
+            <description>W1C0-Walk along the pavement without crossing the road down the hill.-Walk up the hill until you reach the crossways.</description>
+            <LineString id="388">
+                <coordinates>-1.131043729597428,51.44908890050042,65.05105843967266 -1.130905253057104,51.44918781702897,64.75485782061682 -1.131473476034864,51.44955955787994,61.90967619861402 -1.131575763966169,51.44966600389308,61.01336016587788</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="391">
+            <name>thai3-CCF Office</name>
+            <description>W1C0-Walk down the hill down the left path to the CCF office.-Walk up the hill from the CCF office to the Thai Garden.</description>
+            <LineString id="390">
+                <coordinates>-1.132097154826186,51.44956709905227,60.88717032656253 -1.132258282838139,51.44968239176843,60.33056290077714 -1.132372201224673,51.44972689467716,60.03929911005606 -1.132563042379532,51.44971632189834,58.97920548305345</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="393">
+            <name>fhousesplit-F House</name>
+            <description>W1C0-Cross the road and turn right towards the entrance of F House.-From F House, continue towards the road and cross.</description>
+            <LineString id="392">
+                <coordinates>-1.131575763966169,51.44966600389308,61.01336016587788 -1.131384242298934,51.44972874091565,61.66168486565252 -1.130967372627941,51.4496604793077,63.74057825193974</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="395">
+            <name>fhousesplit-medcentresplit</name>
+            <description>W1C0-Walk down the pavement away from the crossways for about 150m and the med centre will be on the right.-Walk from the medcentre along the pavement towards the crossways.</description>
+            <LineString id="394">
+                <coordinates>-1.131575763966169,51.44966600389308,61.01336016587788 -1.131894057644114,51.44988070930027,58.86159444836669 -1.132167266600722,51.45001272536489,56.33004990253669 -1.132437294234165,51.45013810549238,55.76195500542556 -1.132754223605562,51.45028580489513,55.11841568838493 -1.133278457083969,51.45052910160835,53.81479551965358 -1.133429908026307,51.450614780089,53.52672035736742</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="397">
+            <name>medcentresplit-Med Centre</name>
+            <description>W1C0-Nothing-Nothing</description>
+            <LineString id="396">
+                <coordinates>-1.133429908026307,51.450614780089,53.52672035736742 -1.133302731747089,51.45065956117039,54.18159198264868</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="399">
+            <name>medcentresplit-New Ground</name>
+            <description>W1C0-Walk down the pavement past the med centre and take the first left, continue to the football pitches.-Walk towards the car park from new ground and turn right at the road, continue along the pavement to med centre.</description>
+            <LineString id="398">
+                <coordinates>-1.133429908026307,51.450614780089,53.52672035736742 -1.133695477353716,51.45091565256316,53.24841317042991 -1.134104524744375,51.45130497900553,53.40254451456573 -1.13452350796841,51.45117769635772,53.23707348325974 -1.135101574556308,51.45104124244278,53.68732994416595 -1.135580360801038,51.45099675845024,52.84626167835936 -1.135887614365739,51.45103050093213,53.35853118704946 -1.136172863932137,51.45098815965021,53.39689868251524 -1.136530917807755,51.4508680479497,53.26880482913695 -1.137881863050019,51.45024723427858,53.58225811136051 -1.138725040048091,51.44980075257063,53.40295461818711</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="401">
+            <name>Iron Bridge-New Ground</name>
+            <description>W1C0-Cross Iron Bridge, continue on the same path for about 150m and turn right to the pitches.-Walk along the main road exiting New Ground and continue until you reach Iron bridge.</description>
+            <LineString id="400">
+                <coordinates>-1.138725040048091,51.44980075257063,53.40295461818711 -1.13887992009287,51.44944872151161,53.55316684315433 -1.13872983298311,51.44929449537591,53.19544580324145 -1.138406187275945,51.44876494076854,54.34736024905475 -1.138152012840157,51.44867957254318,54.84334546558881 -1.137404506994355,51.44870602399413,54.27703899244663 -1.136511299032911,51.4487371946822,53.53826381227986 -1.136104149558945,51.44873607979828,53.90648633330851 -1.135707980719252,51.44888804911969,53.20638208927432 -1.135200505988544,51.44890892521724,54.4947235233949 -1.134920305067758,51.44885072294798,55.11925078221284 -1.134689120606963,51.44874924685295,56.46289121255426</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="403">
+            <name>riversplit-Major</name>
+            <description>W1C0-Walk to the higher of the 2 nearby pitches.-Walk from Major towards Grey School.</description>
+            <LineString id="402">
+                <coordinates>-1.132978159076189,51.44861510928533,63.06393363143381 -1.133726580123545,51.44785864033888,62.15805284533085</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="405">
+            <name>riversplit-Max</name>
+            <description>W1C0-Walk to the lower of the 2 nearby pitches.-Walk from Max towards Grey School.</description>
+            <LineString id="404">
+                <coordinates>-1.132978159076189,51.44861510928533,63.06393363143381 -1.133147553811328,51.44865131510004,62.53614833868449 -1.133469360108208,51.44850671515042,61.41103536732559 -1.133777354263048,51.44847231922161,59.76989291734743 -1.133952561997879,51.44848481154416,58.71577038363109 -1.134738704596627,51.44817248094012,56.85927834574539</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="407">
+            <name>riversplit-Iron Bridge</name>
+            <description>W1C0-Walk down the path to the right of the 2 pitches until you reach the river.-Walk up from the river along the gravel road.</description>
+            <LineString id="406">
+                <coordinates>-1.132978159076189,51.44861510928533,63.06393363143381 -1.133127904183033,51.44865374511213,62.55831867584767 -1.133457538937046,51.44851409853324,61.4512239326014 -1.133745590796151,51.44847726016371,59.90185523286984 -1.133940584512045,51.44848231774094,58.76521632739123 -1.134260892168953,51.44856982866632,57.76668601833224 -1.134535299840349,51.44872056538908,56.63201779870759 -1.134636048949844,51.44871320213576,56.51938817146737 -1.134689120606963,51.44874924685295,56.46289121255426</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="409">
+            <name>riversplit-Pit</name>
+            <description>W1C0-Walk past the 2 nearby pitches and continue down a slope to the pitch with a pavilion.-Walk back past the nearby pitches towards Big School.</description>
+            <LineString id="408">
+                <coordinates>-1.132978159076189,51.44861510928533,63.06393363143381 -1.134704915786587,51.44750129725163,59.70687561349479 -1.134859813257167,51.4475836905067,58.01391977736877 -1.135651520624822,51.44718703397179,57.09868549086063</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="411">
+            <name>Pit-Rectory 1</name>
+            <description>W1C0-Walk on from Pit until you reach the next pitch.-Walk back from rectory 1 to Pit.</description>
+            <LineString id="410">
+                <coordinates>-1.135651520624822,51.44718703397179,57.09868549086063 -1.13657132650943,51.44671844446622,58.03284553213661 -1.136500146395667,51.44595733118856,60.74279900404301</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="413">
+            <name>Pit-Rectory 2</name>
+            <description>W1C0-Walk on from Pit to the pitch after the next.-Walk back from Rectory 2 to Pit.</description>
+            <LineString id="412">
+                <coordinates>-1.135651520624822,51.44718703397179,57.09868549086063 -1.136561370496686,51.4467235675688,57.98693951257654 -1.137851165415464,51.44576593827934,60.1540135692932</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="415">
+            <name>Pit-Rectory 3</name>
+            <description>W1C0-Walk on from Pit to the furthest pitch (next to the golf centre).-Walk back from Rectory 3 to Pit.</description>
+            <LineString id="414">
+                <coordinates>-1.135651520624822,51.44718703397179,57.09868549086063 -1.137445372212275,51.44627001641783,59.15596473906758 -1.138826877195546,51.4460593880182,57.58629200253613 -1.139494718324544,51.44569159919995,57.8480108423413</coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="417">
+            <name>jhousesplit-J House</name>
+            <description>W1C0-Split off the road towards J House.-Exit J House.</description>
+            <LineString id="416">
+                <coordinates>-1.127578172565373,51.44913249103768,84.03036443636306 -1.12744889773801,51.44926854507443,83.28616187923953 -1.127464747268968,51.44931292317477,83.28773534894327</coordinates>
+            </LineString>
+        </Placemark>
+    </Document>
+</kml>
