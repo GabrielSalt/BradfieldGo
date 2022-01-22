@@ -9,9 +9,7 @@
 }
 @media (min-width: 768px) {
     img {
-        justify-content: center;
         width: 95%;
-        max-height: 400px;
     }
     body {
         padding: 1%;
@@ -49,13 +47,22 @@
         position: absolute;
         top: 5px;
         right: 10px;
-        display:grid;
-        grid-template-columns: auto;
         width: 20%;
     }
-    #login {
-        display: grid;
-        grid-template-columns: auto;
+    #description {
+        overflow : auto;
+        height : 190px;
+        width : 100%;
+        border : 1px solid #d3d3d3;
+        padding: 5px;
+    }
+    .row {
+        text-align:center;
+        margin-left:-20px;
+        margin-right:-20px;
+    }
+    canvas {
+        border: 1px solid #d3d3d3;
     }
 }
 @media (max-width: 768px) { 

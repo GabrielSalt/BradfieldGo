@@ -57,7 +57,7 @@ function FilterSelection(element){
     if (x == 'Category'){var list = places} 
     else if (x == 'House'){var list = houses}   
     else if (x == 'Academic'){var list = academics}
-    else if (x == 'Sport'){var list = sports}
+    else if (x == 'Sports'){var list = sports}
     else if (x == 'Other'){var list = others}
 
     for (var i = 0; i<=list.length-1; i++){
@@ -66,10 +66,6 @@ function FilterSelection(element){
         opt.innerHTML = list[i];
         newSelect.appendChild(opt);
     }
-}
-
-function Help(){
-    console.log('Function not made yet')
 }
 
 Home()

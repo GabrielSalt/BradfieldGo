@@ -9,11 +9,11 @@
 <body>
 <div id='header'>
     <h1 id='title' class='middle'>BradfieldGo</h1>
-    <div id='topbar'>
-        <form onsubmit='Home()'>
+    <div id='topbar' class='row'>
+        <form action = 'index.html'>
             <input type='submit' value='Home' name='home'>
         </form>
-        <form onsubmit='Help()'>
+        <form action = 'help.html'>
             <input type='submit' value='Help' name='help'>
         </form>
     </div>
@@ -22,20 +22,21 @@
     <h2 id='prompt' class = 'middle'>Your Route: </h2>
     <div id='container'>
         <div>
-        <canvas id='Canvas' width="600" height="350" style='border:1px solid #d3d3d3;'></canvas>
-        <img id='Map' src = "static/BradfieldGo.png" alt="Bradfield Map" hidden>
-        <h4>Route Info:</h4>
-        <h5 id='distance'>Total Distance: m</h5>
-        <h5 id='time'>Estimated Time: </h5>
-        <h6 id='elevation'>Net Elevation Change: m</h6>
+        <img id='Map' src='static/BradfieldGo.png' hidden>
+        <canvas id='Canvas' width="600" height="360"></canvas>
         <br>
         </div>
         <div id='info'>
-            <h5>Route:</h5>
+            <h5>Description:</h5>
             <div id='description'>
             </div>
+            <br>
+            <h5>Route Info:</h4>
+            <h6 id='distance'>Total Distance: m</h5>
+            <h6 id='time'>Estimated Time: </h5>
+            <h6 id='elevation'>Net Elevation Change: m</h6>
         </div>
     </div>
-    <script type='text/javascript' src='go.js'></script>
+    <script type='text/javascript' src='static/go.js'></script>
 </body>
 
