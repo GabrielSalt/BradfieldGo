@@ -11,7 +11,7 @@ let academics = ['Big School', 'Bloods', 'Design Centre', 'Grey School', 'Histor
 let sports = ['Astro 1', 'Astro 2', 'Astro Tennis Courts', 'Clay Tennis Courts', 'Hill 2 Cricket Nets', 'Hill 2 Pitch', 'Indoor Tennis Courts', 'Major', 'Max', 'New Ground', 'Pit', 'Rectory 1', 'Rectory 2', 'Rectory 3', 'Rux', 'Sports Centre']
 
 // The following 3 loops are used to iterate through the lists and create drop-down menus
-var categoryseletcs = [].slice.call(document.getElementsByClassName('category'))
+var categoryselects = [].slice.call(document.getElementsByClassName('category'))
 var placeselects = [].slice.call(document.getElementsByClassName('place'))
 var modeselect = document.getElementById('modes')
 console.log('Starting')
