@@ -14,7 +14,7 @@ let sports = ['Astro 1', 'Astro 2', 'Astro Tennis Courts', 'Clay Tennis Courts',
 var categoryseletcs = [].slice.call(document.getElementsByClassName('category'))
 var placeselects = [].slice.call(document.getElementsByClassName('place'))
 var modeselect = document.getElementById('modes')
-
+console.log('Starting')
 for (var x = 0; x <= categoryselects.length; x++){
     for (var i = 0; i<=types.length; i++){
         var opt = document.createElement('option');
