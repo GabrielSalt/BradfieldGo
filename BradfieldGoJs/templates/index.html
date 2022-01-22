@@ -1,9 +1,24 @@
-{% extends "website/layout.html" %}
-{% load static %}
-{% block head %}
-<link href="{% static 'website/styles.css' %}" rel="stylesheet">
-{% endblock %}
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BradfieldGo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="" rel="stylesheet">
+</head>
+<body>
+    <div id='header'>
+        <h1 id='title' class='middle'>BradfieldGo</h1>
+        <div id='topbar'>
+            <form onsubmit='Home()'>
+                <input type='submit' value='Home' name='home'>
+            </form>
+            <form onsubmit='Help()'>
+                <input type='submit' value='Help' name='help'>
+            </form>
+        </div>
+    </div>
+    <hr>
     <h2 id='prompt' class = 'middle'>Find Your Route</h2>
     <div id='container'>
         <img src = "{% static 'website/BradfieldGo.png' %}" alt="Bradfield Map">
@@ -100,132 +115,5 @@
                 {% endif %}
             </div>
         </form>
-        <script>
-            function endchange() {
-                var x = document.getElementById("endcategory").value;
-                console.log(x)
-    
-                if (x == 'House') {
-                    document.getElementById("end").innerHTML = 
-                    "{% for house in houses %} <option value='{{house}}''>{{house}}</option>{% endfor %}"
-                }
-                else if (x == 'Academic') {
-                    document.getElementById("end").innerHTML = 
-                    "{% for academic in academics %} <option value='{{academic}}''>{{academic}}</option>{% endfor %}"
-                }
-                else if (x == 'Sports') {
-                    document.getElementById("end").innerHTML = 
-                    "{% for sport in sports %} <option value='{{sport}}''>{{sport}}</option>{% endfor %}"
-                }
-                else if (x == 'Other') {
-                    document.getElementById("end").innerHTML = 
-                    "{% for other in others %} <option value='{{other}}''>{{other}}</option>{% endfor %}"
-                }
-                else if (x == 'Category') {
-                    document.getElementById('end').innerHTML = 
-                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
-                }
-            }
-            function startchange() {
-                var x = document.getElementById("startcategory").value;
-                console.log(x)
-                
-                if (x == 'House') {
-                    document.getElementById("start").innerHTML = 
-                    "{% for house in houses %} <option value='{{house}}'>{{house}}</option>{% endfor %}"
-                }
-                else if (x == 'Academic') {
-                    document.getElementById("start").innerHTML = 
-                    "{% for academic in academics %} <option value='{{academic}}'>{{academic}}</option>{% endfor %}"
-                }
-                else if (x == 'Sports') {
-                    document.getElementById("start").innerHTML = 
-                    "{% for sport in sports %} <option value='{{sport}}'>{{sport}}</option>{% endfor %}"
-                }
-                else if (x == 'Other') {
-                    document.getElementById("start").innerHTML = 
-                    "{% for other in others %} <option value='{{other}}'>{{other}}</option>{% endfor %}"
-                }
-                else if (x == 'Category') {
-                    document.getElementById('start').innerHTML = 
-                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
-                }
-            }
-            function mid1change() {
-                var x = document.getElementById("mid1category").value;
-                console.log(x)
-    
-                if (x == 'House') {
-                    document.getElementById("midpoint1").innerHTML = 
-                    "{% for house in houses %} <option value='{{house}}''>{{house}}</option>{% endfor %}"
-                }
-                else if (x == 'Academic') {
-                    document.getElementById("midpoint1").innerHTML = 
-                    "{% for academic in academics %} <option value='{{academic}}''>{{academic}}</option>{% endfor %}"
-                }
-                else if (x == 'Sports') {
-                    document.getElementById("midpoint1").innerHTML = 
-                    "{% for sport in sports %} <option value='{{sport}}''>{{sport}}</option>{% endfor %}"
-                }
-                else if (x == 'Other') {
-                    document.getElementById("midpoint1").innerHTML = 
-                    "{% for other in others %} <option value='{{other}}''>{{other}}</option>{% endfor %}"
-                }
-                else if (x == 'Category') {
-                    document.getElementById('midpoint1').innerHTML = 
-                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
-                }
-            }
-            function mid2change() {
-                var x = document.getElementById("mid2category").value;
-                console.log(x)
-    
-                if (x == 'House') {
-                    document.getElementById("midpoint2").innerHTML = 
-                    "{% for house in houses %} <option value='{{house}}''>{{house}}</option>{% endfor %}"
-                }
-                else if (x == 'Academic') {
-                    document.getElementById("midpoint2").innerHTML = 
-                    "{% for academic in academics %} <option value='{{academic}}''>{{academic}}</option>{% endfor %}"
-                }
-                else if (x == 'Sports') {
-                    document.getElementById("midpoint2").innerHTML = 
-                    "{% for sport in sports %} <option value='{{sport}}''>{{sport}}</option>{% endfor %}"
-                }
-                else if (x == 'Other') {
-                    document.getElementById("midpoint2").innerHTML = 
-                    "{% for other in others %} <option value='{{other}}''>{{other}}</option>{% endfor %}"
-                }
-                else if (x == 'Category') {
-                    document.getElementById('midpoint2').innerHTML = 
-                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
-                }
-            }
-            function mid3change() {
-                var x = document.getElementById("mid3category").value;
-                console.log(x)
-    
-                if (x == 'House') {
-                    document.getElementById("midpoint3").innerHTML = 
-                    "{% for house in houses %} <option value='{{house}}''>{{house}}</option>{% endfor %}"
-                }
-                else if (x == 'Academic') {
-                    document.getElementById("midpoint3").innerHTML = 
-                    "{% for academic in academics %} <option value='{{academic}}''>{{academic}}</option>{% endfor %}"
-                }
-                else if (x == 'Sports') {
-                    document.getElementById("midpoint3").innerHTML = 
-                    "{% for sport in sports %} <option value='{{sport}}''>{{sport}}</option>{% endfor %}"
-                }
-                else if (x == 'Other') {
-                    document.getElementById("midpoint3").innerHTML = 
-                    "{% for other in others %} <option value='{{other}}''>{{other}}</option>{% endfor %}"
-                }
-                else if (x == 'Category') {
-                    document.getElementById('midpoint3').innerHTML = 
-                    "<option value='none'>None</option>{% for point in points %}<option value='{{point}}'>{{point}}</option>{% endfor %}"
-                }
-            }
-        </script>
     </div>
-{% endblock %}
+</body>
