@@ -360,6 +360,7 @@ function GetPosition(coordinates){
 
 setTimeout(LoadImage,100)
 
+// Lots of difficult maths to translate the coordinates on the full image to those of the zoomed in version (so the route is more visible)
 function LoadImage () {
     let lines = []
     for (i = 0; i < route.length - 1; i++){
