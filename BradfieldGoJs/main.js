@@ -10,7 +10,42 @@ let houses = ['A House', 'C House', 'D House', 'E House', 'F House', "Faulkner's
 let academics = ['Big School', 'Bloods', 'Design Centre', 'Grey School', 'History', 'Library', 'MFL', 'Maths', 'Science']
 let sports = ['Astro 1', 'Astro 2', 'Astro Tennis Courts', 'Clay Tennis Courts', 'Hill 2 Cricket Nets', 'Hill 2 Pitch', 'Indoor Tennis Courts', 'Major', 'Max', 'New Ground', 'Pit', 'Rectory 1', 'Rectory 2', 'Rectory 3', 'Rux', 'Sports Centre']
 
-return render(request, 'website/index.html', {
-    'points': places, 'categories': types, 'modes': modes, 'others': others, 
-    'houses': houses, 'academics': academics, 'sports': sports, 'message': message,
-})
+// The following 3 loops are used to iterate through the lists and create drop-down menus
+var categoryseletcs = [].slice.call(document.getElementsByClassName('category'))
+var placeselects = [].slice.call(document.getElementsByClassName('place'))
+var modeselect = document.getElementById('modes')
+
+for (var x = 0; x <= categoryselects.length; x++){
+    for (var i = 0; i<=types.length; i++){
+        var opt = document.createElement('option');
+        opt.value = types[i];
+        opt.innerHTML = types[i];
+        categoryselects[x].appendChild(opt);
+    }
+}
+for (var x = 0; x <= placeselects.length; x++){
+    for (var i = 0; i<=places.length; i++){
+        var opt = document.createElement('option');
+        opt.value = places[i];
+        opt.innerHTML = places[i];
+        placeselects[x].appendChild(opt);
+    }
+}
+for (var i = 0; i<=modeslength; i++){
+    var opt = document.createElement('option');
+    opt.value = modes[i];
+    opt.innerHTML = modes[i];
+    modeselect.appendChild(opt);
+}
+
+function Help(){
+    console.log('Function not made yet')
+}
+
+function Go(){
+    console.log('Function not made yet')
+}
+
+function Home(){
+    console.log('Function not made yet')
+}
