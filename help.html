@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BradfieldGo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="static/help.css" rel="stylesheet">
+    <link href="static/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id='FAQs'>
+</div>
+<br>
+<form id='Suggestion'>
+Submit a suggestion:
+<br>
+<input type='hidden' name='choice' value='suggestion'>
+<input type='text' id='subject' name='subject' placeholder='Please define the suggestion (adding a path/route, fixing a bug, improving design, etc).'>
+<br>
+<textarea cols=200 rows=80 name='message' placeholder="Please describe the suggestion (adding a path/route, fixing a bug, improving design, etc)."> 
+</textarea>
+<br>
+<input type='submit'>
+</form>
+<form id='Query'>
+Submit a query:
+<br>
+<input type='hidden' name='choice' value='question'>
+<input type='text' id='subject' name='question' placeholder='Question'>
+<br>
+<input type='email' id='email' name='email' placeholder='Your Email'>
+<br>
+<input type='submit'>
+<br>
+</form>
+<h6 id='message'></h6>
+<script type='text/javascript' src='static/help.js'
+<body>

@@ -10,6 +10,11 @@ let houses = ['A House', 'C House', 'D House', 'E House', 'F House', "Faulkner's
 let academics = ['Big School', 'Bloods', 'Design Centre', 'Grey School', 'History', 'Library', 'MFL', 'Maths', 'Science']
 let sports = ['Astro 1', 'Astro 2', 'Astro Tennis Courts', 'Clay Tennis Courts', 'Hill 2 Cricket Nets', 'Hill 2 Pitch', 'Indoor Tennis Courts', 'Major', 'Max', 'New Ground', 'Pit', 'Rectory 1', 'Rectory 2', 'Rectory 3', 'Rux', 'Sports Centre']
 
+function Error(element){
+    var message = element.value;
+    document.getElementById('message').innerHTML = message
+}
+
 // This function is run when the page is first loaded, or when the home page is pressed
 function Home(){
 // The following 3 loops are used to iterate through the lists and create drop-down menus
@@ -69,3 +74,4 @@ function FilterSelection(element){
 }
 
 Home()
+

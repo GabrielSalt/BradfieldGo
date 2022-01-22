@@ -86,22 +86,19 @@ for (let vertex of vertexs){
     }
 }
 destinations.push(finishlist)
-
-modechoice = constraint
-if (modechoice == 'Wheelchair' || modechoice == 'Wheelchair + One Way System'){
+if (constraint == 'Wheelchair' || constraint == 'Wheelchair + One Way System'){
     for (let edge of edges){
         if (edge.wheelchair == false){
-            edges.splice(edge,1)
+            edges = edges.splice(edges.indexOf(edge),1);
         }
     }
 }
-if (modechoice == 'One Way System' || modechoice == 'Wheelchair + One Way System'){
+if (constraint == 'One Way System' || constraint == 'Wheelchair + One Way System'){
     oneway = true
 }
 else {
     oneway = false
 }
-
 edgenames = []
 for (let edge of edges){
     edgenames.push(`${edge.start}-${edge.end}`)
@@ -216,6 +213,11 @@ for (let x = 0; x < destinations.length-1; x++){
                 current = choicescores.indexOf(tempchoicescores[0])
                 current = choices[current]
                 current = vertexdict[current]
+                if (current == undefined){
+                    var form = document.getElementById('Error');
+                    alert('Unfortunately, this route is not possible with the given constraint.')
+                    form.submit();
+                }
                 searched.push(current.name)
                 if (current.name == end.name){
                     Continue = false
@@ -227,10 +229,9 @@ for (let x = 0; x < destinations.length-1; x++){
             var currentprevious = routes[current.name].previous
             }
             else {
-                // FIX THIS!!!!!!! MAKE IT BREAK
-                message = 'Unfortunately, this path is not possible with your constraint.'
+                var form = document.getElementById('Error');
+                form.submit();
             }
-        
             while (currentprevious != start){
                 route.push(routes[current.name].previous)
                 for (let vertex of vertexs){
@@ -405,12 +406,6 @@ function LoadImage () {
     let top = y[0]-36
     let width = xdiff+120
     let height = ydiff+72
-    console.log(left)
-    console.log(top)
-    console.log(left+width)
-    console.log(top+height)
-    console.log(x[x.length-1])
-    console.log(y[y.length-1])
 
     ctx.drawImage(img,left,top,width,height,0,0,600,360);
 
@@ -421,8 +416,6 @@ function LoadImage () {
             var c = document.getElementById("Canvas");
             var ctx = c.getContext("2d");
             ctx.strokeStyle = 'rgb(255,255,255)'
-            console.log(pos1)
-            console.log(pos2)
             ctx.moveTo((pos1[0]-left)/width*600, (pos1[1]-top)/height*360);
             ctx.lineTo((pos2[0]-left)/width*600, (pos2[1]-top)/height*360);
             ctx.stroke();
