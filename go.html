@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BradfieldGo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="static/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id='header'>
+    <h1 id='title' class='middle'>BradfieldGo</h1>
+    <div id='topbar'>
+        <form onsubmit='Home()'>
+            <input type='submit' value='Home' name='home'>
+        </form>
+        <form onsubmit='Help()'>
+            <input type='submit' value='Help' name='help'>
+        </form>
+    </div>
+</div>
+<hr>
+    <h2 id='prompt' class = 'middle'>Your Route: </h2>
+    <div id='container'>
+        <div>
+        <canvas id='Canvas' width="600" height="350" style='border:1px solid #d3d3d3;'></canvas>
+        <img id='Map' src = "static/BradfieldGo.png" alt="Bradfield Map" hidden>
+        <h4>Route Info:</h4>
+        <h5 id='distance'>Total Distance: m</h5>
+        <h5 id='time'>Estimated Time: </h5>
+        <h6 id='elevation'>Net Elevation Change: m</h6>
+        <br>
+        </div>
+        <div id='info'>
+            <h5>Route:</h5>
+            <div id='description'>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='go.js'></script>
+</body>
+

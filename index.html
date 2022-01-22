@@ -22,11 +22,11 @@
     <h2 id='prompt' class='middle'>Find Your Route</h2>
     <div id='container'>
         <img src = "https://github.com/GabrielSalt/GabrielSalt.github.io/blob/main/static/BradfieldGo.png?raw=true" alt="Bradfield Map">
-        <form onsubmit='Go()'>
+        <form action='go.html'>
             <div id='forms'>
                 <div class='form'>
                     <label id='class' for="start">Choose a starting point:</label>
-                    <select class='category' id="startcategory" name="startcategory" onchange="startchange()">
+                    <select class='category' id="startcategory" name="startcategory" onchange="FilterSelection(this)">
                         <option value='Category' selected disabled >Category</option>
                     </select>
                     <select class='place' id="start" name="start">
@@ -36,7 +36,7 @@
                     <label for="midpoints" class='label'>Select up to 3 midpoints:</label> 
                     <div>
                     <div class='middiv'>
-                    <select class='category' id="mid1category" name="mid1category" onchange="mid1change()">
+                    <select class='category' id="mid1category" name="midpoint1category" onchange="FilterSelection(this)">
                         <option value='Category' selected>Category</option>
                     </select>
                     <select class='place' id="midpoint1" name="midpoint1" class='midpointform'>
@@ -44,7 +44,7 @@
                     </select>
                     </div>
                     <div class='middiv'>
-                    <select class='category' id="mid2category" name="mid2category" onchange="mid2change()">
+                    <select class='category' id="mid2category" name="midpoint2category" onchange="FilterSelection(this)">
                         <option value='Category' selected>Category</option>
                     </select>
                     <select class='place' id="midpoint2" name="midpoint2" class='midpointform'>
@@ -52,7 +52,7 @@
                     </select>
                     </div>
                     <div class='middiv'>
-                    <select class='category' id="mid3category" name="mid3category" onchange="mid3change()">
+                    <select class='category' id="mid3category" name="midpoint3category" onchange="FilterSelection(this)">
                         <option value='Category' selected>Category</option>
                     </select>
                     <select class='place' id="midpoint3" name="midpoint3" class='midpointform'>
@@ -63,7 +63,7 @@
                 </div>
                 <div class='form'>
                     <label class='label' for="end">Choose an ending point:</label>
-                    <select class='category' id="endcategory" name="endcategory" onchange="endchange()">
+                    <select class='category' id="endcategory" name="endcategory" onchange="FilterSelection(this)">
                         <option value='Category' selected disabled >Category</option>
                     </select>
                     <select class='place' id="end" required name="end">

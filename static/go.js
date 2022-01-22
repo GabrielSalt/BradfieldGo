@@ -10,66 +10,308 @@ let houses = ['A House', 'C House', 'D House', 'E House', 'F House', "Faulkner's
 let academics = ['Big School', 'Bloods', 'Design Centre', 'Grey School', 'History', 'Library', 'MFL', 'Maths', 'Science']
 let sports = ['Astro 1', 'Astro 2', 'Astro Tennis Courts', 'Clay Tennis Courts', 'Hill 2 Cricket Nets', 'Hill 2 Pitch', 'Indoor Tennis Courts', 'Major', 'Max', 'New Ground', 'Pit', 'Rectory 1', 'Rectory 2', 'Rectory 3', 'Rux', 'Sports Centre']
 
-// This function is run when the page is first loaded, or when the home page is pressed
-function Home(){
-// The following 3 loops are used to iterate through the lists and create drop-down menus
-var categoryselects = [].slice.call(document.getElementsByClassName('category'))
-var placeselects = [].slice.call(document.getElementsByClassName('place'))
-var modeselect = document.getElementById('modes')
-
-for (var x = 0; x <= categoryselects.length-1; x++){
-    for (var i = 0; i<=types.length-1; i++){
-        var opt = document.createElement('option');
-        opt.value = types[i];
-        opt.innerHTML = types[i];
-        categoryselects[x].appendChild(opt);
-    }
-}
-for (var x = 0; x <= placeselects.length-1; x++){
-    for (var i = 0; i<=places.length-1; i++){
-        var opt = document.createElement('option');
-        opt.value = places[i];
-        opt.innerHTML = places[i];
-        placeselects[x].appendChild(opt);
-    }
-}
-for (var i = 0; i<=modes.length-1; i++){
-    var opt = document.createElement('option');
-    opt.value = modes[i];
-    opt.innerHTML = modes[i];
-    modeselect.appendChild(opt);
-}
-}
-// This function filters down the list of places based on a category that the user selects
-function FilterSelection(element){
-    var x = element.value;
-    var newSelectName = element.name.replace('category','')
-    var newSelect = document.getElementById(newSelectName);
-    newSelect.innerHTML = '';
-
-    if (newSelectName[0] == 'm'){
-        var none = document.createElement('option');
-        none.value = 'none';
-        none.innerHTML = 'None';
-        newSelect.appendChild(none);
-    }
-
-    if (x == 'Category'){var list = places} 
-    else if (x == 'House'){var list = houses}   
-    else if (x == 'Academic'){var list = academics}
-    else if (x == 'Sport'){var list = sports}
-    else if (x == 'Other'){var list = others}
-
-    for (var i = 0; i<=list.length-1; i++){
-        var opt = document.createElement('option');
-        opt.value = list[i];
-        opt.innerHTML = list[i];
-        newSelect.appendChild(opt);
+const Route = (previous, distance, time, score) => {
+    return {
+        previous,
+        distance,
+        time,
+        score
     }
 }
 
-function Help(){
-    console.log('Function not made yet')
+// Accessing form data
+let params = new URLSearchParams(location.search)
+let start = params.get('start')
+let midpoint1 = params.get('midpoint1')
+let midpoint2 = params.get('midpoint2')
+let midpoint3 = params.get('midpoint3')
+let end = params.get('end')
+let constraint = params.get('modes')
+
+let midpoints = [midpoint1, midpoint2, midpoint3]
+for (let x=0; x < 2; x++){
+    for (let midpoint in midpoints){
+        if (midpoint == 'none'){
+            midpoints.remove(midpoint)
+        }
+    }
+}
+let destinations, startlist, midpointlist, finishlist = []
+
+if (start == 'D House'){
+    startlist.push(vertexdict['G House'])
+}
+if (end == 'D House'){
+    finishlist.push(vertexdict['G House'])
+}
+if ('D House' in midpoints){
+    midpointlist.push(vertexdict['G House'])
 }
 
-Home()
+for (let vertex in vertexs){
+    if (vertex.place == start){
+        startlist.push(vertex)
+    }
+}
+destinations.push(startlist)
+let ogstart = startlist
+
+for (let midpoint in midpoints){
+    let midpointsublist = []
+    for (let vertex in vertexs){
+        if (vertex.place == midpoint){
+            midpointsublist.push(vertex)
+        }
+    }
+    if (midpointsublist != []){
+        destinations.push(midpointsublist)
+    }
+}
+        
+for (let vertex in vertexs){
+    if (vertex.place == end){
+        finishlist.push(vertex)
+    }
+}
+destinations.push(finishlist)
+
+modechoice = constraint
+if (modechoice == 'Wheelchair' || modechoice == 'Wheelchair + One Way System'){
+    for (let edge in edges){
+        if (edge.wheelchair == false){
+            edges.remove(edge)
+        }
+    }
+}
+if (modechoice == 'One Way System' || modechoice == 'Wheelchair + One Way System'){
+    oneway = true
+}
+else {
+    oneway = false
+}
+
+edgenames = []
+for (let edge in edges){
+    edgenames.push(`${edge.start}-${edge.end}`)
+}
+
+var fullroute = []
+var  totaldistance, totaltime = 0
+
+for (let x = 0; x <= destinations.length-1; x++){
+    let startpos = destinations[x+1]
+    let endpos = destinations[x]
+    comparisons = []
+    for (let start in startpos){
+        for (let end in endpos){
+            var previous = start
+            var current = previous
+            var searched = [start.name] 
+            var visited = searched
+            let routes = {}
+            routes[start.name] = Route(previous,distance = 0,time = 0,score = 0)
+            Continue = true
+            while (Continue){
+                starttoend = GetDistance((current.point, end.point))
+                enddistance = ((starttoend[0])**2+(starttoend[1])**2)**(1/2)
+                for (connection in current.connections){
+                    if (`${current.name}-${connection}` in edgenames || `${connection}-${current.name}` in edgenames){
+                        let position = vertexdict[connection]
+                        let previous = current
+                        if (oneway){
+                            let oldtime = routes[previous.name].time
+                            let olddistance = routes[previous.name].distance
+                            let nextforwards = none
+                            for (let edge in edges){
+                                if (edge.start == current.name && edge.end == connection){
+                                    nextforwards = edge
+                                    break
+                                }
+                            }
+                            if (nextforwards == none){
+                                for (let edge in edges){
+                                    if (edge.start == connection && edge.end == current.name){
+                                        let nextreverse = edge
+                                        break
+                                    }
+                                }
+                                if (nextreverse.covid == 'reverse' || nextreverse.covid == 'both'){
+                                    distance = nextreverse.distance
+                                    time = nextreverse.time
+                                }
+                                else {
+                                    distance = 9999999999
+                                    time = 9999999999
+                                }
+                            }
+                            else {
+                                if (nextforwards.covid == 'forwards' || nextforwards.covid == 'both'){
+                                    distance = nextforwards.distance
+                                    time = nextforwards.time
+                                }
+                                else {
+                                    distance = 9999999999
+                                    time = 9999999999
+                                }
+                            newdistance = olddistance + distance
+                            newtime = oldtime + time
+                            }
+                        }
+                        else {
+                            let olddistance = routes[previous.name].distance
+                            let oldtime = routes[previous.name].time
+                            for (let edge in edges){
+                                if ((edge.start == connection && edge.end == current.name) || (edge.start == current.name && edge.end == connection)){
+                                    let edgechoice = edge
+                                    break
+                                }
+                            } 
+                            let distance = edgechoice.distance
+                            let time = edgechoice.time
+                            
+                            newdistance = olddistance + distance
+                            newtime = oldtime + time
+                        
+                        newscore = newdistance + enddistance
+                        }
+                        if (position.name in visited){
+                            if (routes[position.name].time > newtime){
+                                routes.pop(position.name)
+                                routes[position.name] = Route(previous,newdistance,newtime,newscore)
+                                if (position.name in searched){
+                                    searched.remove(position.name)
+                                }
+                            }
+                        }
+                        else {
+                            routes[position.name] = Route(previous,newdistance,newtime,newscore)
+                            visited.push(position.name)
+                        }
+                    choices = []
+                    choicescores = []
+                    for (let choice in visited){
+                        if (!(choice in searched)){
+                            choices.push(choice)
+                            choicescores.push(routes[choice].score)
+                        }
+                    }
+                    let tempchoicescores = choicescores
+                    tempchoicescores.sort(function(a, b){return a-b})
+                    current = vertexdict[choices[choicescores.indexOf(tempchoicescores[0])]]
+
+                    searched.push(current.name)
+                    if (current == end){
+                        Continue = false
+                    }
+                    }
+                }    
+                let route = [end]
+                current = end
+                if (current.name in routes.keys()){
+                    currentprevious = routes[current.name].previous
+                }
+                else {
+                    // FIX THIS!!!!!!!!!!!!!!!! NEED TO BREAK HERE
+                    message = 'Unfortunately, this path is not possible with your constraint.'
+                }
+        
+                while (currentprevious != start){
+                    route.push(routes[current.name].previous)
+                    for (let vertex in vertexs){
+                        if (routes[current.name].previous.name == vertex.name){
+                            current = vertex
+                            break
+                        }
+                    }
+                    currentprevious = routes[current.name].previous
+                }
+                try {
+                    if (start == ogstart[0] && start == startpos[0]){
+                        route.push(start)
+                    }
+                    else if (start == ogstart[1] && start == startpos[1]){
+                        route.push(start)
+                    }
+                }
+                catch {
+                }
+                
+                comparisons.push([start,end,routes[end.name].distance,routes[end.name].time,route])
+
+            timecomparison = []
+            for (let comparison in comparisons){
+                timecomparison.push(comparison[3])
+            }
+
+            firsttime = sorted(timecomparison)[0]
+            for (let comparison in comparisons){
+                if (firsttime == comparison[3]){
+                    start = comparison[0]
+                    end = comparison[1]
+                    route = comparison[4]
+                    break
+                }
+            }
+            
+            route = route.reverse()
+            distance = routes[end.name].distance
+            time = routes[end.name].time
+            totaldistance += distance
+            totaltime += time
+            fullroute.push(route)
+        route = list(itertools.chain.from_iterable(fullroute))
+        paths = []
+        descriptions = []
+        totalelevation = 0
+        upwards = 0
+        for (let x = 0; x <= route.length-1; x++){
+            for (let edge in edges){
+                if ((edge.start == route[x].name && edge.end == route[x+1].name) || (edge.start == route[x+1].name && edge.end == route[x].name)){
+                    edge = edge
+                    break
+                }
+            }
+            if (edge.start == route[x].name && edge.end == route[x+1].name){
+                description = edge.forwards
+                height = edge.elevation
+            }
+            else if (edge.start == route[x+1].name && edge.end == route[x].name){
+                description = edge.reverse
+                height = edge.elevation*-1
+            }
+            paths.push([`${edge.start}-${edge.end}`,edge.points, description])
+            if (description != "Nothing"){
+                descriptions.push(description)
+            }
+            totalelevation += height
+            if (height > 0){
+                upwards += height
+            }
+        }
+
+        minutes = math.floor(totaltime/60)
+        seconds = round(totaltime % 60)
+        if (seconds < 10){
+            seconds = `0${seconds}`
+        }
+        estimatedtime = `${minutes}:${seconds}`
+    }
+}
+    }
+}
+
+points = []
+destinationsfinal = []
+for (let destination in destinations){
+    for (let place in destination){
+        if (place in route){
+            destinationsfinal.push(place)
+            points.push(place)
+        }
+    }
+}
+
+var c = document.getElementById("Canvas");
+var ctx = c.getContext("2d");
+var img = document.getElementById("Map");
+ctx.drawImage(img,2,2);
