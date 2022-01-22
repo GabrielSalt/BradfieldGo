@@ -37,6 +37,7 @@ for (var i = 0; i<=modeslength; i++){
     opt.innerHTML = modes[i];
     modeselect.appendChild(opt);
 }
+console.log('Done!')
 
 function Help(){
     console.log('Function not made yet')
