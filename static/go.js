@@ -178,14 +178,14 @@ for (let x = 0; x < possibleRoutes.length; x++){
                     if (oneway){
                         var oldtime = routes[previous.name].time
                         var olddistance = routes[previous.name].distance
-                        var nextforwards = none
+                        var nextforwards = 'none'
                         for (let edge of edges){
                             if (edge.start == current.name && edge.end == connection){
                                 nextforwards = edge
                                 break
                             }
                         }
-                        if (nextforwards == none){
+                        if (nextforwards == 'none'){
                             for (let edge of edges){
                                 if (edge.start == connection && edge.end == current.name){
                                     var nextreverse = edge
