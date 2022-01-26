@@ -9,6 +9,7 @@ let others = ['CCF Office', 'Chapel', "Faulkner's Dining Hall", 'Greeker', 'Med 
 let houses = ['A House', 'C House', 'D House', 'E House', 'F House', "Faulkner's House", 'G House', 'H House', 'I House', 'J House', 'K House', 'M House']
 let academics = ['Big School', 'Bloods', 'Design Centre', 'Grey School', 'History', 'Library', 'MFL', 'Maths', 'Science']
 let sports = ['Astro 1', 'Astro 2', 'Astro Tennis Courts', 'Clay Tennis Courts', 'Hill 2 Cricket Nets', 'Hill 2 Pitch', 'Indoor Tennis Courts', 'Major', 'Max', 'New Ground', 'Pit', 'Rectory 1', 'Rectory 2', 'Rectory 3', 'Rux', 'Sports Centre']
+let bloodsrooms = ['BD0','BD1','BD2','BD3','BD4','BD5','BD6','BD7','BD8','BD9','BD10','BD11','BD12','Q1','Q2','Q3','Q4','EF1','PO1','CL1','CL2']
 
 function Error(element){
     var message = element.value;
@@ -70,6 +71,23 @@ function FilterSelection(element){
         opt.value = list[i];
         opt.innerHTML = list[i];
         newSelect.appendChild(opt);
+    }
+}
+
+function FilterBloods(element){
+    let classroomSelector = document.getElementById(`classroom${element.id}`)
+    if (element.value == 'Bloods'){
+        classroomSelector.hidden = false
+        for (let room of bloodsrooms){
+            var newRoom = document.createElement('option');
+            newRoom.value = room;
+            newRoom.innerHTML = room;
+            classroomSelector.appendChild(newRoom);
+        }
+    }
+    else {
+        classroomSelector.value = 'None'
+        classroomSelector.hidden = true
     }
 }
 

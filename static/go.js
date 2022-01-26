@@ -365,7 +365,7 @@ for (let i = 1; i <= destinationsfinal.length-1; i++){
 }
 
 document.getElementById('prompt').innerHTML = prompt
-document.getElementById('distance').innerHTML = `Total Distance: ${totaldistance}m`
+document.getElementById('distance').innerHTML = `Total Distance: ${Math.floor(totaldistance*0.9)}m`
 document.getElementById('time').innerHTML = `Estimated Time: ${estimatedtime}`
 document.getElementById('elevation').innerHTML = `Net Elevation Change: ${totalelevation}m`
 
