@@ -21,7 +21,14 @@
     <hr>
     <h2 id='prompt' class='middle'>Find Your Route</h2>
     <div id='container'>
-        <img src = "static/BradfieldGo.png" alt="Bradfield Map">
+        <img id='Map' src = "static/BradfieldGo.png" alt="Bradfield Map" hidden>
+        <div id="constantSize">
+            <div id='mapDiv'>
+                <canvas id='Canvas' width="600" height="360" onclick="Select(event)"></canvas>
+                <h6> Note: You can interact with the map to select places.</h6>
+                <h6> If the map is not loading, scroll on it.</h6>
+            </div>
+        </div>
         <form action='go.html'>
             <div id='forms'>
                 <div class='form'>
@@ -35,7 +42,7 @@
                     </select>
                 </div>
                 <div class='form' id='midform'>
-                    <label for="midpoints" class='label'>Select up to 3 midpoints:</label> 
+                    <label for="midpoints" class='label'>Select up to 3 midpoints (Optional):</label> 
                     <div>
                     <div class='middiv'>
                     <select class='category' id="mid1category" name="midpoint1category" onchange="FilterSelection(this)">

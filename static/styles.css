@@ -61,9 +61,6 @@
         margin-left:-20px;
         margin-right:-20px;
     }
-    canvas {
-        border: 1px solid #d3d3d3;
-    }
 }
 @media (max-width: 768px) { 
     img {
