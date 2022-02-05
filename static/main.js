@@ -79,18 +79,20 @@ document.addEventListener("wheel", function(e) {
 
 // This function gets the position that the user clicks on the map and finds the nearest place
 function Select(event){
-    console.log(zoom)
     var elem = document.getElementById('Canvas')
     var elemLeft = elem.offsetLeft + elem.clientLeft
     var elemTop = elem.offsetTop + elem.clientTop
     var posX = event.pageX - elemLeft
     var posY = event.pageY - elemTop
-    console.log(posX, posY)
     var dimensions = [600,360]
-    var bottom = 51.444687
-    var top = 51.452396
-    var left = -1.142394
-    var right = -1.121153
+    var ogbottom = 51.444687
+    var ogtop = 51.452396
+    var ogleft = -1.142394
+    var ogright = -1.121153
+    var left = ogleft+(ogright-ogleft)*(0.5-0.5/zoom)
+    var top = ogtop-(ogtop - ogbottom)*(0.5-0.5/zoom)
+    var right = left + (ogright-ogleft)*(1/zoom)
+    var bottom = top - (ogtop-ogbottom)*(1/zoom)
     var positions = []
     for (let vertex of vertexs){
         if (places.includes(vertex.place)){
