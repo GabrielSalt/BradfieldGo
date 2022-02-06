@@ -170,8 +170,8 @@
     }
 }
 @media (max-width: 768px) { 
-    img {
-        max-width: 90%;
+    canvas {
+        max-width: 90vw;
     }
     body {
         padding: 3%;
