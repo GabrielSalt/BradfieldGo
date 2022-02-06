@@ -3,23 +3,24 @@
 <head>
     <title>BradfieldGo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="static/styles.css" rel="stylesheet">
 </head>
 <body>
     <div id='header'>
         <h1 id='title' class='middle'>BradfieldGo</h1>
-        <div id='topbar'>
+        <div id='topbar' class="row">
             <form action='index.html'>
-                <input type='submit' value='Home' name='home'>
+                <button class="btn"><i class="fa fa-home"></i></button>
             </form>
             <form action = 'help.html'>
-                <input type='submit' value='Help' name='help'>
+                <button class="btn"><i class="fa fa-question-circle"></i></button>
             </form>
         </div>
+        <hr>
     </div>
-    <hr>
-    <h2 id='prompt' class='middle'>Find Your Route</h2>
+    <h2 id='prompt' class='middle white'>Find Your Route</h2>
     <div id='container'>
         <img id='Map' src = "static/BradfieldGo.png" alt="Bradfield Map" hidden>
         <div id="constantSize">
@@ -28,25 +29,32 @@
                 <div class="slidecontainer">
                     <input type="range" min="100" max="400" value="100" class="slider" id="myRange" oninput="Zoom()">
                 </div>
-                <h6 id="InteractMessage"></h6>
-                <h6 id="LoadingMessage"></h6>
             </div>
+            <h6 id="InteractMessage" class="white"></h6>
         </div>
         <form action='go.html'>
             <div id='forms'>
                 <div class='form'>
-                    <label id='class' for="start">Choose a starting point:</label>
+                    <div class="title">
+                    <label id='class' class='white' for="start">Choose a starting point:</label>
+                    </div>
+                    <div class="holder">
                     <select class='category' id="startcategory" name="startcategory" onchange="FilterSelection(this)">
                         <option value='Category' selected disabled >Category</option>
                     </select>
                     <select class='place' id="start" name="start" onchange="FilterBloods(this)">
+                        <option value='none'>None</option>
                     </select>
                     <select class='classroom' id="classroomstart" name="classroomstart" class='classroomform' hidden>
                     </select>
+                    </div>
                 </div>
                 <div class='form' id='midform'>
-                    <label for="midpoints" class='label'>Select up to 3 midpoints (Optional):</label> 
+                    <div class="title" style="background-color:#20253A;">
+                        <label class='white' for="midpoints" class='label'>Select up to 3 midpoints (Optional):</label> 
+                    </div>        
                     <div>
+                    <div class="holder">
                     <div class='middiv'>
                     <select class='category' id="mid1category" name="midpoint1category" onchange="FilterSelection(this)">
                         <option value='Category' selected>Category</option>
@@ -72,23 +80,35 @@
                     </select>
                     </div>
                     </div>
+                    </div>
                 </div>
                 <div class='form'>
-                    <label class='label' for="end">Choose an ending point:</label>
+                    <div class="title">
+                        <label class='label' for="end">Choose an ending point:</label>
+                    </div>
+                    <div class="holder">
                     <select class='category' id="endcategory" name="endcategory" onchange="FilterSelection(this)">
                         <option value='Category' selected disabled >Category</option>
                     </select>
                     <select class='place' id="end" required name="end" onchange="FilterBloods(this)">
+                        <option value='none'>None</option>
                     </select>
                     <select class='classroom' id="classroomend" name="classroomend" class='classroomform' hidden>
                     </select>
+                    </div>
                 </div>
                 <div class='form'>
-                    <label id='class' for="modes">Select any constraint on your travel:</label>
+                    <div class="title" style="background-color:#20253A;">
+                    <label id='class' for="modes" class='white'>Select any constraint on your travel:</label>
+                    </div>
+                    <div class="holder">
                     <select id="modes" name="modes">
                     </select>
+                    </div>
                 </div>
-                <input type='submit'>
+                <button type="submit" class="btn submit2">
+                    Submit <i class="fa fa-arrow-circle-right"></i>
+                </button>
                 <br>
                 <h6 id='message' style='color:red'></h6>
             </div>

@@ -342,7 +342,7 @@ for (let x = 0; x < route.length-1; x++){
     if (description != "Nothing" && description != descriptions[descriptions.length-1]){
         descriptions.push(description)
     }
-    if (x == route.length-2 && (route[x+1].name == 'Bloods (Back)' || route[x+1].name == 'Bloods (Front)')){
+    if (x == route.length-2 && (route[x+1].name == 'Bloods (Back)' || route[x+1].name == 'Bloods (Front)') && endroom != null){
         descriptions.push(endroom[1])
     } 
     totalelevation += height
@@ -389,12 +389,12 @@ else {
 }
 for (let i = 1; i <= destinationsfinal.length-1; i++){
     prompt += `to ${destinationsfinal[i].name} `
-    if (i == destinationsfinal.length-1 && (destinationsfinal[i].name == 'Bloods (Back)' || destinationsfinal[i].name == 'Bloods (Front)')){
+    if (i == destinationsfinal.length-1 && (destinationsfinal[i].name == 'Bloods (Back)' || destinationsfinal[i].name == 'Bloods (Front)') && classroomend != null){
         prompt += `to ${classroomend}`
     }
 }
 
-document.getElementById('prompt').innerHTML = prompt
+document.getElementById('prompt').innerHTML =  prompt
 document.getElementById('distance').innerHTML = `Total Distance: ${Math.floor(totaldistance*0.95)}m`
 document.getElementById('time').innerHTML = `Estimated Time: ${estimatedtime}`
 document.getElementById('elevation').innerHTML = `Net Elevation Change: ${totalelevation}m`

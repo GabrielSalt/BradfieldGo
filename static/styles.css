@@ -4,28 +4,47 @@
 .right {
     text-align: right;
 }
+.white {
+    color:white;
+}
 #info {
     justify-content: center;
 }
 @media (min-width: 768px) {
     img {
-        width: 95%;
+        width: 100%;
     }
     body {
-        padding: 1%;
+        background: #62b8ed url(/static/background.png) fixed top center;
+        background-size: cover;
+    }
+    canvas {
+        border: 2px solid white;
+    }
+    select {
+        border: 0px;
+    }
+    #header {
+        background: #3D436A
     }
     #title {
-        font-size: 72px;
-        margin: auto;
+        vertical-align: middle;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: thin;
+        color:white;
+        font-size: 60px;
     }
     #prompt {
         font-size: 28px;
-        padding-bottom: 2%;
+        font-weight: 300;
+        margin-bottom:2%;
+        margin-top: 1%;
     }
     #container {
         display: grid;
         height: 100%;
         grid-template-columns: 50% 50%;
+        margin: 1%;
     }
     #forms {
         display: grid;
@@ -37,29 +56,104 @@
     .label {
         height: 100%;
         vertical-align: middle;
+        color:white;
     }
     #midform {
         display: grid;
         grid-template-columns: auto;
         float: inline-start;
     }
-    #topbar{
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        width: 20%;
-    }
     #description {
         overflow : auto;
         height : 190px;
         width : 100%;
-        border : 1px solid #d3d3d3;
         padding: 5px;
     }
     .row {
         text-align:center;
         margin-left:-20px;
         margin-right:-20px;
+    }
+    .holder {
+        padding-top: 0.3%;
+        padding-bottom: 0.3%;
+        padding-left: 5px;
+        margin: 0%;
+        background-color: #FFFFFF;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .title {
+        padding-top: 0.3%;
+        padding-bottom: 0.3%;
+        padding-left: 5px;
+        margin: 0%;
+        background-color: #3D436A;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .btn {
+        font-size:48px;
+        color: white;
+    }
+    .btn:hover {
+        color: #d3d3d3;
+    }
+    #topbar{
+        position: absolute;
+        top: 1px;
+        right: 40px;
+    }
+    #subject {
+        width: 97.5%;
+        border-radius:5px;
+    }
+    textarea {
+        margin-top: 10px;
+        width: 97.5%;
+        height: 8vw;
+        border-radius:5px;
+    }
+    .suggest {
+        border: 1px solid #d3d3d3;
+    }
+    .suggest:focus{
+        outline-width: 0;
+        box-shadow: 0 0 6px #009eff;
+        border: 1px solid #e0e0e0;
+        color: #000;
+    }
+    .submit {
+        width: auto;
+        font-size: 32px;
+        background-color:rgb(9, 66, 101); 
+        margin:0 auto;
+        display:block;
+    }
+    .submit2 {
+        width: auto;
+        font-size: 20px;
+        background-color: #3D436A; 
+        margin:0 auto;
+        display:block;
+    }
+    #Suggestion {
+        margin-left: 15%;
+        margin-right:15%;
+    }
+    #Query {
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-right:15%;
+    }
+    #email {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 97.5%;
+        border-radius:5px;
+    }
+    #InteractMessage {
+        text-align: center;
     }
 }
 @media (max-width: 768px) { 

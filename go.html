@@ -3,38 +3,46 @@
 <head>
     <title>BradfieldGo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="static/styles.css" rel="stylesheet">
 </head>
 <body>
 <div id='header'>
     <h1 id='title' class='middle'>BradfieldGo</h1>
-    <div id='topbar' class='row'>
-        <form action = 'index.html'>
-            <input type='submit' value='Home' name='home'>
+    <div id='topbar' class="row">
+        <form action='index.html'>
+            <button class="btn"><i class="fa fa-home"></i></button>
         </form>
         <form action = 'help.html'>
-            <input type='submit' value='Help' name='help'>
+            <button class="btn"><i class="fa fa-question-circle"></i></button>
         </form>
     </div>
-</div>
 <hr>
-    <h2 id='prompt' class = 'middle'>Your Route: </h2>
+</div>
+    <h2 id='prompt' class='middle white'>Your Route: </h2>
     <div id='container'>
         <div>
         <img id='Map' src='static/BradfieldGo.png' hidden>
         <canvas id='Canvas' width="600" height="360"></canvas>
-        <br>
         </div>
         <div id='info'>
-            <h5>Description:</h5>
-            <div id='description'>
+            <div class="title">
+                <h5 class="white">Description:</h5>
+            </div>
+            <div class="holder">
+                <div id='description'>
+                </div>
             </div>
             <br>
-            <h5>Route Info:</h4>
-            <h6 id='distance'>Total Distance: m</h5>
-            <h6 id='time'>Estimated Time: </h5>
-            <h6 id='elevation'>Net Elevation Change: m</h6>
+                <div class="title">
+                    <h5 class="white">  Route Info:</h5>
+                </div>
+                <div class="holder">
+                    <h6 id='distance'>  Total Distance: m</h6>
+                    <h6 id='time'>  Estimated Time: </h6>
+                    <h6 id='elevation'>    Net Elevation Change: m</h6>
+                </div>
         </div>
     </div>
     <form id='Error' action='index.html' value='Error' onsubmit='Error(this)'>

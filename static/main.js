@@ -50,16 +50,13 @@ for (var i = 0; i<=modes.length-1; i++){
 //This function detects the type of device the user is on
 const ua = navigator.userAgent;
 if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-    document.getElementById('InteractMessage').innerHTML = 'Tap on the map to select places, or use the drop-down menus.'
-    document.getElementById('LoadingMessage').innerHTML = 'If the map is not loading, use the slider.'
+    document.getElementById('InteractMessage').innerHTML = 'Slide to zoom and tap to select places, or use the drop-down menus.'
 }
 else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
-    document.getElementById('InteractMessage').innerHTML = 'Tap on the map to select places, or use the drop-down menus.'
-    document.getElementById('LoadingMessage').innerHTML = 'If the map is not loading, use the slider.'
+    document.getElementById('InteractMessage').innerHTML = 'Slide to zoom and tap to select places, or use the drop-down menus.'
 }
 else {
-    document.getElementById('InteractMessage').innerHTML = 'Click on the map to select places, or use the drop-down menus.'
-    document.getElementById('LoadingMessage').innerHTML = 'If the map is not loading, scroll on it.'
+    document.getElementById('InteractMessage').innerHTML = 'Scroll to zoom and click to select places, or use the drop-down menus.'
     document.getElementById('myRange').hidden = 'true'
     //This function allows the user to zoom in and out on the map to select places - this is for desktop
     document.addEventListener("wheel", function(e) {
@@ -89,6 +86,11 @@ var c = document.getElementById("Canvas");
 var ctx = c.getContext("2d");  
 var img = document.getElementById("Map")
 ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
+setTimeout(function(){
+    var img = document.getElementById("Map")
+    ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
+}, 100)
+
 }
 
 //This function allows the user to zoom in and out on the map to select places - this is for mobile
