@@ -13,6 +13,7 @@ let bloodsrooms = {'BD1':[[120,'From snake door, walk straight along the corrido
 let choices = ['start','midpoint1','midpoint2','midpoint3','end']
 
 var zoom = 1
+const ZOOM_SPEED = 0.05;
 var selected = 'start'
 
 // This function is run when the page is first loaded, or when the home page is pressed
@@ -45,37 +46,63 @@ for (var i = 0; i<=modes.length-1; i++){
     opt.innerHTML = modes[i];
     modeselect.appendChild(opt);
 }
+
+//This function detects the type of device the user is on
+const ua = navigator.userAgent;
+if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+    document.getElementById('InteractMessage').innerHTML = 'Tap on the map to select places, or use the drop-down menus.'
+    document.getElementById('LoadingMessage').innerHTML = 'If the map is not loading, use the slider.'
+}
+else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+    document.getElementById('InteractMessage').innerHTML = 'Tap on the map to select places, or use the drop-down menus.'
+    document.getElementById('LoadingMessage').innerHTML = 'If the map is not loading, use the slider.'
+}
+else {
+    document.getElementById('InteractMessage').innerHTML = 'Click on the map to select places, or use the drop-down menus.'
+    document.getElementById('LoadingMessage').innerHTML = 'If the map is not loading, scroll on it.'
+    document.getElementById('myRange').hidden = 'true'
+    //This function allows the user to zoom in and out on the map to select places - this is for desktop
+    document.addEventListener("wheel", function(e) {
+        var elem = document.getElementById('Canvas') 
+        var ctx = elem.getContext("2d"); 
+        var elemLeft = elem.offsetLeft + elem.clientLeft
+        var elemTop = elem.offsetTop + elem.clientTop
+        var posX = e.pageX - elemLeft
+        var posY = e.pageY - elemTop
+        if(e.deltaY > 0 && zoom < 4 && posX < 600 && posY < 360 && posX > 0 && posY > 0){
+            ctx.clearRect(0, 0, elem.width, elem.height);  
+            ctx.scale(1/zoom,1/zoom)
+            zoom += ZOOM_SPEED
+            ctx.scale(zoom,zoom)
+            ctx.drawImage(img,1000-(1000/zoom),600-(600/zoom),2000,1200,0,0,600,360);
+        }else if (zoom > 1 && posX<600 && posY<360 && posX > 0 && posY > 0){ 
+            ctx.clearRect(0, 0, elem.width, elem.height);  
+            ctx.scale(1/zoom,1/zoom) 
+            zoom -= ZOOM_SPEED
+            ctx.scale(zoom,zoom)
+            ctx.drawImage(img,1000-(1000/zoom),600-(600/zoom),2000,1200,0,0,600,360);
+        }
+    })
+};  
+
 var c = document.getElementById("Canvas");
 var ctx = c.getContext("2d");  
 var img = document.getElementById("Map")
 ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
-
-//This function allows the user to zoom in and out on the map to select places
-const ZOOM_SPEED = 0.05;
-
-document.addEventListener("wheel", function(e) {   
-    var elem = document.getElementById('Canvas') 
-    var ctx = elem.getContext("2d"); 
-    var elemLeft = elem.offsetLeft + elem.clientLeft
-    var elemTop = elem.offsetTop + elem.clientTop
-    var posX = e.pageX - elemLeft
-    var posY = e.pageY - elemTop
-    if(e.deltaY > 0 && zoom < 4 && posX < 600 && posY < 360 && posX > 0 && posY > 0){
-        ctx.clearRect(0, 0, elem.width, elem.height);  
-        ctx.scale(1/zoom,1/zoom)
-        zoom += ZOOM_SPEED
-        ctx.scale(zoom,zoom)
-        ctx.drawImage(img,1000-(1000/zoom),600-(600/zoom),2000,1200,0,0,600,360);
-    }else if (zoom > 1 && posX<600 && posY<360 && posX > 0 && posY > 0){ 
-        ctx.clearRect(0, 0, elem.width, elem.height);  
-        ctx.scale(1/zoom,1/zoom) 
-        zoom -= ZOOM_SPEED
-        ctx.scale(zoom,zoom)
-        ctx.drawImage(img,1000-(1000/zoom),600-(600/zoom),2000,1200,0,0,600,360);
-    }
-});
 }
 
+//This function allows the user to zoom in and out on the map to select places - this is for mobile
+function Zoom(){
+    var elem = document.getElementById('Canvas') 
+    var c = document.getElementById("Canvas");
+    var ctx = c.getContext("2d");  
+    var img = document.getElementById("Map")
+    ctx.clearRect(0, 0, elem.width, elem.height);  
+    ctx.scale(1/zoom,1/zoom)
+    zoom = document.getElementById('myRange').value / 100
+    ctx.scale(zoom,zoom)
+    ctx.drawImage(img,1000-(1000/zoom),600-(600/zoom),2000,1200,0,0,600,360);
+}
 
 // This function gets the position that the user clicks on the map and finds the nearest place
 function Select(event){
