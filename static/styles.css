@@ -123,12 +123,20 @@
         border: 1px solid #e0e0e0;
         color: #000;
     }
+    select:focus{
+        outline-width: 0;
+        box-shadow: 0 0 6px #009eff;
+        border: 1px solid #e0e0e0;
+        color: #000;
+        border-radius: 3px;
+    }
     .submit {
         width: auto;
         font-size: 32px;
         background-color:rgb(9, 66, 101); 
         margin:0 auto;
         display:block;
+        margin-top: 5px;
     }
     .submit2 {
         width: auto;
@@ -154,6 +162,9 @@
     }
     #InteractMessage {
         text-align: center;
+    }
+    .gap {
+        margin-top: 15px;
     }
 }
 @media (max-width: 768px) { 
