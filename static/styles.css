@@ -338,3 +338,22 @@
         width:95%;
     }
 }
+@media (max-width: 454px) { 
+    #title {
+        font-size: 30px;
+    }
+    .btn {
+        font-size:18px;
+        width: 10px;
+    }
+    .row {
+        text-align:center;
+        margin-left:-50px;
+        margin-right:0px;
+    }
+    #topbar{
+        position: absolute;
+        top: 0px;
+        right: 5px;
+    }
+}
