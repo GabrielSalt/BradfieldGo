@@ -68,7 +68,7 @@ else {
         var elemTop = elem.offsetTop + elem.clientTop
         var posX = e.pageX - elemLeft
         var posY = e.pageY - elemTop
-        if(e.deltaY > 0 && zoom < 4 && posX < 600 && posY < 360 && posX > 0 && posY > 0){
+        if(e.deltaY > 0 && zoom < 4 && posX < window.innerWidth*0.9 && posY < window.innerWidth*0.9*360/600 && posX > 0 && posY > 0){
             ctx.clearRect(0, 0, elem.width, elem.height);  
             ctx.scale(1/zoom,1/zoom)
             zoom += ZOOM_SPEED
@@ -114,12 +114,20 @@ function Zoom(){
 
 // This function gets the position that the user clicks on the map and finds the nearest place
 function Select(event){
+    if (window.innerWidth < 908){
+        totalw = (window.innerWidth*0.9)
+        totalh = (window.innerWidth*0.9)*360/600
+    }
+    else {
+        totalw = 600
+        totalh = 360
+    }
     var elem = document.getElementById('Canvas')
     var elemLeft = elem.offsetLeft + elem.clientLeft
     var elemTop = elem.offsetTop + elem.clientTop
     var posX = event.pageX - elemLeft
     var posY = event.pageY - elemTop
-    var dimensions = [600,360]
+    var dimensions = [totalw, totalh]
     var ogbottom = 51.444687
     var ogtop = 51.452396
     var ogleft = -1.142394
@@ -160,7 +168,9 @@ function Select(event){
         }
     }
     document.getElementById(`${selected}`).value=closest
+    if (selected != 'end'){
     selected = choices[choices.indexOf(selected)+1]
+    }
 }
 
 // This function filters down the list of places based on a category that the user selects
