@@ -16,6 +16,7 @@ let choices = ['start','midpoint1','midpoint2','midpoint3','end']
 var zoom = 1
 const ZOOM_SPEED = 0.05;
 var selected = 'start'
+var img = document.getElementById("Map");
 
 // This function is run when the page is first loaded, or when the home page is pressed
 function Home(){
@@ -83,26 +84,19 @@ else {
     })
 };  
 
-var c = document.getElementById("Canvas");
-var ctx = c.getContext("2d");  
-var img = document.getElementById("Map")
-ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
-setTimeout(function(){
-    var img = document.getElementById("Map")
+var img = new Image(600, 300);
+img.id = 'Map'
+img.src = 'static/BradfieldGo.png';
+img.hidden = true
+var div = document.getElementById('constantSize')
+div.appendChild(img)
+img.onload = () => {
+    var img = document.getElementById('Map')
+    var c = document.getElementById("Canvas");
+    var ctx = c.getContext("2d");  
     ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
-}, 200)
-setTimeout(function(){
-    var img = document.getElementById("Map")
-    ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
-}, 200)
-setTimeout(function(){
-    var img = document.getElementById("Map")
-    ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
-}, 200)
-setTimeout(function(){
-    var img = document.getElementById("Map")
-    ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
-}, 200)
+}
+
 }
 
 //This function allows the user to zoom in and out on the map to select places - this is for mobile
@@ -220,8 +214,3 @@ function FilterBloods(element){
 }
 
 Home()
-
-setTimeout(function(){
-    var img = document.getElementById("Map")
-    ctx.drawImage(img,0,0,2000,1200,0,0,600,360);
-}, 200)

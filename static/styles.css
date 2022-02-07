@@ -168,6 +168,9 @@
     .gap {
         margin-top: 15px;
     }
+    #Map{
+        width:95%;
+    }
 }
 @media (max-width: 768px) { 
     canvas {
