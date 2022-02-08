@@ -348,6 +348,7 @@
     .rowbtn {
         font-size:18px;
         width: 10px;
+        margin: 2px;
     }
     .row {
         text-align:center;
