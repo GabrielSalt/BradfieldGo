@@ -67,7 +67,7 @@ for (let x=0; x < 2; x++){
         }
     }
 }
-if (len(midpoints) < 2){
+if (midpoints.length < 2){
     var form = document.getElementById('Error');
     alert('Please enter atleast two locations for your travel.')
     form.submit();

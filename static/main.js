@@ -168,9 +168,7 @@ function Select(event){
         }
     }
     document.getElementById(`${selected}`).value=closest
-    if (selected != 'end'){
-    selected = choices[choices.indexOf(selected)+1]
-    }
+    selected = 'end'
 }
 
 // This function filters down the list of places based on a category that the user selects
