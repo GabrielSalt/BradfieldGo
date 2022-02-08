@@ -200,7 +200,7 @@ function FilterSelection(element){
 }
 
 function FilterBloods(element){
-    selected = choices[choices.indexOf(element.id)+1]
+    selected = 'end'
     let classroomSelector = document.getElementById(`classroom${element.id}`)
     if (element.value == 'Bloods'){
         classroomSelector.hidden = false
