@@ -481,29 +481,28 @@ function LoadImage () {
         var c = document.getElementById("Canvas");
         var ctx = c.getContext("2d");  
         ctx.drawImage(img,left,top,width,height,0,0,600,360);
-    }
-
-    for (let line of lines){
-        for (let i = 0; i < line.length - 1 ; i++){
-            var pos1 = GetPosition(line[i])
-            var pos2 = GetPosition(line[i+1])
+        for (let line of lines){
+            for (let i = 0; i < line.length - 1 ; i++){
+                var pos1 = GetPosition(line[i])
+                var pos2 = GetPosition(line[i+1])
+                var c = document.getElementById("Canvas");
+                var ctx = c.getContext("2d");
+                ctx.strokeStyle = 'rgb(255,255,255)'
+                ctx.moveTo((pos1[0]-left)/width*600, (pos1[1]-top)/height*360);
+                ctx.lineTo((pos2[0]-left)/width*600, (pos2[1]-top)/height*360);
+                ctx.stroke();
+            }
+        }
+        for (let destination of destinationsfinal){
+            var pos = GetPosition(destination.point)
             var c = document.getElementById("Canvas");
             var ctx = c.getContext("2d");
             ctx.strokeStyle = 'rgb(255,255,255)'
-            ctx.moveTo((pos1[0]-left)/width*600, (pos1[1]-top)/height*360);
-            ctx.lineTo((pos2[0]-left)/width*600, (pos2[1]-top)/height*360);
+            ctx.fillStyle = 'rgb(100,255,100)'
+            ctx.beginPath();
+            ctx.arc((pos[0]-left)/width*600, (pos[1]-top)/height*360, 2, 0, 2 * Math.PI);
             ctx.stroke();
+            ctx.fill();
         }
-    }
-    for (let destination of destinationsfinal){
-        var pos = GetPosition(destination.point)
-        var c = document.getElementById("Canvas");
-        var ctx = c.getContext("2d");
-        ctx.strokeStyle = 'rgb(255,255,255)'
-        ctx.fillStyle = 'rgb(100,255,100)'
-        ctx.beginPath();
-        ctx.arc((pos[0]-left)/width*600, (pos[1]-top)/height*360, 2, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.fill();
     }
 }
