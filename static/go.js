@@ -470,7 +470,18 @@ function LoadImage () {
         width = 2000
         height = 1200
     }
-    ctx.drawImage(img,left,top,width,height,0,0,600,360);
+    var img = new Image(600, 300);
+    img.id = 'Map'
+    img.src = 'static/BradfieldGo.png';
+    img.hidden = true
+    var div = document.getElementById('mapDiv')
+    div.appendChild(img)
+    img.onload = () => {
+        var img = document.getElementById('Map')
+        var c = document.getElementById("Canvas");
+        var ctx = c.getContext("2d");  
+        ctx.drawImage(img,left,top,width,height,0,0,600,360);
+    }
 
     for (let line of lines){
         for (let i = 0; i < line.length - 1 ; i++){
