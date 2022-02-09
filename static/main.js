@@ -165,7 +165,12 @@ function Select(event){
         }
     }
     document.getElementById(`${selected}`).value=closest
-    selected = 'end'
+    if (selected == 'start'){
+        selected = 'end'
+    }
+    else {
+        selected = choices[choices.indexOf(selected)+1]
+    }
 }
 
 // This function filters down the list of places based on a category that the user selects
@@ -197,7 +202,13 @@ function FilterSelection(element){
 }
 
 function FilterBloods(element){
-    selected = 'end'
+    selected = element.id
+    if (selected == 'start'){
+        selected = 'end'
+    }
+    else {
+        selected = choices[choices.indexOf(selected)+1]
+    }
     let classroomSelector = document.getElementById(`classroom${element.id}`)
     if (element.value == 'Bloods'){
         classroomSelector.hidden = false
