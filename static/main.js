@@ -165,6 +165,7 @@ function Select(event){
         }
     }
     document.getElementById(`${selected}`).value=closest
+    FilterBloods(document.getElementById(`${selected}`))
     if (selected == 'start'){
         selected = 'end'
     }
@@ -205,9 +206,6 @@ function FilterBloods(element){
     selected = element.id
     if (selected == 'start'){
         selected = 'end'
-    }
-    else {
-        selected = choices[choices.indexOf(selected)+1]
     }
     let classroomSelector = document.getElementById(`classroom${element.id}`)
     if (element.value == 'Bloods'){
