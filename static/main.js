@@ -166,12 +166,6 @@ function Select(event){
     }
     document.getElementById(`${selected}`).value=closest
     FilterBloods(document.getElementById(`${selected}`))
-    if (selected == 'start'){
-        selected = 'end'
-    }
-    else {
-        selected = choices[choices.indexOf(selected)+1]
-    }
 }
 
 // This function filters down the list of places based on a category that the user selects
@@ -181,12 +175,10 @@ function FilterSelection(element){
     var newSelect = document.getElementById(newSelectName);
     newSelect.innerHTML = '';
 
-    if (newSelectName[0] == 'm'){
-        var none = document.createElement('option');
-        none.value = 'none';
-        none.innerHTML = 'None';
-        newSelect.appendChild(none);
-    }
+    var none = document.createElement('option');
+    none.value = 'none';
+    none.innerHTML = 'None';
+    newSelect.appendChild(none);
 
     if (x == 'Category'){var list = places} 
     else if (x == 'House'){var list = houses}   
@@ -204,10 +196,9 @@ function FilterSelection(element){
 
 function FilterBloods(element){
     selected = element.id
-    if (selected == 'start'){
-        selected = 'end'
-    }
+    selected = choices[choices.indexOf(selected)+1]
     let classroomSelector = document.getElementById(`classroom${element.id}`)
+    console.log(document.getElementById(`classroom${element.id}`))
     if (element.value == 'Bloods'){
         classroomSelector.hidden = false
         var newRoom = document.createElement('option');
@@ -222,8 +213,10 @@ function FilterBloods(element){
         }
     }
     else {
-        classroomSelector.value = 'None'
-        classroomSelector.hidden = true
+        if (classroomSelector){
+            classroomSelector.value = 'None'
+            classroomSelector.hidden = true
+        }
     }
 }
 
