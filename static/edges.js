@@ -2752,12 +2752,12 @@ export var edges = {
     "time": 57.55186436303318,
     "description": [
       "Walk up the stairs and continue to the front entrance of the Science block.",
-      "Exit science out the front exit and walk to the stairs."
+      "Exit Science out the front exit and walk to the stairs."
     ],
     "covid": "both",
     "wheelchair": false,
     "forwards": "Walk up the stairs and continue to the front entrance of the Science block.",
-    "reverse": "Exit science out the front exit and walk to the stairs."
+    "reverse": "Exit Science out the front exit and walk to the stairs."
   },
   "sciencestairs-scienceroad": {
     "start": "sciencestairs",
@@ -2818,12 +2818,12 @@ export var edges = {
     "time": 90.62455461889338,
     "description": [
       "Walk up the road towards the car park and then to the Science block.",
-      "Exit science out the front and go through the car park to the road and down to the footpath."
+      "Exit Science out the front and go through the car park to the road and down to the footpath."
     ],
     "covid": "both",
     "wheelchair": true,
     "forwards": "Walk up the road towards the car park and then to the Science block.",
-    "reverse": "Exit science out the front and go through the car park to the road and down to the footpath."
+    "reverse": "Exit Science out the front and go through the car park to the road and down to the footpath."
   },
   "scienceroad-crosswaysheadside": {
     "start": "scienceroad",
@@ -2850,12 +2850,12 @@ export var edges = {
     "distance": 94.54121898127126,
     "time": 54.57215981923858,
     "description": [
-      "Continue along the pavement towards the crossways.",
+      "Continue down the path towards the crossways.",
       "Walk along the pavement from the crossways."
     ],
     "covid": "both",
     "wheelchair": true,
-    "forwards": "Continue along the pavement towards the crossways.",
+    "forwards": "Continue down the path towards the crossways.",
     "reverse": "Walk along the pavement from the crossways."
   },
   "crosswaysheadside-crosswayshillside": {
@@ -3226,12 +3226,12 @@ export var edges = {
     "time": 26.633433880593596,
     "description": [
       "Continue along the road to the entrance by the brick wall.",
-      "From Big School walk along the road towards the pitches."
+      "From Big School,walk along the road towards the pitches."
     ],
     "covid": "both",
     "wheelchair": true,
     "forwards": "Continue along the road to the entrance by the brick wall.",
-    "reverse": "From Big School walk along the road towards the pitches."
+    "reverse": "From Big School, walk along the road towards the pitches."
   },
   "Big School-bloodssplit": {
     "start": "Big School",
@@ -3616,13 +3616,13 @@ export var edges = {
     "distance": 27.747531831412502,
     "time": 22.32792125513209,
     "description": [
-      "From the top of the Thai Garden, walk to the C House entrance.",
-      "From C House, walk towards the Thai Garden."
+      "Walk towards the entrance to C House.",
+      "Walk towards the Thai Garden."
     ],
     "covid": "both",
     "wheelchair": true,
-    "forwards": "From the top of the Thai Garden, walk to the C House entrance.",
-    "reverse": "From C House, walk towards the Thai Garden."
+    "forwards": "Walk towards the entrance to C House.",
+    "reverse": "Walk towards the Thai Garden."
   },
   "C House-crosswayscside": {
     "start": "C House",
@@ -3645,12 +3645,12 @@ export var edges = {
     "time": 21.47758813086737,
     "description": [
       "From C House walk towards the Arch.",
-      "Walk towards the Thai Garden straight ahead, with C House on the right."
+      "Walk towards the Thai Garden."
     ],
     "covid": "both",
     "wheelchair": true,
     "forwards": "From C House walk towards the Arch.",
-    "reverse": "Walk towards the Thai Garden straight ahead, with C House on the right."
+    "reverse": "Walk towards the Thai Garden."
   },
   "crosswayscside-crosswaysheadside": {
     "start": "crosswayscside",
