@@ -308,7 +308,7 @@ var upwards = 0
 route = route.flat()
 for (let x = 0; x < route.length-1; x++){
     if (x == 0 && (route[x].name == 'Bloods (Back)' || route[x].name == 'Bloods (Front)') && startroom != null){
-        descriptions.push(startroom[2])
+        descriptions.push(startroom[1])
     }
     if (route[x].name == route[x+1].name){
         continue
