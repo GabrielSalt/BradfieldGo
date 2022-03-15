@@ -2698,13 +2698,13 @@ export var edges = {
     "distance": 25.326495218680183,
     "time": 16.43689575277117,
     "description": [
-      "From the library, walk parallel to bloods towards the stairs.",
-      "From the stairs walk towards Chapel but don't cross the road."
+      "From the library, walk parallel to bloods towards crossways.",
+      "Walk towards Chapel but don't cross the road."
     ],
     "covid": "both",
     "wheelchair": true,
-    "forwards": "From the library, walk parallel to bloods towards the stairs.",
-    "reverse": "From the stairs walk towards Chapel but don't cross the road."
+    "forwards": "From the library, walk parallel to bloods towards crossways.",
+    "reverse": "Walk towards Chapel but don't cross the road."
   },
   "sciencestairs-Science (Front)": {
     "start": "sciencestairs",

@@ -111,7 +111,7 @@ for (let midpoint of midpoints){
     }
 }
 
-if (constraint == 'Wheelchair' || constraint == 'Wheelchair + One Way System'){
+if (constraint == 'Wheelchair'){
     for (let edge of edges){
         if (edge.wheelchair == false){
             edges.splice(edges.indexOf(edge),1);
@@ -328,7 +328,17 @@ for (let x = 0; x < route.length-1; x++){
     }
     paths.push([`${edge.start}-${edge.end}`,edge.points, description])
     if (description != "Nothing" && description != descriptions[descriptions.length-1]){
-        descriptions.push(description)
+        if (constraint == 'Wheelchair'){
+            description = description.replace(/walk/g,'wheel')
+            description = description.replace(/Walk/g,'Wheel')
+            console.log(description)
+            if (description != descriptions[descriptions.length-1]){
+                descriptions.push(description)
+            }
+        }
+        else{
+            descriptions.push(description)
+        }
     }
     if (x == route.length-2 && (route[x+1].name == 'Bloods (Back)' || route[x+1].name == 'Bloods (Front)') && endroom != null){
         descriptions.push(endroom[1])
