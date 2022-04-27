@@ -110,6 +110,22 @@ function Zoom(){
 
 // This function gets the position that the user clicks on the map and finds the nearest place
 function Select(event){
+    document.getElementById(`${selected}category`).value='Category'
+    var newSelect = document.getElementById(`${selected}`)
+
+    var none = document.createElement('option');
+    none.value = 'none';
+    none.innerHTML = 'None';
+    newSelect.appendChild(none);
+
+    list = places
+    for (var i = 0; i<=list.length-1; i++){
+        var opt = document.createElement('option');
+        opt.value = list[i];
+        opt.innerHTML = list[i];
+        newSelect.appendChild(opt);
+    }
+
     if (window.innerWidth < 908){
         totalw = (window.innerWidth*0.9)
         totalh = (window.innerWidth*0.9)*360/600

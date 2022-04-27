@@ -16,6 +16,7 @@ const Route = (previous, distance, time, score) => {
         score,
     }
 }
+
 const GetDistance = (coordinates) => {
     var x = 0
     const φ1 = coordinates[x][1] * Math.PI/180;
