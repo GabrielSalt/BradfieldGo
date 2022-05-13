@@ -67,7 +67,7 @@ else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated
     document.getElementById('InteractMessage').innerHTML = 'Slide to zoom and tap to select places, or use the drop-down menus.'
 }
 else {
-    document.getElementById('InteractMessage').innerHTML = 'Scroll to zoom and click to select places, or use the drop-down menus.'
+    document.getElementById('InteractMessage').innerHTML = 'Scroll to zoom and click to select places, or use the drop-down menus. You can also select classrooms in Bloods for the end point.'
     document.getElementById('myRange').hidden = 'true'
     //This function allows the user to zoom in and out on the map to select places - this is for desktop
     document.addEventListener("wheel", function(e) {
