@@ -39,11 +39,9 @@ for (const edge of Object.values(edges)) {
   }
 }
 
-// Write processed edges to a JS file
 const edgesOutput = `export const edges = ${JSON.stringify(newEdges, null, 2)};\n`;
 fs.writeFileSync('./static/edges.js', edgesOutput, 'utf8');
 
-// Write descriptions to a JS file
 const descOutput = `export const edgeDescriptions = ${JSON.stringify(edgeDescriptions, null, 2)};\n`;
 fs.writeFileSync('./static/descriptions.js', descOutput, 'utf8');
 

@@ -1,7 +1,8 @@
 // convertVertices.js
-import * as vertexobj from "./static/oldVertices.js";
+const fs = require('fs');
+const {vertices} = require('./static/oldVertices.js');
 
-const original = vertexobj.vertices;
+const original = vertices;
 
 const nameToId = {};
 const idToName = {};
@@ -13,12 +14,12 @@ for (const name of Object.keys(original)) {
   nextId++;
 }
 
-const vertices = {};
+const newVertices = {};
 
 for (const [name, data] of Object.entries(original)) {
   const id = nameToId[name];
 
-  vertices[id] = {
+  newVertices[id] = {
     name: data.name,
     point: data.point,
     category: data.category,
@@ -27,8 +28,7 @@ for (const [name, data] of Object.entries(original)) {
   };
 }
 
-const slice = Object.fromEntries(
-  Object.entries(vertices).slice(0, 28)
-);
+const verticesOutput = `export const vertices = ${JSON.stringify(newVertices, null, 2)};\n`;
+fs.writeFileSync('./static/vertices.js', verticesOutput, 'utf8');
 
-console.log(JSON.stringify(slice, null, 2));
+console.log('vertices.js has been generated!');
