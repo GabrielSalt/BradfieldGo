@@ -1,13 +1,15 @@
-import { vertices } from "./static/vertices.js";
-import {edges} from "./static/edges.js";
+// buildEdges.js
+const fs = require('fs');
+const { vertices } = require('./static/vertices.js');
+const { edges } = require('./static/oldEdges.js');
 
 const nameToId = {};
-
 for (const [id, v] of Object.entries(vertices)) {
   nameToId[v.name] = Number(id);
 }
 
 const newEdges = {};
+const edgeDescriptions = {};
 
 for (const edge of Object.values(edges)) {
   const fromId = nameToId[edge.start];
@@ -30,12 +32,19 @@ for (const edge of Object.values(edges)) {
     time: edge.time,
     wheelchair: edge.wheelchair
   };
+
+  // Add descriptions
+  if (edge.description && edge.description.length) {
+    edgeDescriptions[key] = edge.description;
+  }
 }
 
-const slice = Object.fromEntries(
-  Object.entries(newEdges).slice(140, 150)
-);
+// Write processed edges to a JS file
+const edgesOutput = `export const edges = ${JSON.stringify(newEdges, null, 2)};\n`;
+fs.writeFileSync('./static/edges.js', edgesOutput, 'utf8');
 
-console.log(JSON.stringify(slice, null, 2));
+// Write descriptions to a JS file
+const descOutput = `export const edgeDescriptions = ${JSON.stringify(edgeDescriptions, null, 2)};\n`;
+fs.writeFileSync('./static/descriptions.js', descOutput, 'utf8');
 
-// console.log(JSON.stringify(newEdges, null, 2));
+console.log('edgesProcessed.js and descriptions.js have been generated!');

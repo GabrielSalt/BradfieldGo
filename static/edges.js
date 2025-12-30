@@ -4298,4 +4298,4 @@ export const edges = {
     "time": 139.78113157391488,
     "wheelchair": true
   }
-}
+};
