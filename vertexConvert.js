@@ -1,7 +1,7 @@
 // convertVertices.js
-import * as vertexobj from "./static/vertexs.js";
+import * as vertexobj from "./static/oldVertices.js";
 
-const original = vertexobj.vertexs;
+const original = vertexobj.vertices;
 
 const nameToId = {};
 const idToName = {};

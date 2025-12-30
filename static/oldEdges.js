@@ -1,7 +1,7 @@
-export const edges = {
-  "4-0": {
-    "from": 4,
-    "to": 0,
+export var edges = {
+  "sciencecross-hill2b": {
+    "start": "sciencecross",
+    "end": "hill2b",
     "points": [
       [
         -1.132088369320483,
@@ -18,11 +18,18 @@ export const edges = {
     "elevation": -1.192079479633719,
     "distance": 26.164468742206356,
     "time": 15.242616456279519,
-    "wheelchair": true
+    "description": [
+      "Take the right turning as the path diverges.",
+      "Turn left when the path diverges."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Take the right turning as the path diverges.",
+    "reverse": "Turn left when the path diverges."
   },
-  "4-1": {
-    "from": 4,
-    "to": 1,
+  "sciencecross-hill2": {
+    "start": "sciencecross",
+    "end": "hill2",
     "points": [
       [
         -1.132088369320483,
@@ -39,11 +46,18 @@ export const edges = {
     "elevation": 1.661395385313682,
     "distance": 25.152969573184368,
     "time": 23.054775413242684,
-    "wheelchair": true
+    "description": [
+      "Take the left turning as the path diverges.",
+      "Turn right on the way down the hill."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Take the left turning as the path diverges.",
+    "reverse": "Turn right on the way down the hill."
   },
-  "0-1": {
-    "from": 0,
-    "to": 1,
+  "hill2b-hill2": {
+    "start": "hill2b",
+    "end": "hill2",
     "points": [
       [
         -1.132275154673008,
@@ -60,11 +74,18 @@ export const edges = {
     "elevation": 2.853474864947401,
     "distance": 24.12241155392495,
     "time": 25.806617830477375,
-    "wheelchair": true
+    "description": [
+      "Continue up the hill.",
+      "Continue down the hill."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue up the hill.",
+    "reverse": "Continue down the hill."
   },
-  "4-2": {
-    "from": 4,
-    "to": 2,
+  "sciencecross-Science (Back)": {
+    "start": "sciencecross",
+    "end": "Science (Back)",
     "points": [
       [
         -1.132088369320483,
@@ -81,11 +102,18 @@ export const edges = {
     "elevation": 0.02871075922907096,
     "distance": 12.386196336624936,
     "time": 9.004169681841026,
-    "wheelchair": true
+    "description": [
+      "Enter the Science block.",
+      "Exit the Science block."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Enter the Science block",
+    "reverse": "Exit the Science block"
   },
-  "5-6": {
-    "from": 5,
-    "to": 6,
+  "MFL (Back)-hill2c": {
+    "start": "MFL (Back)",
+    "end": "hill2c",
     "points": [
       [
         -1.132575518944713,
@@ -102,11 +130,18 @@ export const edges = {
     "elevation": -0.1766945554028041,
     "distance": 6.321550858182163,
     "time": 4.019654631123879,
-    "wheelchair": true
+    "description": [
+      "Exit the MFL block from the back.",
+      "Enter the MFL block from the back."
+    ],
+    "covid": "forwards",
+    "wheelchair": true,
+    "forwards": "Exit the MFL block from the back.",
+    "reverse": "Enter the MFL block from the back."
   },
-  "6-0": {
-    "from": 6,
-    "to": 0,
+  "hill2c-hill2b": {
+    "start": "hill2c",
+    "end": "hill2b",
     "points": [
       [
         -1.132587960842445,
@@ -123,11 +158,18 @@ export const edges = {
     "elevation": 2.2532687246209804,
     "distance": 22.47189731417462,
     "time": 22.858029651547376,
-    "wheelchair": true
+    "description": [
+      "Go up the hill.",
+      "Go down the hill."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Go up the hill.",
+    "reverse": "Go down the hill."
   },
-  "7-6": {
-    "from": 7,
-    "to": 6,
+  "MFL (Front)-hill2c": {
+    "start": "MFL (Front)",
+    "end": "hill2c",
     "points": [
       [
         -1.132574905182901,
@@ -159,11 +201,18 @@ export const edges = {
     "elevation": -0.23884441426041292,
     "distance": 36.22883275507234,
     "time": 25.367659471415994,
-    "wheelchair": true
+    "description": [
+      "Turn left from the front exit of the MFL block.",
+      "Turn right and go towards the MFL entrance."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Turn left from the front exit of the MFL block.",
+    "reverse": "Turn right and go towards the MFL entrance."
   },
-  "1-8": {
-    "from": 1,
-    "to": 8,
+  "hill2-topofhill2": {
+    "start": "hill2",
+    "end": "topofhill2",
     "points": [
       [
         -1.131929522486307,
@@ -235,11 +284,18 @@ export const edges = {
     "elevation": 11.669952662956632,
     "distance": 458.84685508465463,
     "time": 365.2727267580947,
-    "wheelchair": true
+    "description": [
+      "Go up the hill and turn left at the road, coninue until you split at a footpath and then cross the road at the zebra crossing.",
+      "Turn towards and follow the path to the crossing. Follow this footpath and road until they split past the black house on the right and walk down the hill."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Go up the hill and turn left at the road, coninue until you split at a footpath and then cross the road at the zebra crossing.",
+    "reverse": "Turn towards and follow the path to the crossing. Follow this footpath and road until they split past the black house on the right and walk down the hill."
   },
-  "9-8": {
-    "from": 9,
-    "to": 8,
+  "G House-topofhill2": {
+    "start": "G House",
+    "end": "topofhill2",
     "points": [
       [
         -1.126780981590091,
@@ -261,11 +317,18 @@ export const edges = {
     "elevation": -0.35463904504997856,
     "distance": 17.992253097845854,
     "time": 11.887988390745969,
-    "wheelchair": true
+    "description": [
+      "Walk from G House.",
+      "Go towards G House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk from G House.",
+    "reverse": "Go towards G House."
   },
-  "8-10": {
-    "from": 8,
-    "to": 10,
+  "topofhill2-D House": {
+    "start": "topofhill2",
+    "end": "D House",
     "points": [
       [
         -1.126998493474015,
@@ -287,11 +350,18 @@ export const edges = {
     "elevation": 0.8904713511412581,
     "distance": 45.96029231243629,
     "time": 35.756612962674616,
-    "wheelchair": true
+    "description": [
+      "Go towards the entrance of D House.",
+      "Exit D House and turn right."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Go towards the entrance of D House.",
+    "reverse": "Exit D House and turn right."
   },
-  "11-18": {
-    "from": 11,
-    "to": 18,
+  "D House (Back)-faulknerhallturn": {
+    "start": "D House (Back)",
+    "end": "faulknerhallturn",
     "points": [
       [
         -1.125985456591595,
@@ -338,11 +408,18 @@ export const edges = {
     "elevation": 0.32464471609243617,
     "distance": 100.68451573553888,
     "time": 73.46640863732188,
-    "wheelchair": true
+    "description": [
+      "Exit D House through the back entrance and turn left, continue past the design centre and turn left towards the Faulkner's Dining Hall.",
+      "Walk down the path between Design and H House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit D House through the back entrance and turn left, continue past the design centre and turn left towards the Faulkner's Dining Hall.",
+    "reverse": "Walk down the path between Design and H House."
   },
-  "19-18": {
-    "from": 19,
-    "to": 18,
+  "faulknerback-faulknerhallturn": {
+    "start": "faulknerback",
+    "end": "faulknerhallturn",
     "points": [
       [
         -1.126038727179925,
@@ -359,11 +436,18 @@ export const edges = {
     "elevation": -0.3621458987859967,
     "distance": 10.315288203830079,
     "time": 6.335991321546721,
-    "wheelchair": true
+    "description": [
+      "Exit the Faulkner's Dining Hall through the back entrance.",
+      "Enter the Faulkner's Dining Hall through the back entrance."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit the Faulkner's Dining Hall through the back entrance.",
+    "reverse": "Enter the Faulkner's Dining Hall through the back entrance."
   },
-  "18-14": {
-    "from": 18,
-    "to": 14,
+  "faulknerhallturn-H House": {
+    "start": "faulknerhallturn",
+    "end": "H House",
     "points": [
       [
         -1.126016093942012,
@@ -380,11 +464,18 @@ export const edges = {
     "elevation": 0.5281582691287383,
     "distance": 17.286929485619346,
     "time": 14.02525352785304,
-    "wheelchair": true
+    "description": [
+      "Enter H House (The Close).",
+      "Exit H House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Enter H House (The Close).",
+    "reverse": "Exit H House."
   },
-  "19-14": {
-    "from": 19,
-    "to": 14,
+  "faulknerback-H House": {
+    "start": "faulknerback",
+    "end": "H House",
     "points": [
       [
         -1.126038727179925,
@@ -401,11 +492,18 @@ export const edges = {
     "elevation": 0.16601237034274163,
     "distance": 14.860076667153196,
     "time": 11.196624619793052,
-    "wheelchair": true
+    "description": [
+      "Enter H House (The Close).",
+      "Enter the Faulkner's Dining Hall through the back entrance."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Enter H House (The Close).",
+    "reverse": "Enter the Faulkner's Dining Hall through the back entrance."
   },
-  "18-20": {
-    "from": 18,
-    "to": 20,
+  "faulknerhallturn-astroturn": {
+    "start": "faulknerhallturn",
+    "end": "astroturn",
     "points": [
       [
         -1.126016093942012,
@@ -422,11 +520,18 @@ export const edges = {
     "elevation": 0.5281786954271581,
     "distance": 22.872745673866476,
     "time": 18.048521562677994,
-    "wheelchair": true
+    "description": [
+      "Walk towards the astro.",
+      "Walk towards the Faulkner's Dining Hall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk towards the astro.",
+    "reverse": "Walk towards the Faulkner's Dining Hall."
   },
-  "14-20": {
-    "from": 14,
-    "to": 20,
+  "H House-astroturn": {
+    "start": "H House",
+    "end": "astroturn",
     "points": [
       [
         -1.125824683408079,
@@ -443,11 +548,18 @@ export const edges = {
     "elevation": 0.0000204262984198067,
     "distance": 11.896027415149629,
     "time": 8.565201017790367,
-    "wheelchair": true
+    "description": [
+      "Exit H House.",
+      "Enter H House (The Close)."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit H House.",
+    "reverse": "Enter H House (The Close)."
   },
-  "20-16": {
-    "from": 20,
-    "to": 16,
+  "astroturn-Astro 1 (Back)": {
+    "start": "astroturn",
+    "end": "Astro 1 (Back)",
     "points": [
       [
         -1.125905894689968,
@@ -464,11 +576,18 @@ export const edges = {
     "elevation": -1.997417654426883,
     "distance": 32.423230369303546,
     "time": 17.30813280710475,
-    "wheelchair": true
+    "description": [
+      "Enter the astro through the back.",
+      "Leave the astro and go towards the Faulkner's Dining Hall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Enter the astro through the back.",
+    "reverse": "Leave the astro and go towards the Faulkner's Dining Hall."
   },
-  "20-15": {
-    "from": 20,
-    "to": 15,
+  "astroturn-Astro 1": {
+    "start": "astroturn",
+    "end": "Astro 1",
     "points": [
       [
         -1.125905894689968,
@@ -490,11 +609,18 @@ export const edges = {
     "elevation": -2.7140259602788177,
     "distance": 92.49975910750278,
     "time": 58.42907499922336,
-    "wheelchair": true
+    "description": [
+      "Walk towards the front entrance of the astro (With the building).",
+      "Leave the astro and walk towards the Faulkner's Dining Hall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk towards the front entrance of the astro (With the building).",
+    "reverse": "Leave the astro and walk towards the Faulkner's Dining Hall."
   },
-  "15-17": {
-    "from": 15,
-    "to": 17,
+  "Astro 1-Astro 2": {
+    "start": "Astro 1",
+    "end": "Astro 2",
     "points": [
       [
         -1.124927476111861,
@@ -511,11 +637,18 @@ export const edges = {
     "elevation": -1.1297127802452138,
     "distance": 45.65709849769131,
     "time": 29.473907971933542,
-    "wheelchair": true
+    "description": [
+      "Leave the front astro and walk towards the far astro.",
+      "Leave the far astro and enter the front astro."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Leave the front astro and walk towards the far astro.",
+    "reverse": "Leave the far astro and enter the front astro."
   },
-  "12-9": {
-    "from": 12,
-    "to": 9,
+  "Faulkner's House-G House": {
+    "start": "Faulkner's House",
+    "end": "G House",
     "points": [
       [
         -1.126967112134958,
@@ -537,11 +670,18 @@ export const edges = {
     "elevation": 0.6143023695116199,
     "distance": 39.975555708712555,
     "time": 30.621908634770435,
-    "wheelchair": true
+    "description": [
+      "Exit Faulkner's and walk towards G House.",
+      "Walk towards Faulker's."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit Faulkner's and walk towards G House.",
+    "reverse": "Walk towards Faulker's."
   },
-  "12-13": {
-    "from": 12,
-    "to": 13,
+  "Faulkner's House-Faulkner's Dining Hall": {
+    "start": "Faulkner's House",
+    "end": "Faulkner's Dining Hall",
     "points": [
       [
         -1.126967112134958,
@@ -568,11 +708,18 @@ export const edges = {
     "elevation": 0.6404089633427787,
     "distance": 51.4292786857776,
     "time": 38.947436606491436,
-    "wheelchair": true
+    "description": [
+      "Leave Faulkner's and walk to the Dining Hall on the left.",
+      "Leave the Faulkner's hall and walk towards the Faulkner's House building."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Leave Faulkner's and walk to the Dining Hall on the left.",
+    "reverse": "Leave the Faulkner's hall and walk towards the Faulkner's House building."
   },
-  "9-13": {
-    "from": 9,
-    "to": 13,
+  "G House-Faulkner's Dining Hall": {
+    "start": "G House",
+    "end": "Faulkner's Dining Hall",
     "points": [
       [
         -1.126780981590091,
@@ -599,11 +746,18 @@ export const edges = {
     "elevation": 0.026106593831158875,
     "distance": 70.3110332750513,
     "time": 50.70226024989979,
-    "wheelchair": true
+    "description": [
+      "Continue along the road towards the Faulkner's hall.",
+      "Leave the Faulkner's hall and walk along the road towards the road crossing."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue along the road towards the Faulkner's hall.",
+    "reverse": "Leave the Faulkner's hall and walk along the road towards the road crossing."
   },
-  "12-21": {
-    "from": 12,
-    "to": 21,
+  "Faulkner's House-hill2split": {
+    "start": "Faulkner's House",
+    "end": "hill2split",
     "points": [
       [
         -1.126967112134958,
@@ -630,11 +784,18 @@ export const edges = {
     "elevation": -0.1792072960142832,
     "distance": 71.7635941943669,
     "time": 51.132004826400205,
-    "wheelchair": true
+    "description": [
+      "Go along the path to the right from the Faulkner's entrance and turn right at the road.",
+      "At the top of the hill, turn left and walk parallel to Faulkner's."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Go along the path to the right from the Faulkner's entrance and turn right at the road.",
+    "reverse": "At the top of the hill, turn left and walk parallel to Faulkner's."
   },
-  "8-21": {
-    "from": 8,
-    "to": 21,
+  "topofhill2-hill2split": {
+    "start": "topofhill2",
+    "end": "hill2split",
     "points": [
       [
         -1.126998493474015,
@@ -656,11 +817,18 @@ export const edges = {
     "elevation": -0.4388706204759245,
     "distance": 58.15101410958382,
     "time": 40.550925890767516,
-    "wheelchair": true
+    "description": [
+      "Walk along the road parallel to the gate.",
+      "At the top of the hill, walk along the road straight."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the road parallel to the gate.",
+    "reverse": "At the top of the hill, walk along the road straight."
   },
-  "12-50": {
-    "from": 12,
-    "to": 50,
+  "Faulkner's House-designturn": {
+    "start": "Faulkner's House",
+    "end": "designturn",
     "points": [
       [
         -1.126967112134958,
@@ -682,11 +850,18 @@ export const edges = {
     "elevation": -0.032638134658654394,
     "distance": 57.07718024085433,
     "time": 40.99764865065505,
-    "wheelchair": true
+    "description": [
+      "Exit Faulkner's and turn left towards design.",
+      "Walk towards Faulkner's."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit Faulkner's and turn left towards design.",
+    "reverse": "Walk towards Faulkner's."
   },
-  "13-50": {
-    "from": 13,
-    "to": 50,
+  "Faulkner's Dining Hall-designturn": {
+    "start": "Faulkner's Dining Hall",
+    "end": "designturn",
     "points": [
       [
         -1.126370121637711,
@@ -708,11 +883,18 @@ export const edges = {
     "elevation": -0.6730470980014331,
     "distance": 20.66133940477096,
     "time": 12.849128112614682,
-    "wheelchair": true
+    "description": [
+      "Exit Faulkner's Dining Hall and turn left.",
+      "Enter the Dining Hall from the left."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit Faulkner's Dining Hall and turn left.",
+    "reverse": "Enter the Dining Hall from the left."
   },
-  "9-50": {
-    "from": 9,
-    "to": 50,
+  "G House-designturn": {
+    "start": "G House",
+    "end": "designturn",
     "points": [
       [
         -1.126780981590091,
@@ -739,11 +921,18 @@ export const edges = {
     "elevation": -0.6469405041702743,
     "distance": 65.7117051471766,
     "time": 45.36931322028514,
-    "wheelchair": true
+    "description": [
+      "Walk along the road towards the Faulkner's Dining Hall.",
+      "Walk along the road towards the front gate."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the road towards the Faulkner's Dining Hall.",
+    "reverse": "Walk along the road towards the front gate."
   },
-  "50-49": {
-    "from": 50,
-    "to": 49,
+  "designturn-Design Centre": {
+    "start": "designturn",
+    "end": "Design Centre",
     "points": [
       [
         -1.126216238630264,
@@ -765,11 +954,18 @@ export const edges = {
     "elevation": 0.4417387118338212,
     "distance": 13.85805190154658,
     "time": 11.29794311188437,
-    "wheelchair": true
+    "description": [
+      "Enter the Design Centre.",
+      "Exit the Design Centre."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Enter the Design Centre.",
+    "reverse": "Exit the Design Centre."
   },
-  "50-18": {
-    "from": 50,
-    "to": 18,
+  "designturn-faulknerhallturn": {
+    "start": "designturn",
+    "end": "faulknerhallturn",
     "points": [
       [
         -1.126216238630264,
@@ -786,11 +982,18 @@ export const edges = {
     "elevation": 0.2702572471789182,
     "distance": 17.96533252548123,
     "time": 13.744347478629937,
-    "wheelchair": true
+    "description": [
+      "Nothing",
+      "Nothing"
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Nothing",
+    "reverse": "Nothing"
   },
-  "21-38": {
-    "from": 21,
-    "to": 38,
+  "hill2split-I House": {
+    "start": "hill2split",
+    "end": "I House",
     "points": [
       [
         -1.127796145342701,
@@ -807,11 +1010,18 @@ export const edges = {
     "elevation": -3.2789465828462454,
     "distance": 38.18296269897849,
     "time": 17.55333765952372,
-    "wheelchair": true
+    "description": [
+      "Walk downhill along the road to I House.",
+      "Exit I House and Walk up the hill."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk downhill along the road to I House.",
+    "reverse": "Exit I House and Walk up the hill."
   },
-  "38-51": {
-    "from": 38,
-    "to": 51,
+  "I House-midhill2turn": {
+    "start": "I House",
+    "end": "midhill2turn",
     "points": [
       [
         -1.12812045489993,
@@ -828,11 +1038,18 @@ export const edges = {
     "elevation": 0.6166510057826002,
     "distance": 67.96512350440408,
     "time": 50.78282773298139,
-    "wheelchair": true
+    "description": [
+      "Walk along the road towards J House.",
+      "Continue up the road towards I House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the road towards J House.",
+    "reverse": "Continue up the road towards I House."
   },
-  "51-52": {
-    "from": 51,
-    "to": 52,
+  "midhill2turn-jhousesplit": {
+    "start": "midhill2turn",
+    "end": "jhousesplit",
     "points": [
       [
         -1.12729897153183,
@@ -849,11 +1066,18 @@ export const edges = {
     "elevation": -3.275871425783194,
     "distance": 26.29688584093963,
     "time": 8.958658937396981,
-    "wheelchair": true
+    "description": [
+      "Walk down the hill.",
+      "Continue up the hill."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the hill.",
+    "reverse": "Continue up the hill."
   },
-  "51-20": {
-    "from": 51,
-    "to": 20,
+  "midhill2turn-astroturn": {
+    "start": "midhill2turn",
+    "end": "astroturn",
     "points": [
       [
         -1.12729897153183,
@@ -890,11 +1114,18 @@ export const edges = {
     "elevation": 3.6073006810253503,
     "distance": 109.2881501721999,
     "time": 89.46649434595714,
-    "wheelchair": true
+    "description": [
+      "Split off of the bigger road and walk parallel to the back of Faulkner's.",
+      "Walk down the narrow path behind the Faulkner's Dining Hall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Split off of the bigger road and walk parallel to the back of Faulkner's.",
+    "reverse": "Walk down the narrow path behind the Faulkner's Dining Hall."
   },
-  "51-53": {
-    "from": 51,
-    "to": 53,
+  "midhill2turn-astrochoice": {
+    "start": "midhill2turn",
+    "end": "astrochoice",
     "points": [
       [
         -1.12729897153183,
@@ -921,11 +1152,18 @@ export const edges = {
     "elevation": 1.3654840343281478,
     "distance": 118.90670454681391,
     "time": 89.70363411953662,
-    "wheelchair": true
+    "description": [
+      "Split off of the bigger road and walk parallel to the back of Faulkner's, continue until you can see the astro pitches.",
+      "Turn right, to the path off the road and continue along until you reach the big road again and it splits."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Split off of the bigger road and walk parallel to the back of Faulkner's, continue until you can see the astro pitches.",
+    "reverse": "Turn right, to the path off the road and continue along until you reach the big road again and it splits."
   },
-  "53-16": {
-    "from": 53,
-    "to": 16,
+  "astrochoice-Astro 1 (Back)": {
+    "start": "astrochoice",
+    "end": "Astro 1 (Back)",
     "points": [
       [
         -1.125719469502721,
@@ -942,11 +1180,18 @@ export const edges = {
     "elevation": 0.24439899227031958,
     "distance": 26.7509403819735,
     "time": 19.993070208651414,
-    "wheelchair": true
+    "description": [
+      "Enter the Astro through the back entrance.",
+      "Exit the Astro through the back entrance."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Enter the Astro through the back entrance.",
+    "reverse": "Exit the Astro through the back entrance."
   },
-  "53-15": {
-    "from": 53,
-    "to": 15,
+  "astrochoice-Astro 1": {
+    "start": "astrochoice",
+    "end": "Astro 1",
     "points": [
       [
         -1.125719469502721,
@@ -973,11 +1218,18 @@ export const edges = {
     "elevation": -0.4722093135816152,
     "distance": 68.5897953737253,
     "time": 47.96685437435595,
-    "wheelchair": true
+    "description": [
+      "Walk towards the front entrace of the Astro (with the building).",
+      "Exit the astro and walk along the path."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk towards the front entrace of the Astro (with the building).",
+    "reverse": "Exit the astro and walk along the path."
   },
-  "53-17": {
-    "from": 53,
-    "to": 17,
+  "astrochoice-Astro 2": {
+    "start": "astrochoice",
+    "end": "Astro 2",
     "points": [
       [
         -1.125719469502721,
@@ -1004,11 +1256,19 @@ export const edges = {
     "elevation": -1.601922093826829,
     "distance": 113.77283863752979,
     "time": 77.10255730969484,
-    "wheelchair": true
+    "description": [
+      "Walk towards the astro at the far end.",
+      "Leave the astro and walk along the path back towards Faulkner's.",
+      "Leave the astro and walk along the path back towards Faulkner's."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk towards the astro at the far end.",
+    "reverse": "Leave the astro and walk along the path back towards Faulkner's."
   },
-  "16-47": {
-    "from": 16,
-    "to": 47,
+  "Astro 1 (Back)-Astro Tennis Courts": {
+    "start": "Astro 1 (Back)",
+    "end": "Astro Tennis Courts",
     "points": [
       [
         -1.125519292474277,
@@ -1040,11 +1300,18 @@ export const edges = {
     "elevation": -0.9865018861765265,
     "distance": 107.351654639717,
     "time": 74.33042206822168,
-    "wheelchair": true
+    "description": [
+      "Walk along the road parallel to the short end of the astro until you reach the Tennis Courts.",
+      "Leave the tennis courts and turn right, follow that road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the road parallel to the short end of the astro until you reach the Tennis Courts.",
+    "reverse": "Leave the tennis courts and turn right, follow that road."
   },
-  "11-47": {
-    "from": 11,
-    "to": 47,
+  "D House (Back)-Astro Tennis Courts": {
+    "start": "D House (Back)",
+    "end": "Astro Tennis Courts",
     "points": [
       [
         -1.125985456591595,
@@ -1066,11 +1333,18 @@ export const edges = {
     "elevation": -2.131096129083815,
     "distance": 64.020415876652,
     "time": 39.67586577684091,
-    "wheelchair": true
+    "description": [
+      "Exit D House through the back and walk towards the tennis courts on the right.",
+      "Leave the tennis courts and turn right, walk towards the back door of D House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit D House through the back and walk towards the tennis courts on the right.",
+    "reverse": "Leave the tennis courts and turn right, walk towards the back door of D House."
   },
-  "52-54": {
-    "from": 52,
-    "to": 54,
+  "jhousesplit-khousesplit": {
+    "start": "jhousesplit",
+    "end": "khousesplit",
     "points": [
       [
         -1.127578172565373,
@@ -1087,11 +1361,18 @@ export const edges = {
     "elevation": -1.7478624429933518,
     "distance": 22.858650589608963,
     "time": 11.166457122160617,
-    "wheelchair": true
+    "description": [
+      "Nothing",
+      "Nothing"
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Nothing",
+    "reverse": "Nothing"
   },
-  "55-40": {
-    "from": 55,
-    "to": 40,
+  "khousesplit2-K House": {
+    "start": "khousesplit2",
+    "end": "K House",
     "points": [
       [
         -1.128192057552897,
@@ -1108,11 +1389,18 @@ export const edges = {
     "elevation": 2.096739300495585,
     "distance": 43.411331239907994,
     "time": 37.50989749092195,
-    "wheelchair": true
+    "description": [
+      "Walk towards K House.",
+      "Exit K House and walk towards the footpath."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk towards K House.",
+    "reverse": "Exit K House and walk towards the footpath."
   },
-  "54-55": {
-    "from": 54,
-    "to": 55,
+  "khousesplit-khousesplit2": {
+    "start": "khousesplit",
+    "end": "khousesplit2",
     "points": [
       [
         -1.127844154697702,
@@ -1139,11 +1427,18 @@ export const edges = {
     "elevation": -7.307361739188892,
     "distance": 71.99834019541188,
     "time": 29.64903475506042,
-    "wheelchair": false
+    "description": [
+      "Split off of the road and walk down the footpath.",
+      "Walk up the footpath towards the road."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Split off of the road and walk down the footpath.",
+    "reverse": "Walk up the footpath towards the road."
   },
-  "54-56": {
-    "from": 54,
-    "to": 56,
+  "khousesplit-mhousesplit": {
+    "start": "khousesplit",
+    "end": "mhousesplit",
     "points": [
       [
         -1.127844154697702,
@@ -1175,11 +1470,18 @@ export const edges = {
     "elevation": -5.8218613237170445,
     "distance": 76.07691004355699,
     "time": 37.14916720676313,
-    "wheelchair": true
+    "description": [
+      "Walk down the road towards M House.",
+      "Walk up the road towards K House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the road towards M House.",
+    "reverse": "Walk up the road towards K House."
   },
-  "37-56": {
-    "from": 37,
-    "to": 56,
+  "M House-mhousesplit": {
+    "start": "M House",
+    "end": "mhousesplit",
     "points": [
       [
         -1.128818886089673,
@@ -1206,11 +1508,18 @@ export const edges = {
     "elevation": -2.5148299018873104,
     "distance": 31.192952549113215,
     "time": 14.841327155979366,
-    "wheelchair": true
+    "description": [
+      "Exit M House.",
+      "Enter M House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit M House.",
+    "reverse": "Enter M House."
   },
-  "58-56": {
-    "from": 58,
-    "to": 56,
+  "topofbryn-mhousesplit": {
+    "start": "topofbryn",
+    "end": "mhousesplit",
     "points": [
       [
         -1.129530207222889,
@@ -1227,11 +1536,18 @@ export const edges = {
     "elevation": 1.1249655473254165,
     "distance": 50.720591032772184,
     "time": 39.88473859272403,
-    "wheelchair": true
+    "description": [
+      "Walk up the road towards the basketball courts.",
+      "Walk down the road towards the cottage."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk up the road towards the basketball courts.",
+    "reverse": "Walk down the road towards the cottage."
   },
-  "57-58": {
-    "from": 57,
-    "to": 58,
+  "bryn-topofbryn": {
+    "start": "bryn",
+    "end": "topofbryn",
     "points": [
       [
         -1.129906114253402,
@@ -1248,11 +1564,18 @@ export const edges = {
     "elevation": 1.9467938049952664,
     "distance": 31.220505554456373,
     "time": 28.275400732114534,
-    "wheelchair": true
+    "description": [
+      "Walk along the road parallel to the home.",
+      "Walk down the road towards the main road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the road parallel to the home.",
+    "reverse": "Walk down the road towards the main road."
   },
-  "21-57": {
-    "from": 21,
-    "to": 57,
+  "hill2split-bryn": {
+    "start": "hill2split",
+    "end": "bryn",
     "points": [
       [
         -1.127796145342701,
@@ -1284,11 +1607,18 @@ export const edges = {
     "elevation": -16.57965012187792,
     "distance": 157.87819101435255,
     "time": 63.30480641224664,
-    "wheelchair": false
+    "description": [
+      "Walk down the footpath for about 150m.",
+      "Walk up the hill along the footpath until you reach the road."
+    ],
+    "covid": "forwards",
+    "wheelchair": false,
+    "forwards": "Walk down the footpath for about 150m.",
+    "reverse": "Walk up the hill along the footpath until you reach the road."
   },
-  "59-57": {
-    "from": 59,
-    "to": 57,
+  "crosswayshillside-bryn": {
+    "start": "crosswayshillside",
+    "end": "bryn",
     "points": [
       [
         -1.130600697141567,
@@ -1315,11 +1645,18 @@ export const edges = {
     "elevation": 7.116413117082175,
     "distance": 62.0154212092603,
     "time": 65.70538343620169,
-    "wheelchair": true
+    "description": [
+      "Walk up the hill from the crossways by the road.",
+      "Walk down the hill towards the crossways along the pavement."
+    ],
+    "covid": "reverse",
+    "wheelchair": true,
+    "forwards": "Walk up the hill from the crossways by the road.",
+    "reverse": "Walk down the hill towards the crossways along the pavement."
   },
-  "59-58": {
-    "from": 59,
-    "to": 58,
+  "crosswayshillside-topofbryn": {
+    "start": "crosswayshillside",
+    "end": "topofbryn",
     "points": [
       [
         -1.130600697141567,
@@ -1356,11 +1693,18 @@ export const edges = {
     "elevation": 9.063206922077441,
     "distance": 79.87312665386695,
     "time": 84.32684763527438,
-    "wheelchair": true
+    "description": [
+      "Walk down the middle path up the hill from crossways.",
+      "Split off of the road and walk down the narrow path between E House and the Home on the left."
+    ],
+    "covid": "forwards",
+    "wheelchair": true,
+    "forwards": "Walk down the middle path up the hill from crossways.",
+    "reverse": "Split off of the road and walk down the narrow path between E House and the Home on the left."
   },
-  "59-62": {
-    "from": 59,
-    "to": 62,
+  "crosswayshillside-ehousesplit": {
+    "start": "crosswayshillside",
+    "end": "ehousesplit",
     "points": [
       [
         -1.130600697141567,
@@ -1382,11 +1726,18 @@ export const edges = {
     "elevation": 2.0257209286173037,
     "distance": 75.79161484325519,
     "time": 60.627630701377406,
-    "wheelchair": true
+    "description": [
+      "Walk up along the furthest left path from crossways.",
+      "Walk down towards crossways."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk up along the furthest left path from crossways.",
+    "reverse": "Walk down towards crossways."
   },
-  "62-34": {
-    "from": 62,
-    "to": 34,
+  "ehousesplit-E House": {
+    "start": "ehousesplit",
+    "end": "E House",
     "points": [
       [
         -1.129670740707918,
@@ -1403,11 +1754,18 @@ export const edges = {
     "elevation": 1.862095779756686,
     "distance": 8.209146023729206,
     "time": 11.342806786252378,
-    "wheelchair": false
+    "description": [
+      "Enter E House.",
+      "Exit E House."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Enter E House.",
+    "reverse": "Exit E House."
   },
-  "62-63": {
-    "from": 62,
-    "to": 63,
+  "ehousesplit-road": {
+    "start": "ehousesplit",
+    "end": "road",
     "points": [
       [
         -1.129670740707918,
@@ -1424,11 +1782,18 @@ export const edges = {
     "elevation": 0.9372278492579795,
     "distance": 66.66342046633883,
     "time": 50.804602479510834,
-    "wheelchair": true
+    "description": [
+      "Continue along the path from crossways/Turn right from the exit of E House.",
+      "Walk up from the road crossing towards E House along the footpath."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue along the path from crossways/Turn right from the exit of E House.",
+    "reverse": "Walk up from the road crossing towards E House along the footpath."
   },
-  "63-34": {
-    "from": 63,
-    "to": 34,
+  "road-E House": {
+    "start": "road",
+    "end": "E House",
     "points": [
       [
         -1.128913912126522,
@@ -1450,11 +1815,18 @@ export const edges = {
     "elevation": 0.9248679304987064,
     "distance": 69.00517223379543,
     "time": 52.45386507814438,
-    "wheelchair": true
+    "description": [
+      "Walk up along the driveway to E House.",
+      "Walk down the driveway from E House towards the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk up along the driveway to E House.",
+    "reverse": "Walk down the driveway from E House towards the road."
   },
-  "55-63": {
-    "from": 55,
-    "to": 63,
+  "khousesplit2-road": {
+    "start": "khousesplit2",
+    "end": "road",
     "points": [
       [
         -1.128192057552897,
@@ -1476,11 +1848,18 @@ export const edges = {
     "elevation": -5.739723276055727,
     "distance": 64.58613609117631,
     "time": 29.098853528903312,
-    "wheelchair": false
+    "description": [
+      "Continue down the hill towards the road crossing.",
+      "Walk parallel to the road and up the footpath."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Continue down the hill towards the road crossing.",
+    "reverse": "Walk parallel to the road and up the footpath."
   },
-  "63-64": {
-    "from": 63,
-    "to": 64,
+  "road-ahousesplit": {
+    "start": "road",
+    "end": "ahousesplit",
     "points": [
       [
         -1.128913912126522,
@@ -1497,11 +1876,18 @@ export const edges = {
     "elevation": -1.3403225593625194,
     "distance": 31.5289682629889,
     "time": 18.659368035604082,
-    "wheelchair": true
+    "description": [
+      "Cross the road.",
+      "Cross the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross the road.",
+    "reverse": "Cross the road."
   },
-  "64-41": {
-    "from": 64,
-    "to": 41,
+  "ahousesplit-A House": {
+    "start": "ahousesplit",
+    "end": "A House",
     "points": [
       [
         -1.129114727550702,
@@ -1528,11 +1914,18 @@ export const edges = {
     "elevation": -0.7541943887561189,
     "distance": 56.304843291366176,
     "time": 38.273267007524694,
-    "wheelchair": true
+    "description": [
+      "Split off of the road towards A House.",
+      "Exit A House and turn right towards the path."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Split off of the road towards A House.",
+    "reverse": "Exit A House and turn right towards the path."
   },
-  "64-65": {
-    "from": 64,
-    "to": 65,
+  "ahousesplit-greekersplit": {
+    "start": "ahousesplit",
+    "end": "greekersplit",
     "points": [
       [
         -1.129114727550702,
@@ -1549,11 +1942,18 @@ export const edges = {
     "elevation": -2.8984126563238704,
     "distance": 39.544378407777835,
     "time": 19.700133201552777,
-    "wheelchair": true
+    "description": [
+      "Continue down the path.",
+      "Walk up the path towards A House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue down the path.",
+    "reverse": "Walk up the path towards A House."
   },
-  "36-42": {
-    "from": 36,
-    "to": 42,
+  "F House-Rux": {
+    "start": "F House",
+    "end": "Rux",
     "points": [
       [
         -1.130967372627941,
@@ -1570,11 +1970,18 @@ export const edges = {
     "elevation": -3.5570198639636743,
     "distance": 44.334008029887485,
     "time": 21.146520664786063,
-    "wheelchair": true
+    "description": [
+      "Exit F House and walk to the pitch.",
+      "Exit the Pitch and walk towards the F House entrance."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit F House and walk to the pitch.",
+    "reverse": "Exit the Pitch and walk towards the F House entrance."
   },
-  "63-40": {
-    "from": 63,
-    "to": 40,
+  "road-K House": {
+    "start": "road",
+    "end": "K House",
     "points": [
       [
         -1.128913912126522,
@@ -1621,11 +2028,18 @@ export const edges = {
     "elevation": 7.8364625765513125,
     "distance": 106.8845996623528,
     "time": 100.25918413081969,
-    "wheelchair": true
+    "description": [
+      "Walk along the driveway towards K House.",
+      "Walk down the driveway from K House to the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the driveway towards K House.",
+    "reverse": "Walk down the driveway from K House to the road."
   },
-  "36-66": {
-    "from": 36,
-    "to": 66,
+  "F House-backroutesplit": {
+    "start": "F House",
+    "end": "backroutesplit",
     "points": [
       [
         -1.130967372627941,
@@ -1647,11 +2061,18 @@ export const edges = {
     "elevation": -3.394082351859261,
     "distance": 72.94608481379255,
     "time": 42.282051270297735,
-    "wheelchair": true
+    "description": [
+      "Walk along the footpath from F House towards Greeker.",
+      "Walk from Greeker towards F House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the footpath from F House towards Greeker.",
+    "reverse": "Walk from Greeker towards F House."
   },
-  "66-35": {
-    "from": 66,
-    "to": 35,
+  "backroutesplit-Greeker": {
+    "start": "backroutesplit",
+    "end": "Greeker",
     "points": [
       [
         -1.130239248206185,
@@ -1668,11 +2089,18 @@ export const edges = {
     "elevation": -0.298915304207128,
     "distance": 18.735498751849956,
     "time": 12.5910962247324,
-    "wheelchair": true
+    "description": [
+      "Enter Greeker.",
+      "Exit Greeker."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Enter Greeker.",
+    "reverse": "Exit Greeker."
   },
-  "66-67": {
-    "from": 66,
-    "to": 67,
+  "backroutesplit-Old Sports Hall (Back)": {
+    "start": "backroutesplit",
+    "end": "Old Sports Hall (Back)",
     "points": [
       [
         -1.130239248206185,
@@ -1704,11 +2132,18 @@ export const edges = {
     "elevation": -1.5419892453231654,
     "distance": 98.77238611622168,
     "time": 66.48148352091087,
-    "wheelchair": false
+    "description": [
+      "Walk down the narrow footpath between the tennis courts and the pitch towards the old hall.",
+      "Exit the old hall from the back exit, turn left, continue until you reach Greeker."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Walk down the narrow footpath between the tennis courts and the pitch towards the old hall.",
+    "reverse": "Exit the old hall from the back exit, turn left, continue until you reach Greeker."
   },
-  "67-44": {
-    "from": 67,
-    "to": 44,
+  "Old Sports Hall (Back)-Sports Centre": {
+    "start": "Old Sports Hall (Back)",
+    "end": "Sports Centre",
     "points": [
       [
         -1.130543994286296,
@@ -1730,11 +2165,18 @@ export const edges = {
     "elevation": -1.0782836194310548,
     "distance": 18.914969044228666,
     "time": 10.361779789933378,
-    "wheelchair": true
+    "description": [
+      "Exit the old hall from the back and walk to the new hall.",
+      "Leave the new hall and walk up the stairs to the old hall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit the old hall from the back and walk to the new hall.",
+    "reverse": "Leave the new hall and walk up the stairs to the old hall."
   },
-  "43-67": {
-    "from": 43,
-    "to": 67,
+  "Old Sports Hall-Old Sports Hall (Back)": {
+    "start": "Old Sports Hall",
+    "end": "Old Sports Hall (Back)",
     "points": [
       [
         -1.130188963115554,
@@ -1756,11 +2198,18 @@ export const edges = {
     "elevation": -0.6563500004039255,
     "distance": 35.42264009611784,
     "time": 23.53087232281628,
-    "wheelchair": true
+    "description": [
+      "Nothing",
+      "Nothing"
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Nothing",
+    "reverse": "Nothing"
   },
-  "43-44": {
-    "from": 43,
-    "to": 44,
+  "Old Sports Hall-Sports Centre": {
+    "start": "Old Sports Hall",
+    "end": "Sports Centre",
     "points": [
       [
         -1.130188963115554,
@@ -1787,11 +2236,18 @@ export const edges = {
     "elevation": -1.7346336198349803,
     "distance": 40.79322881940403,
     "time": 24.14065787684332,
-    "wheelchair": true
+    "description": [
+      "Exit the old hall and walk to the new hall on the left.",
+      "Walk up the stairs to the old hall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit the old hall and walk to the new hall on the left.",
+    "reverse": "Walk up the stairs to the old hall."
   },
-  "35-65": {
-    "from": 35,
-    "to": 65,
+  "Greeker-greekersplit": {
+    "start": "Greeker",
+    "end": "greekersplit",
     "points": [
       [
         -1.130008649265543,
@@ -1808,11 +2264,18 @@ export const edges = {
     "elevation": 4.949101166565349,
     "distance": 50.137406170988314,
     "time": 50.76993480741789,
-    "wheelchair": true
+    "description": [
+      "Walk along the footpath from Greeker towards and past the music centre.",
+      "Split off the footpath where the music centre is and continue towards Greeker."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the footpath from Greeker towards and past the music centre.",
+    "reverse": "Split off the footpath where the music centre is and continue towards Greeker."
   },
-  "43-68": {
-    "from": 43,
-    "to": 68,
+  "Old Sports Hall-indoortennissplit": {
+    "start": "Old Sports Hall",
+    "end": "indoortennissplit",
     "points": [
       [
         -1.130188963115554,
@@ -1829,11 +2292,18 @@ export const edges = {
     "elevation": -0.26144892113945417,
     "distance": 25.090618903964014,
     "time": 17.279918056091855,
-    "wheelchair": true
+    "description": [
+      "Walk from the old hall towards the car park.",
+      "Walk from the car park towards the old hall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk from the old hall towards the car park.",
+    "reverse": "Walk from the car park towards the old hall."
   },
-  "65-68": {
-    "from": 65,
-    "to": 68,
+  "greekersplit-indoortennissplit": {
+    "start": "greekersplit",
+    "end": "indoortennissplit",
     "points": [
       [
         -1.12938781234435,
@@ -1850,11 +2320,18 @@ export const edges = {
     "elevation": -5.797274028416915,
     "distance": 66.14385863842955,
     "time": 30.04848372172446,
-    "wheelchair": true
+    "description": [
+      "Walk down the hill towards the car park.",
+      "Walk up the hill towards the music centre."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the hill towards the car park.",
+    "reverse": "Walk up the hill towards the music centre."
   },
-  "68-45": {
-    "from": 68,
-    "to": 45,
+  "indoortennissplit-Indoor Tennis Courts": {
+    "start": "indoortennissplit",
+    "end": "Indoor Tennis Courts",
     "points": [
       [
         -1.129888643951646,
@@ -1876,11 +2353,18 @@ export const edges = {
     "elevation": 2.7133782314934507,
     "distance": 66.16286813313418,
     "time": 55.73732308554088,
-    "wheelchair": true
+    "description": [
+      "Walk along the car park and enter the large grey building.",
+      "Leave the indoor tennis building and walk towards the sports hall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the car park and enter the large grey building.",
+    "reverse": "Leave the indoor tennis building and walk towards the sports hall."
   },
-  "45-46": {
-    "from": 45,
-    "to": 46,
+  "Indoor Tennis Courts-Clay Tennis Courts": {
+    "start": "Indoor Tennis Courts",
+    "end": "Clay Tennis Courts",
     "points": [
       [
         -1.129163262758425,
@@ -1912,11 +2396,18 @@ export const edges = {
     "elevation": -6.156842908119124,
     "distance": 82.75478937242792,
     "time": 40.94778895807328,
-    "wheelchair": true
+    "description": [
+      "Walk from the indoor tennis building to the clay tennis courts.",
+      "Walk from the clay tennis courts to the indoor tennis building."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk from the indoor tennis building to the clay tennis courts.",
+    "reverse": "Walk from the clay tennis courts to the indoor tennis building."
   },
-  "41-46": {
-    "from": 41,
-    "to": 46,
+  "A House-Clay Tennis Courts": {
+    "start": "A House",
+    "end": "Clay Tennis Courts",
     "points": [
       [
         -1.128717498935091,
@@ -1953,11 +2444,18 @@ export const edges = {
     "elevation": -11.38495697261034,
     "distance": 202.86249466551837,
     "time": 111.6759249349757,
-    "wheelchair": true
+    "description": [
+      "From A House go towards the road and turn left down the hill to the clay tennis courts.",
+      "Walk up the hill from the clay tennis courts until you reach A House (before the road crossing)."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From A House go towards the road and turn left down the hill to the clay tennis courts.",
+    "reverse": "Walk up the hill from the clay tennis courts until you reach A House (before the road crossing)."
   },
-  "1-77": {
-    "from": 1,
-    "to": 77,
+  "hill2-Hill 2 Pitch": {
+    "start": "hill2",
+    "end": "Hill 2 Pitch",
     "points": [
       [
         -1.131929522486307,
@@ -1989,11 +2487,18 @@ export const edges = {
     "elevation": 11.398469733071465,
     "distance": 262.5213736248229,
     "time": 223.0325456537795,
-    "wheelchair": true
+    "description": [
+      "Walk up the hill and turn left at the road, continue until you reach the pitch.",
+      "Walk from the hill 2 pitch down the footpath away from the cricket nets, then continue down the hill."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk up the hill and turn left at the road, continue until you reach the pitch.",
+    "reverse": "Walk from the hill 2 pitch down the footpath away from the cricket nets, then continue down the hill."
   },
-  "8-78": {
-    "from": 8,
-    "to": 78,
+  "topofhill2-Hill 2 Cricket Nets": {
+    "start": "topofhill2",
+    "end": "Hill 2 Cricket Nets",
     "points": [
       [
         -1.126998493474015,
@@ -2030,11 +2535,18 @@ export const edges = {
     "elevation": -0.18377497209810656,
     "distance": 121.23160517165364,
     "time": 86.73533051683573,
-    "wheelchair": true
+    "description": [
+      "Cross the road at the zebra crossing and continue on the footpath until you reach the cricket nets.",
+      "Leave the cricket nets, turn right and walk along the footpath then cross the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross the road at the zebra crossing and continue on the footpath until you reach the cricket nets.",
+    "reverse": "Leave the cricket nets, turn right and walk along the footpath then cross the road."
   },
-  "8-77": {
-    "from": 8,
-    "to": 77,
+  "topofhill2-Hill 2 Pitch": {
+    "start": "topofhill2",
+    "end": "Hill 2 Pitch",
     "points": [
       [
         -1.126998493474015,
@@ -2076,11 +2588,18 @@ export const edges = {
     "elevation": -0.27148292988516687,
     "distance": 198.65569192448726,
     "time": 142.2175158327969,
-    "wheelchair": true
+    "description": [
+      "Cross the road at the zebra crossing and continue on the footpath until you reach the pitch.",
+      "Leave the pitch, turn right and walk along the footpath then cross the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross the road at the zebra crossing and continue on the footpath until you reach the pitch.",
+    "reverse": "Leave the pitch, turn right and walk along the footpath then cross the road."
   },
-  "7-23": {
-    "from": 7,
-    "to": 23,
+  "MFL (Front)-History": {
+    "start": "MFL (Front)",
+    "end": "History",
     "points": [
       [
         -1.132574905182901,
@@ -2112,11 +2631,18 @@ export const edges = {
     "elevation": -0.201639385277403,
     "distance": 36.28371947491711,
     "time": 25.51895645785133,
-    "wheelchair": true
+    "description": [
+      "Exit MFL from the front exit and turn right.",
+      "Exit the history block and turn left."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit MFL from the front exit and turn right.",
+    "reverse": "Exit the history block and turn left."
   },
-  "23-24": {
-    "from": 23,
-    "to": 24,
+  "History-Library": {
+    "start": "History",
+    "end": "Library",
     "points": [
       [
         -1.13241557543038,
@@ -2138,11 +2664,18 @@ export const edges = {
     "elevation": -1.4938668972945095,
     "distance": 40.215842366436696,
     "time": 24.45382196796429,
-    "wheelchair": true
+    "description": [
+      "Exit the history block and turn right.",
+      "Exit the library and turn left."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Exit the history block and turn right.",
+    "reverse": "Exit the library and turn left."
   },
-  "24-25": {
-    "from": 24,
-    "to": 25,
+  "Library-sciencestairs": {
+    "start": "Library",
+    "end": "sciencestairs",
     "points": [
       [
         -1.132082472672863,
@@ -2164,11 +2697,18 @@ export const edges = {
     "elevation": -0.5977006904716831,
     "distance": 25.326495218680183,
     "time": 16.43689575277117,
-    "wheelchair": true
+    "description": [
+      "From the library, walk parallel to bloods towards crossways.",
+      "Walk towards Chapel but don't cross the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From the library, walk parallel to bloods towards crossways.",
+    "reverse": "Walk towards Chapel but don't cross the road."
   },
-  "25-3": {
-    "from": 25,
-    "to": 3,
+  "sciencestairs-Science (Front)": {
+    "start": "sciencestairs",
+    "end": "Science (Front)",
     "points": [
       [
         -1.131894732253822,
@@ -2210,11 +2750,18 @@ export const edges = {
     "elevation": 4.830564647586769,
     "distance": 60.00055950997464,
     "time": 57.55186436303318,
-    "wheelchair": false
+    "description": [
+      "Walk up the stairs and continue to the front entrance of the Science block.",
+      "Exit Science out the front exit and walk to the stairs."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Walk up the stairs and continue to the front entrance of the Science block.",
+    "reverse": "Exit Science out the front exit and walk to the stairs."
   },
-  "25-26": {
-    "from": 25,
-    "to": 26,
+  "sciencestairs-scienceroad": {
+    "start": "sciencestairs",
+    "end": "scienceroad",
     "points": [
       [
         -1.131894732253822,
@@ -2231,11 +2778,18 @@ export const edges = {
     "elevation": -1.1940399241797195,
     "distance": 37.876226327197145,
     "time": 23.67520874751424,
-    "wheelchair": true
+    "description": [
+      "Continue down the path towards the crossways.",
+      "Continue up the path towards the Chapel."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue down the path towards the crossways.",
+    "reverse": "Continue up the path towards the Chapel."
   },
-  "26-3": {
-    "from": 26,
-    "to": 3,
+  "scienceroad-Science (Front)": {
+    "start": "scienceroad",
+    "end": "Science (Front)",
     "points": [
       [
         -1.131554448594252,
@@ -2262,11 +2816,18 @@ export const edges = {
     "elevation": 6.0246045717664884,
     "distance": 100.94485892805372,
     "time": 90.62455461889338,
-    "wheelchair": true
+    "description": [
+      "Walk up the road towards the car park and then to the Science block.",
+      "Exit Science out the front and go through the car park to the road and down to the footpath."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk up the road towards the car park and then to the Science block.",
+    "reverse": "Exit Science out the front and go through the car park to the road and down to the footpath."
   },
-  "26-60": {
-    "from": 26,
-    "to": 60,
+  "scienceroad-crosswaysheadside": {
+    "start": "scienceroad",
+    "end": "crosswaysheadside",
     "points": [
       [
         -1.131554448594252,
@@ -2288,11 +2849,18 @@ export const edges = {
     "elevation": -4.473754250051158,
     "distance": 94.54121898127126,
     "time": 54.57215981923858,
-    "wheelchair": true
+    "description": [
+      "Continue down the path towards the crossways.",
+      "Walk along the pavement from the crossways."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue down the path towards the crossways.",
+    "reverse": "Walk along the pavement from the crossways."
   },
-  "60-59": {
-    "from": 60,
-    "to": 59,
+  "crosswaysheadside-crosswayshillside": {
+    "start": "crosswaysheadside",
+    "end": "crosswayshillside",
     "points": [
       [
         -1.130791291594917,
@@ -2309,11 +2877,18 @@ export const edges = {
     "elevation": 0.3639191261030561,
     "distance": 14.313215796919728,
     "time": 11.393941210433852,
-    "wheelchair": true
+    "description": [
+      "Cross the road towards the hill.",
+      "Cross the road to the Arch's side."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross the road towards the hill.",
+    "reverse": "Cross the road to the Arch's side."
   },
-  "24-79": {
-    "from": 24,
-    "to": 79,
+  "Library-Chapel": {
+    "start": "Library",
+    "end": "Chapel",
     "points": [
       [
         -1.132082472672863,
@@ -2355,11 +2930,18 @@ export const edges = {
     "elevation": -4.134569152100383,
     "distance": 64.60430456914877,
     "time": 34.01603607077848,
-    "wheelchair": true
+    "description": [
+      "Cross the road and walk along the pavement up towards the entrance of the Chapel.",
+      "From the Chapel, continue up and turn left, continue and cross the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross the road and walk along the pavement up towards the entrance of the Chapel.",
+    "reverse": "From the Chapel, continue up and turn left, continue and cross the road."
   },
-  "80-79": {
-    "from": 80,
-    "to": 79,
+  "Stunt Pavilion-Chapel": {
+    "start": "Stunt Pavilion",
+    "end": "Chapel",
     "points": [
       [
         -1.133495391102308,
@@ -2391,11 +2973,18 @@ export const edges = {
     "elevation": -0.8835541763018284,
     "distance": 139.87322781588682,
     "time": 98.05605222712587,
-    "wheelchair": true
+    "description": [
+      "From the stunt pavilion, walk along the road until you pass the gate and reach Chapel.",
+      "From Chapel walk past the gate and continue to the pavilion."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From the stunt pavilion, walk along the road until you pass the gate and reach Chapel.",
+    "reverse": "From Chapel walk past the gate and continue to the pavilion."
   },
-  "80-24": {
-    "from": 80,
-    "to": 24,
+  "Stunt Pavilion-Library": {
+    "start": "Stunt Pavilion",
+    "end": "Library",
     "points": [
       [
         -1.133495391102308,
@@ -2452,11 +3041,18 @@ export const edges = {
     "elevation": 3.2510149757985545,
     "distance": 181.93232846448012,
     "time": 140.72340606701604,
-    "wheelchair": true
+    "description": [
+      "From stunt pavilion, walk straight up to the road opposite MFL and continue along the road. Cross the road at the zebra crossing.",
+      "Cross the road, then walk along the pavement opposite MFL/History, continue until the pavement stops and walk to the pavilion."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From stunt pavilion, walk straight up to the road opposite MFL and continue along the road. Cross the road at the zebra crossing.",
+    "reverse": "Cross the road, then walk along the pavement opposite MFL/History, continue until the pavement stops and walk to the pavilion."
   },
-  "79-81": {
-    "from": 79,
-    "to": 81,
+  "Chapel-bloodsturn": {
+    "start": "Chapel",
+    "end": "bloodsturn",
     "points": [
       [
         -1.132660657317595,
@@ -2473,11 +3069,18 @@ export const edges = {
     "elevation": -3.1229575669440806,
     "distance": 26.660419640760484,
     "time": 9.694480041512344,
-    "wheelchair": true
+    "description": [
+      "Walk down the hill from Chapel.",
+      "Walk up to Chapel."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the hill from Chapel.",
+    "reverse": "Walk up to Chapel."
   },
-  "81-22": {
-    "from": 81,
-    "to": 22,
+  "bloodsturn-Bloods (Back)": {
+    "start": "bloodsturn",
+    "end": "Bloods (Back)",
     "points": [
       [
         -1.132585165251127,
@@ -2509,11 +3112,18 @@ export const edges = {
     "elevation": 2.290606952953567,
     "distance": 33.79467141333815,
     "time": 31.14802719095846,
-    "wheelchair": true
+    "description": [
+      "Turn off the pavement to the back entrance past the memorial.",
+      "Exit bloods through the back and walk out past the memorial."
+    ],
+    "covid": "reverse",
+    "wheelchair": true,
+    "forwards": "Turn off the pavement to the back entrance past the memorial.",
+    "reverse": "Exit bloods through the back and walk out past the memorial."
   },
-  "81-83": {
-    "from": 81,
-    "to": 83,
+  "bloodsturn-riversplit": {
+    "start": "bloodsturn",
+    "end": "riversplit",
     "points": [
       [
         -1.132585165251127,
@@ -2530,11 +3140,18 @@ export const edges = {
     "elevation": -1.8525835883710329,
     "distance": 43.505181133070195,
     "time": 25.737566842684213,
-    "wheelchair": true
+    "description": [
+      "Continue along the road.",
+      "Continue along the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue along the road.",
+    "reverse": "Continue along the road."
   },
-  "83-30": {
-    "from": 83,
-    "to": 30,
+  "riversplit-Grey School (Left)": {
+    "start": "riversplit",
+    "end": "Grey School (Left)",
     "points": [
       [
         -1.132978159076189,
@@ -2551,11 +3168,18 @@ export const edges = {
     "elevation": 1.2830495652886071,
     "distance": 29.61600704312744,
     "time": 25.15265364187033,
-    "wheelchair": true
+    "description": [
+      "Walk along to the grey building.",
+      "From Greys, continue along the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along to the grey building.",
+    "reverse": "From Greys, continue along the road."
   },
-  "30-29": {
-    "from": 30,
-    "to": 29,
+  "Grey School (Left)-Grey School (Right)": {
+    "start": "Grey School (Left)",
+    "end": "Grey School (Right)",
     "points": [
       [
         -1.132689993589706,
@@ -2572,11 +3196,18 @@ export const edges = {
     "elevation": -0.12339306084871282,
     "distance": 12.399349186048036,
     "time": 8.556910156528486,
-    "wheelchair": true
+    "description": [
+      "Nothing",
+      "Nothing"
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Nothing",
+    "reverse": "Nothing"
   },
-  "83-82": {
-    "from": 83,
-    "to": 82,
+  "riversplit-Big School": {
+    "start": "riversplit",
+    "end": "Big School",
     "points": [
       [
         -1.132978159076189,
@@ -2593,11 +3224,18 @@ export const edges = {
     "elevation": 1.953966112416964,
     "distance": 28.915450246263635,
     "time": 26.633433880593596,
-    "wheelchair": true
+    "description": [
+      "Continue along the road to the entrance by the brick wall.",
+      "From Big School,walk along the road towards the pitches."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue along the road to the entrance by the brick wall.",
+    "reverse": "From Big School, walk along the road towards the pitches."
   },
-  "82-27": {
-    "from": 82,
-    "to": 27,
+  "Big School-bloodssplit": {
+    "start": "Big School",
+    "end": "bloodssplit",
     "points": [
       [
         -1.13260738745973,
@@ -2619,11 +3257,18 @@ export const edges = {
     "elevation": -0.2718270272607697,
     "distance": 48.41619159198979,
     "time": 34.04362744937786,
-    "wheelchair": true
+    "description": [
+      "Walk along the road past the brick wall to the large door on the right.",
+      "From snake door, walk towards the pitches and stop at the door past the brick wall."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the road past the brick wall to the large door on the right.",
+    "reverse": "From snake door, walk towards the pitches and stop at the door past the brick wall."
   },
-  "29-27": {
-    "from": 29,
-    "to": 27,
+  "Grey School (Right)-bloodssplit": {
+    "start": "Grey School (Right)",
+    "end": "bloodssplit",
     "points": [
       [
         -1.132568902076829,
@@ -2650,11 +3295,18 @@ export const edges = {
     "elevation": 0.5224825807163,
     "distance": 38.35834608967441,
     "time": 29.182894765782336,
-    "wheelchair": true
+    "description": [
+      "Walk from Greys towards the Thai Garden, to the large door on the right.",
+      "From snake door, walk to the grey building on the way to the pitches."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk from Greys towards the Thai Garden, to the large door on the right.",
+    "reverse": "From snake door, walk to the grey building on the way to the pitches."
   },
-  "27-84": {
-    "from": 27,
-    "to": 84,
+  "bloodssplit-thai1": {
+    "start": "bloodssplit",
+    "end": "thai1",
     "points": [
       [
         -1.132247427144045,
@@ -2671,11 +3323,18 @@ export const edges = {
     "elevation": -1.715101427643539,
     "distance": 12.670622096553801,
     "time": 3.8935807470477606,
-    "wheelchair": false
+    "description": [
+      "Walk to the Thai Garden.",
+      "From the top of the Thai Garden, walk towards the large door."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Walk to the Thai Garden.",
+    "reverse": "From the top of the Thai Garden, walk towards the large door."
   },
-  "27-28": {
-    "from": 27,
-    "to": 28,
+  "bloodssplit-Bloods (Front)": {
+    "start": "bloodssplit",
+    "end": "Bloods (Front)",
     "points": [
       [
         -1.132247427144045,
@@ -2692,11 +3351,18 @@ export const edges = {
     "elevation": -1.715101427643539,
     "distance": 12.670622096553801,
     "time": 3.8935807470477606,
-    "wheelchair": true
+    "description": [
+      "",
+      ""
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "",
+    "reverse": ""
   },
-  "84-86": {
-    "from": 84,
-    "to": 86,
+  "thai1-thai3": {
+    "start": "thai1",
+    "end": "thai3",
     "points": [
       [
         -1.132222719037624,
@@ -2728,11 +3394,18 @@ export const edges = {
     "elevation": -2.143800962383935,
     "distance": 59.83806906061194,
     "time": 36.6243480399045,
-    "wheelchair": false
+    "description": [
+      "Cross the Thai Garden.",
+      "Cross the Thai Garden."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Cross the Thai Garden.",
+    "reverse": "Cross the Thai Garden."
   },
-  "84-87": {
-    "from": 84,
-    "to": 87,
+  "thai1-thai4": {
+    "start": "thai1",
+    "end": "thai4",
     "points": [
       [
         -1.132222719037624,
@@ -2754,11 +3427,18 @@ export const edges = {
     "elevation": -2.6375763088699173,
     "distance": 38.412319879074566,
     "time": 19.67886518884923,
-    "wheelchair": false
+    "description": [
+      "Walk down parallel to the Thai Garden.",
+      "Walk up parallel to the Thai Garden."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Walk down parallel to the Thai Garden.",
+    "reverse": "Walk up parallel to the Thai Garden."
   },
-  "87-31": {
-    "from": 87,
-    "to": 31,
+  "thai4-Maths": {
+    "start": "thai4",
+    "end": "Maths",
     "points": [
       [
         -1.132586919597854,
@@ -2775,11 +3455,18 @@ export const edges = {
     "elevation": 0.18864004392703038,
     "distance": 22.456263391694694,
     "time": 16.73385929377065,
-    "wheelchair": false
+    "description": [
+      "Walk down the stairs and continue to the entrance on the right.",
+      "Turn right from the exit and continue to the stairs then left."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Walk down the stairs and continue to the entrance on the right.",
+    "reverse": "Turn right from the exit and continue to the stairs then left."
   },
-  "31-86": {
-    "from": 31,
-    "to": 86,
+  "Maths-thai3": {
+    "start": "Maths",
+    "end": "thai3",
     "points": [
       [
         -1.132367901975156,
@@ -2796,11 +3483,18 @@ export const edges = {
     "elevation": 0.30513530255895205,
     "distance": 23.261108291287716,
     "time": 17.661962838538145,
-    "wheelchair": false
+    "description": [
+      "Turn left from the exit and continue past the stairs.",
+      "Walk down the stairs towards the front entrance of the maths block."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Turn left from the exit and continue past the stairs.",
+    "reverse": "Walk down the stairs towards the front entrance of the maths block."
   },
-  "86-85": {
-    "from": 86,
-    "to": 85,
+  "thai3-thai2": {
+    "start": "thai3",
+    "end": "thai2",
     "points": [
       [
         -1.132097154826186,
@@ -2822,11 +3516,18 @@ export const edges = {
     "elevation": 2.6154163951118505,
     "distance": 39.49524362760135,
     "time": 36.2204056711503,
-    "wheelchair": false
+    "description": [
+      "Walk through the Thai Garden towards the Arch/C House.",
+      "Walk straight along the path through the Thai Garden."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Walk through the Thai Garden towards the Arch/C House.",
+    "reverse": "Walk straight along the path through the Thai Garden."
   },
-  "85-87": {
-    "from": 85,
-    "to": 87,
+  "thai2-thai4": {
+    "start": "thai2",
+    "end": "thai4",
     "points": [
       [
         -1.131695088003021,
@@ -2853,11 +3554,18 @@ export const edges = {
     "elevation": -3.109191741597833,
     "distance": 64.27524982887256,
     "time": 36.896428516951936,
-    "wheelchair": false
+    "description": [
+      "Cross the Thai Garden.",
+      "Cross the Thai Garden."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Cross the Thai Garden.",
+    "reverse": "Cross the Thai Garden."
   },
-  "85-27": {
-    "from": 85,
-    "to": 27,
+  "thai2-bloodssplit": {
+    "start": "thai2",
+    "end": "bloodssplit",
     "points": [
       [
         -1.131695088003021,
@@ -2879,11 +3587,18 @@ export const edges = {
     "elevation": 1.2434859949156234,
     "distance": 54.9491978498401,
     "time": 43.28374882457475,
-    "wheelchair": true
+    "description": [
+      "From the top of the Thai Garden, walk down the road towards the pitches to the large door.",
+      "From snake door, walk towards C House past the Dining Hall to the top of the Thai Garden."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From the top of the Thai Garden, walk down the road towards the pitches to the large door.",
+    "reverse": "From snake door, walk towards C House past the Dining Hall to the top of the Thai Garden."
   },
-  "85-33": {
-    "from": 85,
-    "to": 33,
+  "thai2-C House": {
+    "start": "thai2",
+    "end": "C House",
     "points": [
       [
         -1.131695088003021,
@@ -2900,11 +3615,18 @@ export const edges = {
     "elevation": 0.7859044531369292,
     "distance": 27.747531831412502,
     "time": 22.32792125513209,
-    "wheelchair": true
+    "description": [
+      "Walk towards the entrance to C House.",
+      "Walk towards the Thai Garden."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk towards the entrance to C House.",
+    "reverse": "Walk towards the Thai Garden."
   },
-  "33-61": {
-    "from": 33,
-    "to": 61,
+  "C House-crosswayscside": {
+    "start": "C House",
+    "end": "crosswayscside",
     "points": [
       [
         -1.131303348677123,
@@ -2921,11 +3643,18 @@ export const edges = {
     "elevation": 0.762567264861346,
     "distance": 26.663526716857447,
     "time": 21.47758813086737,
-    "wheelchair": true
+    "description": [
+      "From C House walk towards the Arch.",
+      "Walk towards the Thai Garden."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From C House walk towards the Arch.",
+    "reverse": "Walk towards the Thai Garden."
   },
-  "61-60": {
-    "from": 61,
-    "to": 60,
+  "crosswayscside-crosswaysheadside": {
+    "start": "crosswayscside",
+    "end": "crosswaysheadside",
     "points": [
       [
         -1.131043729597428,
@@ -2942,11 +3671,18 @@ export const edges = {
     "elevation": 0.8574906344740896,
     "distance": 18.09822824279735,
     "time": 15.588562032810113,
-    "wheelchair": true
+    "description": [
+      "Cross the road from the Arch's side to the Headmaster's House's side.",
+      "Cross the road to the Arch's side."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross the road from the Arch's side to the Headmaster's House's side.",
+    "reverse": "Cross the road to the Arch's side."
   },
-  "61-88": {
-    "from": 61,
-    "to": 88,
+  "crosswayscside-fhousesplit": {
+    "start": "crosswayscside",
+    "end": "fhousesplit",
     "points": [
       [
         -1.131043729597428,
@@ -2973,11 +3709,18 @@ export const edges = {
     "elevation": -4.037698273794788,
     "distance": 85.57722769166804,
     "time": 49.43388861106549,
-    "wheelchair": true
+    "description": [
+      "Walk along the pavement without crossing the road down the hill.",
+      "Walk up the hill until you reach the crossways."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the pavement without crossing the road down the hill.",
+    "reverse": "Walk up the hill until you reach the crossways."
   },
-  "86-32": {
-    "from": 86,
-    "to": 32,
+  "thai3-CCF Office": {
+    "start": "thai3",
+    "end": "CCF Office",
     "points": [
       [
         -1.132097154826186,
@@ -3004,11 +3747,18 @@ export const edges = {
     "elevation": -1.9079648435090846,
     "distance": 39.64044335620247,
     "time": 22.78414537293415,
-    "wheelchair": true
+    "description": [
+      "Walk down the hill down the left path to the CCF office.",
+      "Walk up the hill from the CCF office to the Thai Garden."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the hill down the left path to the CCF office.",
+    "reverse": "Walk up the hill from the CCF office to the Thai Garden."
   },
-  "88-36": {
-    "from": 88,
-    "to": 36,
+  "fhousesplit-F House": {
+    "start": "fhousesplit",
+    "end": "F House",
     "points": [
       [
         -1.131575763966169,
@@ -3030,11 +3780,18 @@ export const edges = {
     "elevation": 2.7272180860618676,
     "distance": 44.94469117355234,
     "time": 40.4822019926831,
-    "wheelchair": true
+    "description": [
+      "Cross the road and turn right towards the entrance of F House.",
+      "From F House, continue towards the road and cross."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross the road and turn right towards the entrance of F House.",
+    "reverse": "From F House, continue towards the road and cross."
   },
-  "88-89": {
-    "from": 88,
-    "to": 89,
+  "fhousesplit-medcentresplit": {
+    "start": "fhousesplit",
+    "end": "medcentresplit",
     "points": [
       [
         -1.131575763966169,
@@ -3076,11 +3833,18 @@ export const edges = {
     "elevation": -7.4866398085104535,
     "distance": 166.85462389029604,
     "time": 97.55441771196718,
-    "wheelchair": true
+    "description": [
+      "Walk down the pavement away from the crossways for about 150m and the Med Centre will be on the right.",
+      "Walk from the Med Centre along the pavement towards the crossways."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the pavement away from the crossways for about 150m and the Med Centre will be on the right.",
+    "reverse": "Walk from the Med entre along the pavement towards the crossways."
   },
-  "89-48": {
-    "from": 89,
-    "to": 48,
+  "medcentresplit-Med Centre": {
+    "start": "medcentresplit",
+    "end": "Med Centre",
     "points": [
       [
         -1.133429908026307,
@@ -3097,11 +3861,18 @@ export const edges = {
     "elevation": 0.6548716252812667,
     "distance": 10.143364274271972,
     "time": 9.252600622636999,
-    "wheelchair": true
+    "description": [
+      "Nothing",
+      "Nothing"
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Nothing",
+    "reverse": "Nothing"
   },
-  "89-69": {
-    "from": 89,
-    "to": 69,
+  "medcentresplit-New Ground": {
+    "start": "medcentresplit",
+    "end": "New Ground",
     "points": [
       [
         -1.133429908026307,
@@ -3163,11 +3934,18 @@ export const edges = {
     "elevation": -0.12376573918030687,
     "distance": 461.7087959734429,
     "time": 332.0590239397382,
-    "wheelchair": true
+    "description": [
+      "Walk down the pavement past the Med Centre and take the first left, continue to the football pitches.",
+      "Walk towards the car park from new ground and turn right at the road, continue along the pavement to Med Centre."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the pavement past the Med Centre and take the first left, continue to the football pitches.",
+    "reverse": "Walk towards the car park from new ground and turn right at the road, continue along the pavement to Med Centre."
   },
-  "70-69": {
-    "from": 70,
-    "to": 69,
+  "Iron Bridge-New Ground": {
+    "start": "Iron Bridge",
+    "end": "New Ground",
     "points": [
       [
         -1.138725040048091,
@@ -3234,11 +4012,18 @@ export const edges = {
     "elevation": 3.0599365943671515,
     "distance": 393.3148611898567,
     "time": 292.3579395882132,
-    "wheelchair": true
+    "description": [
+      "Cross Iron Bridge, continue on the same path for about 150m and turn right to the pitches.",
+      "Walk along the main road exiting New Ground and continue until you reach Iron bridge."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross Iron Bridge, continue on the same path for about 150m and turn right to the pitches.",
+    "reverse": "Walk along the main road exiting New Ground and continue until you reach Iron bridge."
   },
-  "83-72": {
-    "from": 83,
-    "to": 72,
+  "riversplit-Major": {
+    "start": "riversplit",
+    "end": "Major",
     "points": [
       [
         -1.132978159076189,
@@ -3255,11 +4040,18 @@ export const edges = {
     "elevation": -0.9058807861029621,
     "distance": 98.82411013598343,
     "time": 68.43272749294283,
-    "wheelchair": true
+    "description": [
+      "Walk to the higher of the 2 nearby pitches.",
+      "Walk from Major towards Grey School."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk to the higher of the 2 nearby pitches.",
+    "reverse": "Walk from Major towards Grey School."
   },
-  "83-71": {
-    "from": 83,
-    "to": 71,
+  "riversplit-Max": {
+    "start": "riversplit",
+    "end": "Max",
     "points": [
       [
         -1.132978159076189,
@@ -3296,11 +4088,18 @@ export const edges = {
     "elevation": -6.204655285688425,
     "distance": 138.55326395808896,
     "time": 81.04430611524707,
-    "wheelchair": true
+    "description": [
+      "Walk to the lower of the 2 nearby pitches.",
+      "Walk from Max towards Grey School."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk to the lower of the 2 nearby pitches.",
+    "reverse": "Walk from Max towards Grey School."
   },
-  "83-70": {
-    "from": 83,
-    "to": 70,
+  "riversplit-Iron Bridge": {
+    "start": "riversplit",
+    "end": "Iron Bridge",
     "points": [
       [
         -1.132978159076189,
@@ -3352,11 +4151,18 @@ export const edges = {
     "elevation": -6.601042418879551,
     "distance": 134.9698872698698,
     "time": 77.25889937453913,
-    "wheelchair": true
+    "description": [
+      "Walk down the path to the right of the 2 pitches until you reach the river.",
+      "Walk up from the river along the gravel road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the path to the right of the 2 pitches until you reach the river.",
+    "reverse": "Walk up from the river along the gravel road."
   },
-  "83-73": {
-    "from": 83,
-    "to": 73,
+  "riversplit-Pit": {
+    "start": "riversplit",
+    "end": "Pit",
     "points": [
       [
         -1.132978159076189,
@@ -3383,11 +4189,18 @@ export const edges = {
     "elevation": -5.9652481405731805,
     "distance": 256.7931991872397,
     "time": 166.9454665682722,
-    "wheelchair": true
+    "description": [
+      "Walk past the 2 nearby pitches and continue down a slope to the pitch with a pavilion.",
+      "Walk back past the nearby pitches towards Big School."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk past the 2 nearby pitches and continue down a slope to the pitch with a pavilion.",
+    "reverse": "Walk back past the nearby pitches towards Big School."
   },
-  "73-74": {
-    "from": 73,
-    "to": 74,
+  "Pit-Rectory 1": {
+    "start": "Pit",
+    "end": "Rectory 1",
     "points": [
       [
         -1.135651520624822,
@@ -3409,11 +4222,18 @@ export const edges = {
     "elevation": 3.6441135131823756,
     "distance": 167.14475475871066,
     "time": 131.24795875455385,
-    "wheelchair": true
+    "description": [
+      "Walk on from Pit until you reach the next pitch.",
+      "Walk back from rectory 1 to Pit."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk on from Pit until you reach the next pitch.",
+    "reverse": "Walk back from rectory 1 to Pit."
   },
-  "73-75": {
-    "from": 73,
-    "to": 75,
+  "Pit-Rectory 2": {
+    "start": "Pit",
+    "end": "Rectory 2",
     "points": [
       [
         -1.135651520624822,
@@ -3435,11 +4255,18 @@ export const edges = {
     "elevation": 3.0553280784325665,
     "distance": 220.48287318716112,
     "time": 167.89841014960393,
-    "wheelchair": true
+    "description": [
+      "Walk on from Pit to the pitch after the next.",
+      "Walk back from Rectory 2 to Pit."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk on from Pit to the pitch after the next.",
+    "reverse": "Walk back from Rectory 2 to Pit."
   },
-  "73-76": {
-    "from": 73,
-    "to": 76,
+  "Pit-Rectory 3": {
+    "start": "Pit",
+    "end": "Rectory 3",
     "points": [
       [
         -1.135651520624822,
@@ -3466,11 +4293,18 @@ export const edges = {
     "elevation": 0.749325351480671,
     "distance": 321.1134419888585,
     "time": 233.44902480131483,
-    "wheelchair": true
+    "description": [
+      "Walk on from Pit to the furthest pitch (next to the golf centre).",
+      "Walk back from Rectory 3 to Pit."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk on from Pit to the furthest pitch (next to the golf centre).",
+    "reverse": "Walk back from Rectory 3 to Pit."
   },
-  "52-39": {
-    "from": 52,
-    "to": 39,
+  "jhousesplit-J House": {
+    "start": "jhousesplit",
+    "end": "J House",
     "points": [
       [
         -1.127578172565373,
@@ -3492,11 +4326,18 @@ export const edges = {
     "elevation": -0.7426290874197861,
     "distance": 22.649520668345932,
     "time": 14.070999545783385,
-    "wheelchair": true
+    "description": [
+      "Split off the road towards J House.",
+      "Exit J House."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Split off the road towards J House.",
+    "reverse": "Exit J House."
   },
-  "35-90": {
-    "from": 35,
-    "to": 90,
+  "Greeker-Music Centre": {
+    "start": "Greeker",
+    "end": "Music Centre",
     "points": [
       [
         -1.130009659506803,
@@ -3518,11 +4359,18 @@ export const edges = {
     "elevation": 2.596892150476677,
     "distance": 43.077870169129035,
     "time": 38.75033360786121,
-    "wheelchair": true
+    "description": [
+      "Walk along the footpath from Greeker to the Music Centre.",
+      "From the Music Centre,turn right."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk along the footpath from Greeker to the Music Centre.",
+    "reverse": "From the Music Centre,turn right."
   },
-  "90-65": {
-    "from": 90,
-    "to": 65,
+  "Music Centre-greekersplit": {
+    "start": "Music Centre",
+    "end": "greekersplit",
     "points": [
       [
         -1.129695487443279,
@@ -3544,11 +4392,18 @@ export const edges = {
     "elevation": 1.2632438725398245,
     "distance": 27.9371718323635,
     "time": 23.883921436994683,
-    "wheelchair": true
+    "description": [
+      "From the Music Centre, turn left.",
+      "Turn off the path to the Music Centre."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From the Music Centre, turn left.",
+    "reverse": "Turn off the path to the Music Centre."
   },
-  "32-91": {
-    "from": 32,
-    "to": 91,
+  "CCF Office-Art": {
+    "start": "CCF Office",
+    "end": "Art",
     "points": [
       [
         -1.132562592513258,
@@ -3575,11 +4430,18 @@ export const edges = {
     "elevation": -4.595566707000856,
     "distance": 47.89622745357757,
     "time": 20.539479187044762,
-    "wheelchair": false
+    "description": [
+      "Continue down the path and cross the road to Art School.",
+      "From Art School, cross the road and walk up the hill towards the CCF office."
+    ],
+    "covid": "both",
+    "wheelchair": false,
+    "forwards": "Continue down the path and cross the road to Art School.",
+    "reverse": "From Art School, cross the road and walk up the hill towards the CCF office."
   },
-  "88-91": {
-    "from": 88,
-    "to": 91,
+  "fhousesplit-Art": {
+    "start": "fhousesplit",
+    "end": "Art",
     "points": [
       [
         -1.131577782403557,
@@ -3616,11 +4478,18 @@ export const edges = {
     "elevation": -6.621010172773289,
     "distance": 160.5031053895181,
     "time": 95.60083767759004,
-    "wheelchair": true
+    "description": [
+      "Walk down the road until the first left and walk to Art School.",
+      "From Art School, walk parallel to the stream and turn right at the road."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk down the road until the first left and walk to Art School.",
+    "reverse": "From Art School, walk parallel to the stream and turn right at the road."
   },
-  "89-91": {
-    "from": 89,
-    "to": 91,
+  "medcentresplit-Art": {
+    "start": "medcentresplit",
+    "end": "Art",
     "points": [
       [
         -1.133432638986704,
@@ -3657,11 +4526,18 @@ export const edges = {
     "elevation": 0.8597938407527934,
     "distance": 134.2361367933053,
     "time": 99.22741745421534,
-    "wheelchair": true
+    "description": [
+      "Walk up the road towards the school and take the first right to Art School.",
+      "From Art School, walk parallel to the stream and turn left to Med Centre."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk up the road towards the school and take the first right to Art School.",
+    "reverse": "From Art School, walk parallel to the stream and turn left to Med Centre."
   },
-  "92-93": {
-    "from": 92,
-    "to": 93,
+  "Golf Course-hill2d": {
+    "start": "Golf Course",
+    "end": "hill2d",
     "points": [
       [
         -1.140107528653795,
@@ -3823,11 +4699,18 @@ export const edges = {
     "elevation": 23.95997316751835,
     "distance": 654.5864199459364,
     "time": 514.908189105167,
-    "wheelchair": true
+    "description": [
+      "From the Golf Course, walk up the road and continue until you cross, then cross the Course up to Hill 2.",
+      "From Hill 2, split off the path continue until you cross the road and walk around 200m to the Golf Course."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From the Golf Course, walk up the road and continue until you cross, then cross the Course up to Hill 2.",
+    "reverse": "From Hill 2, split off the path continue until you cross the road and walk around 200m to the Golf Course."
   },
-  "1-93": {
-    "from": 1,
-    "to": 93,
+  "hill2-hill2d": {
+    "start": "hill2",
+    "end": "hill2d",
     "points": [
       [
         -1.131929534616174,
@@ -3844,11 +4727,18 @@ export const edges = {
     "elevation": 7.215743733869289,
     "distance": 44.16916842099514,
     "time": 53.02179179999516,
-    "wheelchair": true
+    "description": [
+      "Continue up the hill.",
+      "Continue down the hill."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue up the hill.",
+    "reverse": "Continue down the hill."
   },
-  "8-93": {
-    "from": 8,
-    "to": 93,
+  "topofhill2-hill2d": {
+    "start": "topofhill2",
+    "end": "hill2d",
     "points": [
       [
         -1.13130475380108,
@@ -3925,11 +4815,18 @@ export const edges = {
     "elevation": 4.485130548688332,
     "distance": 415.4260742044979,
     "time": 312.5447320952808,
-    "wheelchair": true
+    "description": [
+      "Turn towards and follow the path to the crossing. Follow this footpath and road until they split past the black house on the right and walk down the hill.",
+      "Go up the hill and turn left at the road, coninue until you split at a footpath and then cross the road at the zebra crossing."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Turn towards and follow the path to the crossing. Follow this footpath and road until they split past the black house on the right and walk down the hill.",
+    "reverse": "Go up the hill and turn left at the road, coninue until you split at a footpath and then cross the road at the zebra crossing."
   },
-  "92-94": {
-    "from": 92,
-    "to": 94,
+  "Golf Course-golfcoursesplit": {
+    "start": "Golf Course",
+    "end": "golfcoursesplit",
     "points": [
       [
         -1.13317198748821,
@@ -4071,11 +4968,18 @@ export const edges = {
     "elevation": -8.056435588615386,
     "distance": 555.4486529629351,
     "time": 387.7180728278133,
-    "wheelchair": true
+    "description": [
+      "From the Golf Course, walk up the road and down the stairs on the left, Continue straight along the edge of Rectory 1 and keep walking to Stunt.",
+      "From Stunt, walk down the road and continue to Rectory 1, walk along the edge and up the stairs then straight to the Golf Course."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "From the Golf Course, walk up the road and down the stairs on the left, Continue straight along the edge of Rectory 1 and keep walking to Stunt.",
+    "reverse": "From Stunt, walk down the road and continue to Rectory 1, walk along the edge and up the stairs then straight to the Golf Course."
   },
-  "24-94": {
-    "from": 24,
-    "to": 94,
+  "Library-golfcoursesplit": {
+    "start": "Library",
+    "end": "golfcoursesplit",
     "points": [
       [
         -1.13317328345993,
@@ -4117,11 +5021,18 @@ export const edges = {
     "elevation": 1.2192726251548294,
     "distance": 150.90151296652743,
     "time": 112.30336056700608,
-    "wheelchair": true
+    "description": [
+      "Cross the road and continue along the pavement until you're by Stunt.",
+      "From Stunt, walk along the pavement and cross the Zebra crossing towards the library."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Cross the road and continue along the pavement until you're by Stunt.",
+    "reverse": "From Stunt, walk along the pavement and cross the Zebra crossing towards the library."
   },
-  "79-94": {
-    "from": 79,
-    "to": 94,
+  "Chapel-golfcoursesplit": {
+    "start": "Chapel",
+    "end": "golfcoursesplit",
     "points": [
       [
         -1.133174393127877,
@@ -4153,11 +5064,18 @@ export const edges = {
     "elevation": -2.028095082730445,
     "distance": 126.75781954697516,
     "time": 85.16966242322515,
-    "wheelchair": true
+    "description": [
+      "Continue up the hill and past the gate, continue to Stunt.",
+      "From Stunt, take the lower road and continue to Chapel."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Continue up the hill and past the gate, continue to Stunt.",
+    "reverse": "From Stunt, take the lower road and continue to Chapel."
   },
-  "74-92": {
-    "from": 74,
-    "to": 92,
+  "Rectory 1-Golf Course": {
+    "start": "Rectory 1",
+    "end": "Golf Course",
     "points": [
       [
         -1.136490923193825,
@@ -4224,11 +5142,18 @@ export const edges = {
     "elevation": 1.491212475779406,
     "distance": 341.93442906373235,
     "time": 250.66408514095897,
-    "wheelchair": true
+    "description": [
+      "Walk up the stairs by the pitch and continue down to the Golf Course.",
+      "From the Golf Course, walk to the third pitch on the left."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk up the stairs by the pitch and continue down to the Golf Course.",
+    "reverse": "From the Golf Course, walk to the third pitch on the left."
   },
-  "75-92": {
-    "from": 75,
-    "to": 92,
+  "Rectory 2-Golf Course": {
+    "start": "Rectory 2",
+    "end": "Golf Course",
     "points": [
       [
         -1.137848767043803,
@@ -4260,11 +5185,18 @@ export const edges = {
     "elevation": 2.3200406292955833,
     "distance": 192.47332541503522,
     "time": 145.53084828637162,
-    "wheelchair": true
+    "description": [
+      "Walk to the end of the pitch and to the Golf Course.",
+      "From the Golf Course, walk to the second pitch on the left."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk to the end of the pitch and to the Golf Course.",
+    "reverse": "From the Golf Course, walk to the second pitch on the left."
   },
-  "76-92": {
-    "from": 76,
-    "to": 92,
+  "Rectory 3-Golf Course": {
+    "start": "Rectory 3",
+    "end": "Golf Course",
     "points": [
       [
         -1.139494503558359,
@@ -4296,6 +5228,13 @@ export const edges = {
     "elevation": 4.211365292356348,
     "distance": 176.64331399368925,
     "time": 139.78113157391488,
-    "wheelchair": true
+    "description": [
+      "Walk from Rectory 3 to the Golf Course ahead.",
+      "From the Golf Course walk to the first pitch on the left."
+    ],
+    "covid": "both",
+    "wheelchair": true,
+    "forwards": "Walk from Rectory 3 to the Golf Course ahead.",
+    "reverse": "From the Golf Course walk to the first pitch on the left."
   }
 }

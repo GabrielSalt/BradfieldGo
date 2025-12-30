@@ -1,4 +1,4 @@
-export var vertexs = {
+export var vertices = {
     "hill2b": {
       "name": "hill2b",
       "point": [
