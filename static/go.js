@@ -3,12 +3,12 @@ import {edges} from './edges.js';
 import {vertices} from './vertices.js';
 import { edgeDescriptions } from './descriptions.js';
 
-const edgesObj = Object.entries(edges).map(([key, e]) => ({
+var edgesObj = Object.entries(edges).map(([key, e]) => ({
   id: key,
   ...e
 }));
 
-const verticesObj = Object.entries(vertices).map(([id, v]) => ({
+var verticesObj = Object.entries(vertices).map(([id, v]) => ({
   id: Number(id),
   ...v
 }));
