@@ -86,7 +86,6 @@ for (let mp of waypoints) {
 // Wheelchair constraint
 if (constraint === 'Wheelchair') {
   edgesObj = edgesObj.filter(e => e.wheelchair);
-  console.log("Filtering edges for wheelchair accessibility, remaining edges:", edgesObj.length);
 }
 
 // Generate all possible routes
